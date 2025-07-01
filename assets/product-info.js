@@ -242,8 +242,12 @@ if (!customElements.get('product-info')) {
       updateMedia(html, variantFeaturedMediaId) {
         if (!variantFeaturedMediaId) return;
 
-        const mediaGallerySource = this.querySelector('media-gallery ul');
-        const mediaGalleryDestination = html.querySelector(`media-gallery ul`);
+        let mediaGallerySource = this.querySelector('media-gallery');
+        let mediaGalleryDestination = html.querySelector(`media-gallery`);
+        mediaGallerySource.outerHTML = mediaGalleryDestination.outerHTML;
+        
+        mediaGallerySource = this.querySelector('media-gallery ul');
+        mediaGalleryDestination = html.querySelector(`media-gallery ul`);
 
         const refreshSourceData = () => {
           if (this.hasAttribute('data-zoom-on-hover')) enableZoomOnHover(2);

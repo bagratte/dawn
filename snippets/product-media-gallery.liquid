@@ -251,7 +251,8 @@
             </button>
           </li>
         {%- endif -%}
-        {%- for media in product.media -%}
+        {% assign product_media = product.selected_or_first_available_variant.metafields.custom.media.value | default: product.media %}
+        {%- for media in product_media -%}
           {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
             {%- liquid
               capture media_index

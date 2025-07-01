@@ -56,8 +56,16 @@
           "type": "description",
           "settings": {}
         },
+        "custom_liquid_4qcphr": {
+          "type": "custom_liquid",
+          "name": "GPSR",
+          "settings": {
+            "custom_liquid": "{% assign eu = \"AT,BE,BG,HR,CY,CZ,DK,EE,FI,FR,DE,GR,HU,IE,IT,LV,LT,LU,MT,NL,PL,PT,RO,SK,SI,ES,SE\" | split: \",\" %}\n\n{% if eu contains localization.country.iso_code %}\n  <section class=\"eu-gpsr\">\n    Age restrictions: For adults<br>\n    EU Warranty: 2 years<br>\n    Other compliance information: Meets the lead and cadmium level requirements.<br>\n    <br>\n    In compliance with the General Product Safety Regulation (GPSR), <b>Bagrat Lazaryan</b> and <b>SINDEN VENTURES LIMITED</b> ensure that all consumer products offered are safe and meet EU standards. For any product safety related inquiries or concerns, please contact our EU representative at <b>gpsr@sindenventures.com</b>. You can also write to us at <b>stokhastik LLC, 30 N Gould St, STE R, Sheridan, WY 82801, USA</b> or<b> Markou Evgenikou 11, Mesa Geitonia, 4002, Limassol, Cyprus.<b></b></b>\n  </section>\n{% endif %}"
+          }
+        },
         "collapsible-row-0": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Materials",
             "icon": "leather",
@@ -67,6 +75,7 @@
         },
         "collapsible-row-1": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Shipping & Returns",
             "icon": "truck",
@@ -76,6 +85,7 @@
         },
         "collapsible-row-2": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Dimensions",
             "icon": "ruler",
@@ -85,6 +95,7 @@
         },
         "collapsible-row-3": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Care Instructions",
             "icon": "heart",
@@ -108,6 +119,7 @@
         "quantity_selector",
         "buy_buttons",
         "description",
+        "custom_liquid_4qcphr",
         "collapsible-row-0",
         "collapsible-row-1",
         "collapsible-row-2",
@@ -152,6 +164,7 @@
         "image-with-text-0",
         "image-with-text-1"
       ],
+      "disabled": true,
       "settings": {
         "height": "small",
         "desktop_image_width": "medium",
@@ -193,6 +206,7 @@
         "column-0",
         "column-1"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
