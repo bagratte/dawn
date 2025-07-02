@@ -67,7 +67,7 @@
           "type": "custom_liquid",
           "name": "Size Guide",
           "settings": {
-            "custom_liquid": "{% assign size_guide = product.metafields.custom.sizeguide %}\n{% if size_guide != blank %}\n  <details class=\"accordion__item\">\n    <summary>Care instructions</summary>\n    <div class=\"accordion__content rte\">\n      {{ size_guide }}\n    </div>\n  </details>\n{% endif %}"
+            "custom_liquid": "{% assign size_guide = product.metafields.custom.size_guide %}\n{% if size_guide != blank %}\n  <details class=\"accordion__item\">\n    <summary>Size Guide</summary>\n    <div class=\"accordion__content rte\">\n      {{ size_guide }}\n    </div>\n  </details>\n{% endif %}"
           }
         },
         "collapsible_tab_kKFMTb": {
