@@ -63,6 +63,12 @@
             "custom_liquid": "{% assign eu = \"AT,BE,BG,HR,CY,CZ,DK,EE,FI,FR,DE,GR,HU,IE,IT,LV,LT,LU,MT,NL,PL,PT,RO,SK,SI,ES,SE\" | split: \",\" %}\n\n{% if eu contains localization.country.iso_code %}\n  <section class=\"eu-gpsr\">\n    Age restrictions: For adults<br>\n    EU Warranty: 2 years<br>\n    Other compliance information: Meets the lead and cadmium level requirements.<br>\n    <br>\n    In compliance with the General Product Safety Regulation (GPSR), <b>Bagrat Lazaryan</b> and <b>SINDEN VENTURES LIMITED</b> ensure that all consumer products offered are safe and meet EU standards. For any product safety related inquiries or concerns, please contact our EU representative at <b>gpsr@sindenventures.com</b>. You can also write to us at <b>stokhastik LLC, 30 N Gould St, STE R, Sheridan, WY 82801, USA</b> or<b> Markou Evgenikou 11, Mesa Geitonia, 4002, Limassol, Cyprus.<b></b></b>\n  </section>\n{% endif %}"
           }
         },
+        "custom_liquid_Db3YJP": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.metafields.custom.size_guide != blank %}\n  <div class=\"accordion\">\n    <details>\n      <summary>\n        {% render 'icon-accordion', icon: 'ruler' %}\n        <h3 class=\"accordion__title inline-richtext h4\">Size Guide</h3>\n        {{ 'icon-caret.svg' | inline_asset_content }}\n      </summary>\n      <div class=\"accordion__content rte\">\n        {{ product.metafields.custom.size_guide | metafield_tag }}\n      </div>\n    </details>\n  </div>\n{% endif %}"
+          }
+        },
         "collapsible_tab_8Rairc": {
           "type": "collapsible_tab",
           "settings": {
@@ -129,6 +135,7 @@
         "buy_buttons",
         "description",
         "custom_liquid_4qcphr",
+        "custom_liquid_Db3YJP",
         "collapsible_tab_8Rairc",
         "collapsible_tab_kKFMTb",
         "collapsible-row-1",
