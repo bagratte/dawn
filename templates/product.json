@@ -65,11 +65,10 @@
         },
         "collapsible_tab_8Rairc": {
           "type": "collapsible_tab",
-          "disabled": true,
           "settings": {
             "heading": "Size Guide",
             "icon": "ruler",
-            "content": "<p>&lcub;% if product.metafields.custom.size_guide != blank %&rcub;<br/>  {{ product.metafields.custom.size_guide | metafield_tag }}<br/>&lcub;% endif %&rcub;</p>",
+            "content": "<p>{{ product.metafields.custom.size_guide | metafield_tag }}</p>",
             "page": ""
           }
         },
