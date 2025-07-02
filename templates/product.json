@@ -72,7 +72,6 @@
         },
         "collapsible_tab_kKFMTb": {
           "type": "collapsible_tab",
-          "disabled": true,
           "settings": {
             "heading": "Materials",
             "icon": "leather",
