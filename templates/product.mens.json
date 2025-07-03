@@ -68,7 +68,7 @@
           "settings": {
             "heading": "Size Guide",
             "icon": "ruler",
-            "content": "<p>Size Guide</p>",
+            "content": "<p>&lt;p&gt;Size Guide&lt;/p&gt;</p>",
             "page": ""
           }
         },
