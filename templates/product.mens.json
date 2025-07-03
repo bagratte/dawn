@@ -65,6 +65,15 @@
         },
         "collapsible_tab_kKFMTb": {
           "type": "collapsible_tab",
+          "settings": {
+            "heading": "Size Guide",
+            "icon": "ruler",
+            "content": "<p>Size Guide</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_wWmbFp": {
+          "type": "collapsible_tab",
           "disabled": true,
           "settings": {
             "heading": "Materials",
@@ -121,6 +130,7 @@
         "description",
         "custom_liquid_4qcphr",
         "collapsible_tab_kKFMTb",
+        "collapsible_tab_wWmbFp",
         "collapsible-row-1",
         "collapsible-row-2",
         "collapsible-row-3",
