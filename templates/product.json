@@ -44,7 +44,7 @@
         "custom_liquid_XK8FyG": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{% assign size_options = product.options_with_values | where: \"name\", \"Size\" | first %}\n{% if size_options and size_options.values.size > 1 %}\n<a href=\"size-chart\">Size Chart</a>\n{% endif %}"
+            "custom_liquid": "{% assign size_options = product.options_with_values | where: \"name\", \"Size\" | first %}\n{% if size_options and size_options.values.size > 1 %}\n<a href=\"/pages/size-chart\">Size Chart</a>\n{% endif %}"
           }
         },
         "quantity_selector": {
