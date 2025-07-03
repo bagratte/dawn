@@ -41,6 +41,12 @@
             "swatch_shape": "circle"
           }
         },
+        "custom_liquid_3PaeiU": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% assign size_options = product.options_with_values | where: \"name\", \"size\" | first %}\n{% if size_options and size_options.values.size > 1 %}\n  <div class=\"accordion\">\n    <details>\n      <summary>\n        {% render 'icon-accordion', icon: 'ruler' %}\n        <h3 class=\"accordion__title inline-richtext h4\">Size Guide</h3>\n        {{ 'icon-caret.svg' | inline_asset_content }}\n      </summary>\n      <div class=\"accordion__content rte\">\n        <!-- Your size guide table HTML goes here -->\n      </div>\n    </details>\n  </div>\n{% endif %}"
+          }
+        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {}
@@ -123,6 +129,7 @@
         "caption",
         "price",
         "variant_picker",
+        "custom_liquid_3PaeiU",
         "quantity_selector",
         "buy_buttons",
         "description",
