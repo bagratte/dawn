@@ -45,7 +45,7 @@
           "type": "custom_liquid",
           "name": "Size Guide",
           "settings": {
-            "custom_liquid": "{% assign size_options = product.options_with_values | where: \"name\", \"size\" | first %}\n{{ product.options_with_values | json }}\n{% if size_options and size_options.values.size > 1 %}\n  <div class=\"accordion\">\n    <details>\n      <summary>\n        {% render 'icon-accordion', icon: 'ruler' %}\n        <h3 class=\"accordion__title inline-richtext h4\">Size Guide</h3>\n        {{ 'icon-caret.svg' | inline_asset_content }}\n      </summary>\n      <div class=\"accordion__content rte\">\n        <!-- Your size guide table HTML goes here -->\n      </div>\n    </details>\n  </div>\n{% endif %}"
+            "custom_liquid": "{% assign size_options = product.options_with_values | where: \"name\", \"Size\" | first %}\n{% if size_options and size_options.values.size > 1 %}\n  <div class=\"accordion\">\n    <details>\n      <summary>\n        {% render 'icon-accordion', icon: 'ruler' %}\n        <h3 class=\"accordion__title inline-richtext h4\">Size Guide</h3>\n        {{ 'icon-caret.svg' | inline_asset_content }}\n      </summary>\n      <div class=\"accordion__content rte\">\n        <!-- Your size guide table HTML goes here -->\n      </div>\n    </details>\n  </div>\n{% endif %}"
           }
         },
         "quantity_selector": {
