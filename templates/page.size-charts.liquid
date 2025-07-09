@@ -1,0 +1,9 @@
+<div class="size-charts-page">
+  <h1>Size Charts</h1>
+  {% for chart in shop.metaobjects.size_chart.values %}
+    <div class="size-chart-block">
+      <h2>{{ chart.title.value }}</h2>
+      {{ chart.html.value }}
+    </div>
+  {% endfor %}
+</div>
