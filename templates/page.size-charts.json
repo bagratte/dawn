@@ -20,7 +20,7 @@
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
-        "custom_liquid": "{% for chart in shop.metaobjects.size_chart.values %}\n    <h2>{{ chart.title.value }}</h2>\n    {{ chart.html.value }}\n{% endfor %}",
+        "custom_liquid": "<section id=\"shopify-section-template--19883406734048__main\" class=\"shopify-section section\">\n<link href=\"//stokhastik.com/cdn/shop/t/3/assets/section-main-page.css?v=848677459125201531751389987\" rel=\"stylesheet\" type=\"text/css\" media=\"all\">\n{% for chart in shop.metaobjects.size_chart.values %}\n    <h2>{{ chart.title.value }}</h2>\n    {{ chart.html.value }}\n{% endfor %}\n</section>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
