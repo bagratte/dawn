@@ -19,7 +19,10 @@
     {{ page.title | escape }}
   </h1>
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-    {{ page.content }}
+    {% for chart in shop.metaobjects.size_chart.values %}
+        <h2>{{ chart.title.value }}</h2>
+        {{ chart.html.value }}
+    {% endfor %}
   </div>
 </div>
 
