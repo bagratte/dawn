@@ -11,6 +11,10 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "custom_css": [
+        "{text-align: center;}",
+        "table {width: 100%;}"
+      ],
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
