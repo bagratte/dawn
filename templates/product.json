@@ -142,6 +142,9 @@
         "collapsible-row-3",
         "share"
       ],
+      "custom_css": [
+        "table[data-size-chart] {width: 100%;}"
+      ],
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "",
