@@ -77,6 +77,15 @@
             "custom_liquid": "{%- assign tags_down = product.tags | join: ',' | downcase -%}\n{%- if tags_down contains 'p65' -%}\n  <section id=\"prop65-warning\" style=\"display:none;\">\n    <span style=\"color: #F7B500\">⚠</span> <b>Warning:</b>\n    This product can expose you to chemicals, including Bisphenol A (BPA)\n    which is known to the State of California to cause birth defects or other reproductive harm.\n    For more information go to <a href=\"https://www.p65warnings.ca.gov\" target=\"_blank\">https://www.p65warnings.ca.gov</a>\n  </section>\n{%- endif -%}\n\n<script>\n  (async () => {\n    try {\n      const response = await fetch('/browsing_context_suggestions.json');\n      const data = await response.json();\n\n      // Extract country handle (ISO) and readable name from the new structure\n      const countryHandle = data?.detected_values?.country?.handle || null;   // e.g. \"US\", \"AM\"\n      const countryName   = data?.detected_values?.country_name || countryHandle || 'unknown';\n\n      // Reveal Prop 65 warning if visitor is in the United States\n      if (countryHandle === 'US') {\n        document.getElementById('prop65-warning')?.style.removeProperty('display');\n      }\n    } catch (error) {\n      // Fallback on any error: display Prop 65 warning\n      document.getElementById('prop65-warning')?.style.removeProperty('display');\n    }\n  })();\n</script>"
           }
         },
+        "collapsible_tab_gDppKQ": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Size Chart",
+            "icon": "ruler",
+            "content": "<p>content</p>",
+            "page": ""
+          }
+        },
         "collapsible_tab_kKFMTb": {
           "type": "collapsible_tab",
           "disabled": true,
@@ -89,6 +98,7 @@
         },
         "collapsible-row-1": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Shipping & Returns",
             "icon": "truck",
@@ -135,6 +145,7 @@
         "description",
         "custom_liquid_4qcphr",
         "custom_liquid_MYifHU",
+        "collapsible_tab_gDppKQ",
         "collapsible_tab_kKFMTb",
         "collapsible-row-1",
         "collapsible-row-2",
