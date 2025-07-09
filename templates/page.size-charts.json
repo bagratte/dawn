@@ -15,9 +15,20 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "custom_liquid_gT4x6X": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "{% for chart in shop.metaobjects.size_chart.values %}\n    <h2>{{ chart.title.value }}</h2>\n    {{ chart.html.value }}\n{% endfor %}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "custom_liquid_gT4x6X"
   ]
 }
