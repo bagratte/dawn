@@ -70,18 +70,11 @@
             "custom_liquid": "{% assign eu = \"AT,BE,BG,HR,CY,CZ,DK,EE,FI,FR,DE,GR,HU,IE,IT,LV,LT,LU,MT,NL,PL,PT,RO,SK,SI,ES,SE\" | split: \",\" %}\n{% if eu contains localization.country.iso_code %}\n  <section>\n    Age restrictions: For adults<br>\n    EU Warranty: 2 years<br>\n    Other compliance information: Meets the lead and cadmium level requirements.<br>\n    <br>\n    In compliance with the General Product Safety Regulation (GPSR), <b>Bagrat Lazaryan</b> and <b>SINDEN VENTURES LIMITED</b> ensure that all consumer products offered are safe and meet EU standards. For any product safety related inquiries or concerns, please contact our EU representative at <b>gpsr@sindenventures.com</b>. You can also write to us at <b>stokhastik LLC, 30 N Gould St, STE R, Sheridan, WY 82801, USA</b> or <b>Markou Evgenikou 11, Mesa Geitonia, 4002, Limassol, Cyprus.</b>\n  </section>\n{% endif %}"
           }
         },
-        "custom_liquid_MYifHU": {
-          "type": "custom_liquid",
-          "name": "P65",
-          "settings": {
-            "custom_liquid": "{%- assign tags_down = product.tags | join: ',' | downcase -%}\n{%- if tags_down contains 'p65' -%}\n  <section id=\"prop65-warning\" style=\"display:none;\">\n    <span style=\"color: #F7B500\">⚠</span> <b>Warning:</b>\n    This product can expose you to chemicals, including Bisphenol A (BPA)\n    which is known to the State of California to cause birth defects or other reproductive harm.\n    For more information go to <a href=\"https://www.p65warnings.ca.gov\" target=\"_blank\">https://www.p65warnings.ca.gov</a>\n  </section>\n{%- endif -%}\n\n<script>\n  (async () => {\n    try {\n      const response = await fetch('/browsing_context_suggestions.json');\n      const data = await response.json();\n\n      // Extract country handle (ISO) and readable name from the new structure\n      const countryHandle = data?.detected_values?.country?.handle || null;   // e.g. \"US\", \"AM\"\n      const countryName   = data?.detected_values?.country_name || countryHandle || 'unknown';\n\n      // Reveal Prop 65 warning if visitor is in the United States\n      if (countryHandle === 'US') {\n        document.getElementById('prop65-warning')?.style.removeProperty('display');\n      }\n    } catch (error) {\n      // Fallback on any error: display Prop 65 warning\n      document.getElementById('prop65-warning')?.style.removeProperty('display');\n    }\n  })();\n</script>"
-          }
-        },
         "custom_liquid_mWYNPJ": {
           "type": "custom_liquid",
           "name": "P65",
           "settings": {
-            "custom_liquid": "<script>\nfetch('https://ipinfo.io/json?token=YOUR_TOKEN_HERE')\n  .then(response => response.json())\n  .then(data => {\n    if (data.region === 'Yerevan') {\n      document.getElementById('prop65-warning').style.display = 'block';\n    }\n  });\n</script>\n\n<div id=\"prop65-warning\" style=\"display:none;\">\n  ⚠️ CALIFORNIA WARNING: This product can expose you to chemicals...\n</div>"
+            "custom_liquid": "{%- assign tags = product.tags | join: ',' | downcase -%}\n{%- if tags contains 'p65' -%}\n  <section id=\"prop65-warning\" style=\"display:none;\">\n    <span style=\"color: #F7B500\">⚠</span> <b>Warning:</b>\n    This product can expose you to chemicals, including Bisphenol A (BPA)\n    which is known to the State of California to cause birth defects or other reproductive harm.\n    For more information go to <a href=\"https://www.p65warnings.ca.gov\" target=\"_blank\">https://www.p65warnings.ca.gov</a>\n  </section>\n{%- endif -%}\n\n<script>\nfetch('https://ipinfo.io/json')\n  .then(response => response.json())\n  .then(data => {\n    if (data.region === 'California') {\n      document.getElementById('prop65-warning').style.display = 'block';\n    }\n  });\n</script>"
           }
         },
         "collapsible_tab_kKFMTb": {
@@ -142,7 +135,6 @@
         "buy_buttons",
         "description",
         "custom_liquid_4qcphr",
-        "custom_liquid_MYifHU",
         "custom_liquid_mWYNPJ",
         "collapsible_tab_kKFMTb",
         "collapsible-row-1",
