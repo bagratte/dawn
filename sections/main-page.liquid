@@ -14,7 +14,7 @@
   }
 {%- endstyle -%}
 
-<nav class="size-chart-toc">
+<nav data-size-chart>
   <ul>
     {% for chart in shop.metaobjects.size_chart.values %}
       <li>
@@ -30,7 +30,7 @@
   </h1>
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
     {% for chart in shop.metaobjects.size_chart.values %}
-      <table>
+      <table data-size-chart>
         <tbody>
           <tr>
             <td>
