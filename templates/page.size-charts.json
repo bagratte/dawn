@@ -12,7 +12,7 @@
     "main": {
       "type": "main-page",
       "custom_css": [
-        "nav.toc {position: sticky; top: 0;}",
+        "nav.toc {position: sticky; top: var(--header-height);}",
         ".size-chart {width: unset; max-width: unset;}",
         "@media screen and (min-width: 750px) {.size-chart {width: unset; max-width: unset; }}",
         "ul[data-size-chart] {list-style: none;}",
