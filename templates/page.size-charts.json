@@ -12,6 +12,7 @@
     "main": {
       "type": "main-page",
       "custom_css": [
+        "div.toc {width: 22%;}",
         "ul[data-size-chart] {list-style: none;}",
         "table[data-size-chart] {text-align: center; width: 100%; table-layout: auto;}"
       ],
