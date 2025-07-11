@@ -1,33 +1,32 @@
 {{ 'section-main-page.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
     }
-
-    @media screen and (min-width: 750px) {
-      .section-{{ section.id }}-padding {
-        padding-top: {{ section.settings.padding_top }}px;
-        padding-bottom: {{ section.settings.padding_bottom }}px;
-      }
-    }
+  }
 {%- endstyle -%}
-
-<div class="grid grid--2-col">
-  <div class="grid__item">
-    <nav>
-      <ul data-size-chart>
-        {%- for chart in shop.metaobjects.size_chart.values -%}
-          <li>
-            <a href="#{{ chart.title | handle }}">{{ chart.title }}</a>
-          </li>
-        {%- endfor -%}
-      </ul>
-    </nav>
-  </div>
-  <div class="grid__item">
-    <div class="section-{{ section.id }}-padding">
+<div class="page-width page-width--narrow section-{{ section.id }}-padding">
+  <div class="grid grid--2-col">
+    <div class="grid__item">
+      <nav>
+        <ul data-size-chart>
+          {%- for chart in shop.metaobjects.size_chart.values -%}
+            <li>
+              <a href="#{{ chart.title | handle }}">{{ chart.title }}</a>
+            </li>
+          {%- endfor -%}
+        </ul>
+      </nav>
+    </div>
+    <div class="grid__item">
       <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
         {{ page.title | escape }}
       </h1>
