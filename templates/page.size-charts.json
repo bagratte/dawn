@@ -13,7 +13,7 @@
       "type": "main-page",
       "custom_css": [
         "nav {position: sticky; top: calc(var(--header-height) + 10px);}",
-        ".size-chart {width: unset; max-width: unset;}",
+        "div {width: unset; max-width: unset;}",
         "@media screen and (min-width: 750px) {.size-chart {width: unset; max-width: unset; }}",
         "ul.size-chart {list-style: none;}",
         "h1 {text-align: center;}",
