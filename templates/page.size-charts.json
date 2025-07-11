@@ -12,8 +12,7 @@
     "main": {
       "type": "main-page",
       "custom_css": [
-        "{text-align: center;}",
-        "table {width: 100%; table-layout: auto;}"
+        "table {text-align: center; width: 100%; table-layout: auto;}"
       ],
       "settings": {
         "padding_top": 28,
