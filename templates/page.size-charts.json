@@ -12,8 +12,9 @@
     "main": {
       "type": "main-page",
       "custom_css": [
-        "div.toc {/* flex: 0 0 200px; */ max-width: 220px; /* min-width: 160px; */}",
+        "div.toc {max-width: 12em;}",
         "ul[data-size-chart] {list-style: none;}",
+        "h1 {text-align: center;}",
         "table[data-size-chart] {text-align: center; width: 100%; table-layout: auto;}"
       ],
       "settings": {
