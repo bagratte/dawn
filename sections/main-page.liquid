@@ -19,8 +19,8 @@
     {{ page.title | escape }}
   </h1>
   <div class="grid grid--2-col">
-    <div class="grid__item size-chart toc">
-      <nav>
+    <div class="grid__item size-chart">
+      <nav class="toc">
         <ul data-size-chart>
           {%- for chart in shop.metaobjects.size_chart.values -%}
             <li>
