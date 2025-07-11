@@ -14,9 +14,9 @@
       "custom_css": [
         "nav {position: sticky; top: calc(var(--header-height) + 10px);}",
         "div.grid__item {width: unset; max-width: unset;}",
-        "ul.size-chart {list-style: none;}",
+        "ul {list-style: none;}",
         "h1 {text-align: center;}",
-        "table[data-size-chart] {text-align: center; width: 100%; table-layout: auto;}"
+        "table {text-align: center; width: 100%; table-layout: auto;}"
       ],
       "settings": {
         "padding_top": 28,
