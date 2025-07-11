@@ -12,7 +12,8 @@
     "main": {
       "type": "main-page",
       "custom_css": [
-        "table {text-align: center; width: 100%; table-layout: auto;}"
+        "ul[data-size-chart] {list-style: none;}",
+        "table[data-size-chart] {text-align: center; width: 100%; table-layout: auto;}"
       ],
       "settings": {
         "padding_top": 28,
