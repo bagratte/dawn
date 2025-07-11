@@ -16,7 +16,7 @@
         "div.grid__item {width: unset; max-width: unset;}",
         "ul {list-style: none;}",
         "h1 {text-align: center;}",
-        "table {text-align: center; width: 100%; table-layout: auto;}"
+        "table {text-align: center; width: 100%; table-layout: auto; table-layout: fixed; border-collapse: collapse; font-size: 1.4rem; border-style: hidden; box-shadow: 0 0 0 .1rem rgba(var(--color-foreground),.2);}"
       ],
       "settings": {
         "padding_top": 28,
