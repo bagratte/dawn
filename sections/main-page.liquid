@@ -14,19 +14,16 @@
   }
 {%- endstyle -%}
 
-<div class="grid grid--2-col" data-size-chart>
-  <div class="grid__item toc">
+<div class="grid grid--2-col size-chart-grid">
+  <div class="grid__item">
     <nav>
       <ul data-size-chart>
-        {% for chart in shop.metaobjects.size_chart.values %}
-          <li>
-            <a href="#{{ chart.title | handle }}">{{ chart.title }}</a>
-          </li>
-        {% endfor %}
+        {%- for chart in shop.metaobjects.size_chart.values -%}
+          <li><a href="#{{ chart.title | handle }}">{{ chart.title }}</a></li>
+        {%- endfor -%}
       </ul>
     </nav>
   </div>
-
   <div class="grid__item">
     <div class="page-width page-width--narrow section-{{ section.id }}-padding">
       <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
@@ -49,6 +46,34 @@
     </div>
   </div>
 </div>
+
+{%- style -%}
+.size-chart-grid {
+  display: grid;
+  grid-template-columns: 22% 78%;
+  gap: 2rem;
+}
+@media (max-width: 749px) {
+  .size-chart-grid {
+    grid-template-columns: 100%;
+  }
+}
+.size-chart-grid {
+  position: sticky;
+  top: 2rem;
+  align-self: start;
+  max-height: 90vh;
+  overflow: auto;
+}
+.size-chart-grid ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.size-chart-grid li {
+  margin-bottom: 0.5em;
+}
+{%- endstyle -%}
 
 {% schema %}
 {
