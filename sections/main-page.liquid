@@ -14,8 +14,8 @@
   }
 {%- endstyle -%}
 
-<nav data-size-chart>
-  <ul>
+<nav>
+  <ul data-size-chart>
     {% for chart in shop.metaobjects.size_chart.values %}
       <li>
         <a href="#{{ chart.title | handle }}">{{ chart.title }}</a>
