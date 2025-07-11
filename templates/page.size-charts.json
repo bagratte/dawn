@@ -15,7 +15,7 @@
         "nav.toc {position: sticky; top: calc(var(--header-height) + 10px);}",
         ".size-chart {width: unset; max-width: unset;}",
         "@media screen and (min-width: 750px) {.size-chart {width: unset; max-width: unset; }}",
-        "ul[data-size-chart] {list-style: none;}",
+        "ul.data-size-chart {list-style: none;}",
         "h1 {text-align: center;}",
         "table[data-size-chart] {text-align: center; width: 100%; table-layout: auto;}"
       ],
