@@ -143,7 +143,7 @@
         "share"
       ],
       "custom_css": [
-        "table[data-size-chart] {width: 100%; table-layout: auto; text-align: center;}"
+        "table {width: 100%; table-layout: auto; text-align: center;}"
       ],
       "settings": {
         "enable_sticky_info": true,
