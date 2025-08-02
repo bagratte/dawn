@@ -14,38 +14,12 @@
   }
 {%- endstyle -%}
 
-<div class="page-width section-{{ section.id }}-padding">
+<div class="page-width page-width--narrow section-{{ section.id }}-padding">
   <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
     {{ page.title | escape }}
   </h1>
-  <div class="grid grid--2-col">
-    <div class="grid__item">
-      <nav>
-        <ul>
-          {%- for chart in shop.metaobjects.size_chart.values -%}
-            <li>
-              <a class="link" href="#{{ chart.title | handle }}">{{ chart.title }}</a>
-            </li>
-          {%- endfor -%}
-        </ul>
-      </nav>
-    </div>
-    <div class="grid__item">
-      <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-        {% for chart in shop.metaobjects.size_chart.values %}
-          <table>
-            <tbody>
-              <tr>
-                <td>
-                  <h2 id="{{ chart.title | handle }}">{{ chart.title }}</h2>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          {{ chart.html }}
-        {% endfor %}
-      </div>
-    </div>
+  <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+    {{ page.content }}
   </div>
 </div>
 
