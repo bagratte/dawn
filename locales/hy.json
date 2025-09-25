@@ -3525,7 +3525,14 @@
       "taxes_included": "Հարկերը ներառված են։",
       "duties_included": "Պարտականությունները ներառված են։",
       "duties_and_taxes_included": "Ներառված են տուրքեր և հարկեր։",
-      "shipping_policy_html": "<a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">Առաքման արժեքը</a> հաշվարկվում է վճարման ժամանակ։"
+      "shipping_policy_html": "<a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">Առաքման արժեքը</a> հաշվարկվում է վճարման ժամանակ։",
+      "add_to_cart": "Ավելացնել զամբյուղում",
+      "choose_options": "Ընտրեք տարբերակներ",
+      "choose_product_options": "Ընտրեք տարբերակներ {{ product_name }} ի համար",
+      "description": "Նկարագրություն",
+      "inventory_in_stock": "Պահեստում կա",
+      "inventory_in_stock_show_count": "{{ quantity }} պահեստում",
+      "inventory_low_stock": "Ցածր պաշար"
     },
     "modal": {
       "label": "Մեդիա պատկերասրահ"
@@ -3593,5 +3600,141 @@
       "send_on": "ՏՏՏՏ-ԱԱ-ՕՕ",
       "send_on_label": "Ուղարկել (ըստ ցանկության)"
     }
+  },
+  "sections": {
+    "slideshow": {
+      "carousel": "Կարուսել",
+      "slide": "Սլայդ"
+    },
+    "page": {
+      "title": "Էջի վերնագիր"
+    },
+    "quick_order_list": {
+      "product_total": "Արտադրանքի ենթագումար",
+      "view_cart": "Դիտել զամբյուղը",
+      "each": "{{ money }} / հատ",
+      "product": "Արտադրանք",
+      "variant": "Տարբերակ",
+      "variant_total": "Տարբերակների ընդհանուր քանակը",
+      "items_added": {
+        "one": "{{ quantity }} տարր ավելացված է",
+        "other": "{{ quantity }} տարր ավելացված է"
+      },
+      "items_removed": {
+        "one": "{{ quantity }} տարր հեռացվել է",
+        "other": "{{ quantity }} տարր հեռացվել է"
+      },
+      "product_variants": "Արտադրանքի տարբերակներ",
+      "total_items": "Ընդհանուր ապրանքներ",
+      "remove_all_single_item_confirmation": "Հեռացնե՞լ 1 ապրանք ձեր զամբյուղից։",
+      "remove_all_items_confirmation": "Հեռացնե՞լ բոլոր {{ quantity }} ապրանքները ձեր զամբյուղից։",
+      "remove_all": "Հեռացնել բոլորը",
+      "cancel": "Չեղարկել",
+      "min_error": "Այս տարրն ունի նվազագույնը {{ min }}",
+      "max_error": "Այս տարրն ունի առավելագույնը {{ max }}",
+      "step_error": "Դուք կարող եք այս տարրը ավելացնել միայն {{ step }} քայլերով։"
+    }
+  },
+  "general": {
+    "password_page": {
+      "login_form_heading": "Մուտք գործեք խանութ՝ օգտագործելով գաղտնաբառը։",
+      "login_password_button": "Մուտքագրեք գաղտնաբառով",
+      "login_form_password_label": "Գաղտնաբառ",
+      "login_form_password_placeholder": "Ձեր գաղտնաբառը",
+      "login_form_error": "Սխալ գաղտնաբառ է։",
+      "login_form_submit": "Մուտքագրեք",
+      "admin_link_html": "Դուք խանութի սեփականատերն եք՞։ <a href=\"/admin\" class=\"link underlined-link\">Մուտք գործեք այստեղ։</a>",
+      "powered_by_shopify_html": "Այս խանութը կաշխատի {{ shopify }} ի կողմից"
+    },
+    "social": {
+      "alt_text": {
+        "share_on_facebook": "Կիսվել Ֆեյսբուքում",
+        "share_on_twitter": "Կիսվել X-ում",
+        "share_on_pinterest": "Pin Pinterest-ում"
+      },
+      "links": {
+        "twitter": "X (Թվիթթեր)",
+        "facebook": "Ֆեյսբուք",
+        "pinterest": "Փինթերեսթ",
+        "instagram": "Ինստագրամ",
+        "tumblr": "Թամբլր",
+        "vimeo": "Վիմեո"
+      }
+    },
+    "continue_shopping": "Շարունակեք գնումները",
+    "pagination": {
+      "label": "Էջերի դասակարգում",
+      "page": "Էջ {{ number }}",
+      "next": "Հաջորդ էջ",
+      "previous": "Նախորդ էջ"
+    },
+    "search": {
+      "search": "Որոնում",
+      "reset": "Մաքրել որոնման տերմինը"
+    },
+    "cart": {
+      "view": "Դիտել զամբյուղը ( {{ count }} )",
+      "view_empty_cart": "Դիտել զամբյուղը",
+      "item_added": "Ապրանքը ավելացվել է ձեր զամբյուղին"
+    },
+    "share": {
+      "close": "Փակել համօգտագործումը",
+      "copy_to_clipboard": "Պատճենել հղումը",
+      "share_url": "Հղում",
+      "success_message": "Հղումը պատճենվեց սեղմատախտակին"
+    },
+    "slider": {
+      "of": "-ի",
+      "next_slide": "Սահեցրեք աջ",
+      "previous_slide": "Սահեցրեք ձախ",
+      "name": "Սահող"
+    }
+  },
+  "newsletter": {
+    "label": "Էլ․ փոստ",
+    "success": "Շնորհակալություն բաժանորդագրվելու համար",
+    "button_label": "Բաժանորդագրվել"
+  },
+  "accessibility": {
+    "skip_to_text": "Անցնել բովանդակությանը",
+    "skip_to_product_info": "Անցնել ապրանքի տեղեկատվությանը",
+    "close": "Փակել",
+    "unit_price_separator": "յուրաքանչյուր",
+    "vendor": "Վաճառող՝",
+    "error": "Սխալ",
+    "refresh_page": "Ընտրություն կատարելը հանգեցնում է էջի ամբողջական թարմացմանը։",
+    "link_messages": {
+      "new_window": "Բացվում է նոր պատուհանում։",
+      "external": "Բացում է արտաքին կայքը։"
+    },
+    "loading": "Բեռնվում է...",
+    "total_reviews": "ընդհանուր կարծիքներ",
+    "star_reviews_info": "{{ rating_value }} ՝ {{ rating_max }} աստղից",
+    "collapsible_content_title": "Ծալովի բովանդակություն",
+    "complementary_products": "Լրացուցիչ ապրանքներ"
+  },
+  "blogs": {
+    "article": {
+      "blog": "Բլոգ",
+      "read_more_title": "Կարդալ ավելին՝ {{ title }}",
+      "comments": {
+        "one": "{{ count }} մեկնաբանություն",
+        "other": "{{ count }} մեկնաբանություն"
+      },
+      "moderated": "Խնդրում ենք նկատի ունենալ, որ մեկնաբանությունները պետք է հաստատվեն նախքան հրապարակվելը։",
+      "comment_form_title": "Թողեք մեկնաբանություն",
+      "name": "Անուն",
+      "email": "Էլ․ փոստ",
+      "message": "Մեկնաբանություն",
+      "post": "Հրապարակել մեկնաբանություն",
+      "back_to_blog": "Վերադառնալ բլոգ",
+      "share": "Կիսվեք այս հոդվածով",
+      "success": "Ձեր մեկնաբանությունը հաջողությամբ հրապարակվեց։ Շնորհակալություն։",
+      "success_moderated": "Ձեր մեկնաբանությունը հաջողությամբ հրապարակվեց։ Մենք այն կհրապարակենք որոշ ժամանակ անց, քանի որ մեր բլոգը մոդերացվում է։"
+    }
+  },
+  "onboarding": {
+    "product_title": "Օրինակ ապրանքի վերնագիր",
+    "collection_title": "Ձեր հավաքածուի անվանումը"
   }
 }
