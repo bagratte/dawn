@@ -375,7 +375,8 @@
       "shipping": {
         "subscription_delivery_description": {
           "prepaid_order_one_cycle_delivery_not_included": {
-            "other": "%{shipping_price}՝ %{count} առաքումների համար (%{per_delivery_cost})"
+            "other": "%{shipping_price}՝ %{count} առաքումների համար (%{per_delivery_cost})",
+            "one": "%{shipping_price}՝ %{count} առաքման համար"
           },
           "prepaid_order_no_cycle": {
             "one": "%{shipping_price}՝ %{count} լրացուցիչ առաքման համար, որին կհաջորդի %{recurring_order_shipping_price}-ը",
@@ -426,6 +427,38 @@
           "free_for_first_n_order": {
             "one": "Առաջին պատվերի համար",
             "other": "Առաջին %{count} պատվերների համար"
+          },
+          "free_shipping_cycles": {
+            "one": "Անվճար առաքում՝ %{count} ավելի առաքման դեպքում",
+            "other": "Անվճար առաքում %{count} ավելի առաքումների դեպքում"
+          },
+          "free_shipping_cycles_delivery_not_included": {
+            "one": "Անվճար առաքում %{count} առաքման դեպքում",
+            "other": "Անվճար առաքում %{count} առաքումների համար"
+          },
+          "first_n_order_free_with_cycle": {
+            "one": "Անվճար առաքում՝ %{count} ավելի առաքման դեպքում, ապա %{recurring_order_shipping_price}",
+            "other": "Անվճար առաքում %{count} ավելի առաքումների դեպքում, ապա %{recurring_order_shipping_price}"
+          },
+          "first_n_order_free_with_cycle_delivery_not_included": {
+            "one": "Անվճար առաքում %{count} առաքման դեպքում, ապա %{recurring_order_shipping_price}",
+            "other": "Անվճար առաքում %{count} առաքումների համար, ապա %{recurring_order_shipping_price}"
+          },
+          "max_cycles_base_shipping": {
+            "one": "%{count} լրացուցիչ առաքում՝ %{shipping_price}-ով",
+            "other": "%{count} լրացուցիչ առաքում՝ յուրաքանչյուրը %{shipping_price}-ով"
+          },
+          "max_cycles_base_shipping_delivery_not_included": {
+            "one": "%{count} առաքում՝ %{shipping_price}-ով",
+            "other": "%{count} լրացուցիչ առաքում՝ յուրաքանչյուրը %{shipping_price}-ով"
+          },
+          "prepaid_free_shipping_with_cycles": {
+            "one": "Անվճար առաքում առաջին %{cycle}-ի համար, որին կհաջորդի %{recurring_order_shipping_price}-ը",
+            "other": "Անվճար առաքում առաջին %{cycle}-ի համար, որին կհաջորդի %{recurring_order_shipping_price}-ը"
+          },
+          "prepaid_order_one_cycle": {
+            "one": "%{shipping_price}՝ %{count} լրացուցիչ առաքման համար",
+            "other": "%{shipping_price}՝ %{count} լրացուցիչ առաքումների համար (%{per_delivery_cost})"
           }
         },
         "one_time_purchase_shipping": "Միանգամյա առաքում",
@@ -498,7 +531,66 @@
         "split_shipping_option_lowest_price": "Ամենացածր գինը",
         "split_shipping_option_fastest": "Ամենաարագը",
         "split_shipping_option_recommended": "Առաջարկվող",
-        "split_shipping_option_custom": "Պատվերով"
+        "split_shipping_option_custom": "Պատվերով",
+        "title": "Առաքում",
+        "delivery_title": "Առաքում",
+        "shipping_method_title": "Առաքման եղանակը",
+        "shipping_method_rollup_accessibility_label": "Առաքման մեթոդի տարբերակներ",
+        "shipping_method_one_time_purchase_group_title": "Միանգամյա գնում",
+        "shipping_method_first_shipment_group_title": {
+          "one": "Առաջին առաքումը",
+          "other": "Առաջին առաքումները"
+        },
+        "shipping_method_subscription_group_title": "Բաժանորդագրություն",
+        "shipping_method_recurring_shipments_group_title": {
+          "one": "Կրկնվող առաքում",
+          "other": "Կրկնվող առաքումներ"
+        },
+        "subscription_shipping": "Բաժանորդագրության առաքում",
+        "subscription_local_delivery": "Բաժանորդագրության տեղական առաքում",
+        "subscription_pickup": "Բաժանորդագրության հավաքագրում",
+        "waiting_on_rate_notice": "Ստացվում են առաքման հասանելի գները…",
+        "waiting_on_pickup_location_notice": "Ստացվում են ազատ վերցման վայրեր…",
+        "no_rates_for_cart_or_destination_notice": "Ձեր զամբյուղի կամ հասցեի համար առաքման մեթոդներ հասանելի չեն",
+        "no_pickup_location_notice": "Ձեր ապրանքներից առնվազն մեկը հասանելի չէ վերցնելու համար",
+        "no_rates_for_country_notice": "Այս հասցեի համար առաքման սակագներ չեն գտնվել։",
+        "no_rates_contact_notice": "Կապվեք մեզ հետ՝ ավելի շատ տեղեկությունների համար",
+        "free_rate_label": "Անվճար",
+        "cheapest_rate_label": "Ամենաէժանը",
+        "please_enter_your_shipping_information_notice": "Խնդրում ենք մուտքագրել ձեր առաքման տեղեկությունները։",
+        "estimated_delivery_date": {
+          "one": "%{count} աշխատանքային օր",
+          "other": "%{count} աշխատանքային օր"
+        },
+        "estimated_delivery_date_range": "%{նվազագույն}-ից մինչև %{առավելագույն} աշխատանքային օր",
+        "estimated_delivery_time": "Մոտավոր առաքում %{time}",
+        "estimated_delivery_time_range": "Մոտավոր առաքում %{min_time}–%{max_time}",
+        "delivery_today": "Նույն օրվա առաքում %{time}",
+        "delivery_tomorrow": "Հաջորդ օրվա առաքում %{time}",
+        "two_day_delivery": "2-օրյա առաքում %{time}",
+        "delivery": "Առաքում %{time}",
+        "arrives_time": "Ժամանում է %{time}",
+        "arrives_time_range": "Ժամանում է %{min_time}–%{max_time}",
+        "estimated_time": "Մոտավոր %{time}",
+        "estimated_time_range": "Մոտավոր %{min_time}–%{max_time}",
+        "default_description": "Առաքվում է 1 աշխատանքային օրվա ընթացքում",
+        "unbranded_default_description": "Պատրաստ է առաքման",
+        "shipping_line_phone_label": "Բջջային հեռախոսահամար (պարտադիր)",
+        "shipping_line_phone": "Ձեր սուրհանդակը կարող է օգտագործել այս համարը ձեզ հետ կապվելու համար։",
+        "shipping_line_delivery_phone_label": "Բջջային հեռախոսահամար",
+        "shipping_line_delivery_phone": "Ձեզ կարող են կապ հաստատել առաքման վերաբերյալ թարմացումներով։",
+        "optional_shipping_line_delivery_instructions_label": "Առաքման հրահանգներ (ըստ ցանկության)",
+        "shipping_line_delivery_instructions": "Մուտքագրեք անհրաժեշտ տեղեկությունները, ինչպիսիք են դռան կոդերը կամ բեռնաթափման հրահանգները։",
+        "other_method": {
+          "zero": "Այլ մեթոդներ հասանելի չեն",
+          "one": "%{count} այլ մեթոդ հասանելի է",
+          "other": "Հասանելի է %{count} այլ մեթոդ՝ սկսած"
+        },
+        "shipping_rate_discounted_amount": "Նախկինում՝ %{original_amount}։ Հիմա՝ %{amount}",
+        "local_delivery": "Տեղական առաքում",
+        "prime_not_available": {
+          "default": "Ձեր պատվերի համար Prime Delivery-ը հասանելի չէ։ Ձեր առաքման տարբերակները թարմացվել են։"
+        }
       },
       "localized_fields": {
         "additional_information": {
@@ -1298,7 +1390,54 @@
         "maximum_discount_code_limit_reached": "Դուք հասել եք զեղչի կոդերի առավելագույն քանակին։ Հեռացրեք առկա կոդը <strong style=\"text-transform:uppercase\">՝ %{code}-ն</strong> օգտագործելու համար։",
         "discount_code_application_failed": "<strong style=\"text-transform:uppercase\">%{code}-ը</strong> այս պահին չի աշխատում։ Կապվեք մեզ հետ օգնության համար։",
         "due_on_fulfillment": "Կատարման ենթակա",
-        "gift_card_masked": "•••• %{վերջին_նիշեր}"
+        "gift_card_masked": "•••• %{վերջին_նիշեր}",
+        "subscriptions": "Բաժանորդագրություններ",
+        "duties_label": "Պարտականություններ",
+        "duties_and_taxes_label": "Տուրքեր և հարկեր",
+        "error_duties_tooltip": "Այս պատվերը ուղարկվում է մեկ այլ երկրից, ուստի առաքման ժամանակ կարող են գանձվել տուրքեր և հարկեր։",
+        "may_be_charged_on_delivery": "Կարող է վճար գանձվել առաքման ժամանակ",
+        "total_updated_label_with_price": "Թարմացված ընդհանուր գինը՝ %{totalPrice}",
+        "updated_shipping_method": "Թարմացված առաքման եղանակը՝ %{shipping_method}",
+        "recurring_payments": "Կրկնվող վճարումներ",
+        "recurring_total_multiple_label": "Այս պատվերի համար կա կրկնվող վճար մի քանի ապրանքների համար։",
+        "deferred_total_due_date_label": "Ընդհանուր վճարման ենթակա {{date}}",
+        "deferred_total_due_date_label_next": "Վճարման ժամկետը՝ %{date}",
+        "full_price": "Լրիվ գինը՝ %{price}",
+        "custom_discount": "Անհատական ​​զեղչ",
+        "expand_component_information": {
+          "one": "Ցուցադրել %{count} տարր",
+          "other": "Ցուցադրել %{count} տարր"
+        },
+        "collapse_component_information": {
+          "one": "Թաքցնել %{count} տարրը",
+          "other": "Թաքցնել %{count} տարր"
+        },
+        "component_quantity_title": "%{քանակ} × %{արտադրանքի_վերնագիր}",
+        "discount_discovery": {
+          "add_code": "Ավելացնել զեղչ",
+          "merchandise_quantity_label": {
+            "one": "%{count} տարր",
+            "other": "%{count} տարր"
+          }
+        },
+        "alternative_payment_currency_total": "Գանձվել է որպես %{amount_due}",
+        "return_rules_experiment": {
+          "limited_window_title": {
+            "one": "%{count} օրվա անվճար վերադարձ",
+            "other": "%{count} օրվա անվճար վերադարձ"
+          },
+          "limited_window_title_with_final_sale": {
+            "one": "%{count} օրվա անվճար վերադարձ, բացառությամբ վերջնական վաճառքի",
+            "other": "%{count} օրվա անվճար վերադարձ, բացառությամբ վերջնական վաճառքի"
+          },
+          "unlimited_window_title": "Անվճար վերադարձներ",
+          "unlimited_window_title_with_final_sale": "Անվճար վերադարձ, բացառությամբ վերջնական վաճառքի",
+          "refund_policy_description": "Իմացեք ավելին մեր %{refund_policy_link_text}-ի մասին։",
+          "refund_policy_link_text": "վերադարձի քաղաքականություն",
+          "refund_policy_with_final_sale_description": "Վերջնական վաճառքը բացառված է։ Իմացեք ավելին մեր %{refund_policy_link_text}-ի մասին։",
+          "final_sale_label": "Վերջնական վաճառք",
+          "final_sale_description": "Վերջնական վաճառքը բացառված է։"
+        }
       },
       "thank_you": {
         "failed_contact_merchant": "Կապվեք %{company}-ի հետ՝ առաքումը կազմակերպելու համար։",
