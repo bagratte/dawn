@@ -1399,7 +1399,8 @@
         "returned_with_quantities": "Վերադարձվել է {{delta}} ՝ {{total}} ից",
         "removed_with_quantities": "Հեռացվել է {{delta}} ը {{total}} ից",
         "return_line_item_removed": "Հեռացված է վերադարձից",
-        "return_line_item_removed_with_quantities": "{{delta}} հեռացվել է վերադարձից"
+        "return_line_item_removed_with_quantities": "{{delta}} հեռացվել է վերադարձից",
+        "added": "Ավելացված է"
       },
       "shop_pay": {
         "order_completed_with": "Պատվերն ավարտված է",
@@ -1438,7 +1439,142 @@
       "adjusted_total": "Կարգավորված ընդհանուր",
       "due_on_date": "Վճարման ժամկետը {{date}}",
       "due_on_fulfillment": "Կատարման ենթակա",
-      "due_on_receipt": "Վճարման ենթակա է ստացման պահին"
+      "due_on_receipt": "Վճարման ենթակա է ստացման պահին",
+      "company_and_location": "Ընկերությունը և գտնվելու վայրը",
+      "fully_refunded_label": "ՎԵՐԱԴԱՐՁՎԱԾ Է",
+      "group_title_label": "Մաս՝ {{groupTitle}}",
+      "group_title_label_with_parent": "Համար՝ {{groupTitle}}",
+      "view_controls": {
+        "gallery": "Պատկերասրահ",
+        "list": "Ցանկ"
+      },
+      "grouped_view_components": {
+        "expand_line_items": "Ցուցադրել {{count}} տարր",
+        "collapse_line_items": "Թաքցնել {{count}} տարր",
+        "line_item_summary_list_accessibility_label": "{{productTitle}} փաթեթի ապրանքներ"
+      },
+      "discount": "Զեղչ",
+      "hide_items": "Թաքցնել տարրերը",
+      "loading": "Պատվերի մանրամասները բեռնվում են",
+      "loading_finished_accessibility_message": "Պատվերի մանրամասները բեռնվել են",
+      "location": "Գտնվելու վայրը",
+      "image_gallery": {
+        "next": "Ցուցադրել հաջորդ տարրերը",
+        "previous": "Ցուցադրել նախորդ տարրերը",
+        "load_more_items": {
+          "one": "Բեռնել ևս {{count}} տարր",
+          "other": "Բեռնել ևս {{count}} տարր"
+        }
+      },
+      "mobile_summary_toggle_button": {
+        "open": "Ցուցադրել պատվերի ամփոփումը",
+        "closed": "Թաքցնել պատվերի ամփոփումը"
+      },
+      "no_data": "Ոչ մեկը",
+      "no_data_provided_accessibility_label": "{{fieldName}} ը դատարկ է",
+      "not_applicable": "Հասանելի չէ",
+      "paid_amount": "Վճարված",
+      "partially_refunded_label": "Մասամբ վերադարձված",
+      "payment": {
+        "status_in_review": "Վճարումը պետք է կատարվի վերանայումից հետո",
+        "status_unpaid": "Վճարման ժամկետը {{date}}",
+        "title": "Վճարում",
+        "payment_type": {
+          "gift_card": "Նվեր քարտ",
+          "store_credit": "Խանութի վարկ",
+          "money_order": "Փողային փոխանցում",
+          "cash_on_delivery": "Կանխիկ առաքման պահին (COD)",
+          "bank_deposit": "Բանկային ավանդ",
+          "manual": "Ձեռնարկ"
+        },
+        "card_payment_details": "վերջանում է {{lastDigits}} -ով - {{formattedTransactionAmount}}",
+        "gift_card_payment_details": "վերջանում է {{lastDigits}} -ով - {{formattedTransactionAmount}}",
+        "store_credit_payment_details": "Խանութի վարկ - {{formattedTransactionAmount}}",
+        "shop_pay_installments": {
+          "paid_in_installments": "Վճարված է Shop Pay-ի մաս-մաս վճարումներով",
+          "view_schedule": "Դիտել ժամանակացույցը"
+        },
+        "manual_payment_methods": {
+          "money_order": "Փողային փոխանցում - {{formattedTransactionAmount}}",
+          "cash_on_delivery": "Կանխիկ առաքման պահին (COD) - {{formattedTransactionAmount}}",
+          "bank_deposit": "Բանկային ավանդ - {{formattedTransactionAmount}}",
+          "manual": "Ձեռքով - {{formattedTransactionAmount}}"
+        },
+        "transactions": {
+          "show_all": "Ցուցադրել բոլորը",
+          "show_less": "Ցուցադրել ավելի քիչ",
+          "details": "Մանրամասներ",
+          "payment_details": "Վճարման մանրամասներ"
+        },
+        "emv_details": {
+          "auth": "Հաստատում:",
+          "aid": "ԱԻԴ:",
+          "source": "ԱՂԲՅՈՒՐ՝"
+        }
+      },
+      "paid_with_shop_pay_installments_card": {
+        "paid_with_shop_pay_installments": "Վճարված է Shop Pay-ի մաս-մաս վճարումներով",
+        "description": "Մնացեք տեղեկացված ձեր վճարման ժամանակացույցի մասին՝ Shop հավելվածում հիշեցումների միջոցով։",
+        "payment_reminders_button": "Ստացեք վճարման հիշեցումներ",
+        "desktop_qr_code_content": {
+          "title": "Սկանավորել հիշեցումները",
+          "description": "Ստացեք հիշեցումներ ձեր վճարումների մասին Shop-ի միջոցով։"
+        }
+      },
+      "refunded_amount": "Վերադարձված",
+      "request_return_failed": "Ձեր հարցումը մշակելիս խնդիր առաջացավ։ Խնդրում ենք կրկին փորձել։",
+      "login_card": {
+        "resend_link_and_login": "Ձեր պատվերի մանրամասները դիտելու համար մուտք գործեք կամ ուղարկեք նոր հղում դեպի վճարման ժամանակ օգտագործված էլ. փոստը կամ հեռախոսահամարը։",
+        "resend_link_only": "Ձեր պատվերի մանրամասները դիտելու համար ուղարկեք նոր հղում վճարման ժամանակ օգտագործված էլ. փոստին կամ հեռախոսահամարին։",
+        "log_in": "Մուտք գործել",
+        "resend_link": "Ուղարկել նոր հղում",
+        "link_expired": "Հղումը ժամկետանց է"
+      },
+      "remaining_amount": "Մնացած",
+      "marketing_section_title": "Նորություններ և առաջարկներ",
+      "marketing_description": "Դուք կստանաք մարքեթինգային էլ. նամակներ: Կարող եք հրաժարվել բաժանորդագրությունից ցանկացած պահի:",
+      "marketing_checkbox_label": "Գրեք ինձ էլ. փոստով՝ նորություններով և առաջարկներով։",
+      "marketing_checkmark_label": "Դուք բաժանորդագրված եք նորություններ և առաջարկներ էլեկտրոնային փոստով ստանալու համար",
+      "returns": {
+        "expand_events_label": "Ցուցադրել մանրամասները",
+        "hide_events_label": "Թաքցնել մանրամասները",
+        "ineligible_return_message": "Այս պատվերի մեջ ներառված ապրանքները վերադարձի ենթակա չեն։",
+        "ineligible_return_message_when_returned": "Այս պատվերի մեջ որևէ լրացուցիչ ապրանք վերադարձի ենթակա չէ։",
+        "print_shipping_label": "Տպել առաքման պիտակը",
+        "return_and_refund_modal_header": "Վերադարձի քաղաքականություն",
+        "tracking_number": "Հետևման համարը՝",
+        "exchange_header": "Փոխանակեք իրեր",
+        "exchange_subheader": "Փոխանակվող ապրանքները կավելացվեն պատվերին վերադարձնելուց հետո։"
+      },
+      "shipping": {
+        "address": "Առաքման հասցե",
+        "address_map_marker": "Առաքման հասցե",
+        "method": "Առաքման եղանակը",
+        "summary": "Առաքում",
+        "free": "Անվճար",
+        "free_shipping_discount": "Անվճար առաքում",
+        "one_time": "Միանգամյա առաքում",
+        "subscription": "Բաժանորդագրության առաքում"
+      },
+      "pickup": {
+        "pickup": "Վերցնել",
+        "pickup_location": "Վերցնելու վայրը",
+        "pickup_point": "Վերցման կետ"
+      },
+      "show_items": "Ցուցադրել տարրերը",
+      "show_order_summary": "Ցուցադրել պատվերի ամփոփումը",
+      "hide_order_summary": "Թաքցնել պատվերի ամփոփումը",
+      "subtitle": "Հաստատված է {{date}}",
+      "subtotal": "Ենթամجموع",
+      "summary_list_title_accessibility_label": "Պատվիրել ապրանքներ",
+      "summary_title": "Պատվերի ամփոփում",
+      "summary_totals_title_accessibility_label": "Պատվերի ընդհանուր գումարը",
+      "shop_order_tracking": {
+        "download_shop_to_track": "Ներբեռնեք «Խանութ՝ ծանրոցը հետևելու համար» ծրագիրը",
+        "track_order_with_shop": "Հետևեք պատվերին Shop-ի միջոցով",
+        "title_header": "Սկանավորեք ձեր հեռախոսով",
+        "real_time_delivery_updates": "Խանութը ձեզ կուղարկի իրական ժամանակի առաքման թարմացումներ, երբ ձեր պատվերը առաքվի։"
+      }
     },
     "addresses": {
       "add_button": "Ավելացնել հասցե",
