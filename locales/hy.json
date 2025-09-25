@@ -777,6 +777,161 @@
           "other": "Այս պատվերը կուղարկվի {{merchant}} ի կողմից տրամադրված հասցեին։ Ընտրեք առաքման հասցե։"
         },
         "subtitle_no_match": "Այս հասցեն չի համապատասխանում ձեր պահպանված հասցեներից ոչ մեկին։"
+      },
+      "stock": {
+        "unfulfillable_product": {
+          "message": {
+            "one": "%{delivery_method}-ը այլևս հասանելի չէ այս ապրանքի համար։",
+            "other": "%{delivery_method}-ը այլևս հասանելի չէ այս ապրանքների համար։"
+          },
+          "default_message": {
+            "one": "Ընտրված առաքման եղանակը այլևս հասանելի չէ այս ապրանքի համար։",
+            "other": "Ընտրված առաքման եղանակը այլևս հասանելի չէ այս ապրանքների համար։"
+          }
+        },
+        "unshippable_product": {
+          "title": "Առաքում հասանելի չէ",
+          "header": {
+            "one": "%{count} ապրանքի համար առաքում հնարավոր չէ",
+            "other": "%{count} ապրանքների համար առաքում հասանելի չէ"
+          },
+          "message": {
+            "one": "Այս ապրանքը կհեռացվի ձեր զամբյուղից, քանի որ ձեր հասցեի համար առաքման մեթոդներ հասանելի չեն։",
+            "other": "Այս ապրանքները կհեռացվեն ձեր զամբյուղից, քանի որ ձեր հասցեի համար առաքման մեթոդներ հասանելի չեն։"
+          },
+          "status_column_header": "Առաքում չկա"
+        },
+        "price_update": {
+          "title": "Գնի թարմացում",
+          "description": "Այս ապրանքների գները փոխվել են և թարմացվել են ձեր զամբյուղում։",
+          "updated_price": "Թարմացված գին"
+        },
+        "price_and_quantity_update": {
+          "title": "Գնի և քանակի թարմացում",
+          "description": "Այս ապրանքների գները և մատչելի քանակները փոխվել են և թարմացվել են ձեր զամբյուղում։"
+        },
+        "out_of_stock": {
+          "description": "Այս ապրանքները այլևս հասանելի չեն և հեռացվել են ձեր զամբյուղից։",
+          "items_unavailable": "Որոշ ապրանքներ այլևս հասանելի չեն և հեռացվել են ձեր զամբյուղից։"
+        },
+        "out_of_stock_in_context_label": "Այս ապրանքը հասանելի չէ ձեր երկրում/տարածաշրջանում։"
+      },
+      "contextual_availability": {
+        "title": {
+          "one": "Անհասանելի ապրանք",
+          "other": "Անհասանելի ապրանքներ"
+        },
+        "products_not_available": {
+          "one": "Այս ապրանքը կհեռացվի ձեր զամբյուղից, քանի որ այն հասանելի չէ ձեր երկրում/տարածաշրջանում։",
+          "other": "Այս ապրանքները կհեռացվեն ձեր զամբյուղից, քանի որ դրանք հասանելի չեն ձեր երկրում/տարածաշրջանում։"
+        },
+        "all_products_in_cart_unavailable": {
+          "one": "Այս ապրանքը հասանելի չէ ձեր երկրում/տարածաշրջանում։",
+          "other": "Այս ապրանքները հասանելի չեն ձեր երկրում/տարածաշրջանում։"
+        },
+        "unavailable_label": "Անհասանելի է"
+      },
+      "merchandise_unavailable_in_buyer_location": {
+        "banner_title": {
+          "some_products_one": "Այս ապրանքը հասանելի չէ %{location_name} առաքման համար։",
+          "some_products_other": "Այս ապրանքները հասանելի չեն %{location_name} առաքման համար։",
+          "all_products_one": "Ձեր զամբյուղում գտնվող ապրանքը հասանելի չէ %{location_name} առաքման համար։",
+          "all_products_other": "Ձեր զամբյուղի ապրանքները հասանելի չեն %{location_name} առաքման համար։"
+        },
+        "missing_country_fallback": "քո երկիրը",
+        "indeterminate_location_fallback": "ձեր գտնվելու վայրը",
+        "cart_updated": "Ձեր զամբյուղը թարմացվել է։",
+        "change_address_only": "Շարունակելու համար փոխեք առաքման հասցեն։",
+        "change_address_or_remove": "Փոխել առաքման հասցեն կամ %{remove_action}:",
+        "remove_items_action": {
+          "one": "հեռացնել անհասանելի տարրը",
+          "other": "հեռացնել անհասանելի իրերը"
+        },
+        "empty_cart_action": "դատարկեք զամբյուղը և վերադարձրեք խանութ"
+      },
+      "deliverability": {
+        "not_deliverable": {
+          "title": {
+            "one": "%{count} ապրանքի համար առաքում հնարավոր չէ",
+            "other": "%{count} ապրանքների համար առաքում հասանելի չէ"
+          },
+          "message": {
+            "one": "Այս ապրանքը կհեռացվի ձեր զամբյուղից, քանի որ ձեր հասցեի համար առաքման մեթոդներ հասանելի չեն։",
+            "other": "Այս ապրանքները կհեռացվեն ձեր զամբյուղից, քանի որ ձեր հասցեի համար առաքման մեթոդներ հասանելի չեն։"
+          },
+          "label": "Առաքում չկա"
+        }
+      },
+      "order_summary": {
+        "title": "Պատվերի ամփոփում",
+        "group_title_label": "«%{group_title}»-ի մաս",
+        "for_add_on": "Համար՝ %{group_title}",
+        "from_shop_heading": "%{shop_name}-ից",
+        "from_other_stores_heading": "Այլ խանութներից",
+        "number_items": {
+          "one": "%{count} տարր",
+          "other": "%{count} տարր"
+        },
+        "view_all_items": {
+          "one": "Դիտել %{count} տարրը",
+          "other": "Դիտել բոլոր %{count} տարրերը"
+        },
+        "more_items_modal": {
+          "search_item": "Որոնում",
+          "clear_search": "Մաքրել որոնումը",
+          "empty_results": "«%{searchText}» բառի համար արդյունքներ չեն գտնվել։ Ստուգեք ուղղագրությունը կամ օգտագործեք այլ բառ կամ արտահայտություն։",
+          "number_items_shown": "%{shownNumber}-ից %{totalNumber} տարր"
+        },
+        "order_name_label": "Պատվեր %{name}",
+        "shopping_cart_label": "Գնումների զամբյուղ",
+        "discount_title": "Զեղչ",
+        "discount_title_stacking": {
+          "one": "Զեղչ",
+          "other": "Զեղչեր"
+        },
+        "discount_order_stacking": {
+          "one": "Պատվիրեք զեղչ",
+          "other": "Պատվիրեք զեղչեր"
+        },
+        "discount_label": "Զեղչի կոդ",
+        "discount_not_found": "Մուտքագրված կոդին համապատասխանող վավեր զեղչ չի գտնվել",
+        "discount_placeholder": "Զեղչի կոդ",
+        "discount_code_applied": "Զեղչի կոդը կիրառվել է",
+        "discount_code_allocations_mismatch": "Ձեր <strong style=\"text-transform:uppercase\">%{code}</strong> զեղչի կոդը փոխվել է։ Վերանայեք ձեր զամբյուղը և փորձեք կրկին։",
+        "gift_card_applied": "Նվեր քարտը կիրառվել է",
+        "enter_shipping_address": "Մուտքագրեք առաքման հասցեն",
+        "gift_card_title": "Նվեր քարտ",
+        "gift_card_label": "Նվեր քարտ",
+        "gift_card_placeholder": "Նվեր քարտ",
+        "gift_card_and_discount_title": "Զեղչի կոդ կամ նվեր քարտ",
+        "gift_card_and_discount_label": "Զեղչի կոդ կամ նվեր քարտ",
+        "gift_card_and_discount_placeholder": "Զեղչի կոդ կամ նվեր քարտ",
+        "add_discount_or_gift_card": "Ավելացրեք զեղչի կոդ կամ նվեր քարտ",
+        "remove_gift_card_label": "Մաքրել նվեր քարտը",
+        "remove_discount_label": "Հեռացնել զեղչը",
+        "return_restocking_fee_label": "Վերամշակման վճար",
+        "return_shipping_fee_label": "Վերադարձի առաքում",
+        "free_shipping_discount_label": "Անվճար առաքում",
+        "applied_free_shipping_discount_label": "Կիրառված",
+        "apply_discount_button_label": "Կիրառել",
+        "applied_discount_message": "%{amount} զեղչ պատվերի ընդհանուր գնից",
+        "discount_has_been_applied": "Զեղչը կիրառվել է",
+        "discount_has_been_removed": "Զեղչը հեռացվել է",
+        "gift_card_has_been_applied": "Նվեր քարտը կիրառվել է",
+        "gift_card_has_been_removed": "Նվեր քարտը հեռացվել է",
+        "gift_card_subscriptions_notice": "Նվեր քարտերը կգործեն միայն ձեր առաջին վճարման համար",
+        "discount_already_applied": "Այս պատվերի համար զեղչ է կիրառվել։ Դուք չեք կարող ավելացնել մեկ այլ զեղչ։",
+        "cart_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> զեղչի կոդը վավեր չէ ձեր զամբյուղի ապրանքների համար",
+        "discount_requires_customer_notice": "Մուտքագրեք ձեր առաքման տեղեկությունները <strong style=\"text-transform:uppercase\">%{code}</strong> զեղչի կոդը կիրառելու համար",
+        "customer_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> զեղչի կոդը այս պահին հասանելի չէ ձեզ համար",
+        "eligible_customer_missing_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> զեղչի կոդը պահանջում է համապատասխան հաճախորդ",
+        "shipping_information_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> զեղչի կոդը հասանելի չէ ձեր առաքման հասցեի համար",
+        "customer_already_used_once_per_customer_discount_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> զեղչի կոդն արդեն օգտագործվել է",
+        "subtotal_label": "Ենթամجموع",
+        "subtotal_label_with_quantity": {
+          "one": "Ենթամجموع · %{count} ապրանք",
+          "other": "Ենթամجموع · %{count} տարր"
+        }
       }
     }
   },
