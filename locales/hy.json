@@ -848,7 +848,25 @@
           "buying_gift_card": "Դուք չեք կարող խանութի կրեդիտը օգտագործել նվեր քարտ գնելու համար",
           "no_fixed_selling_plans": "Դուք չեք կարող օգտագործել խանութի վարկը հետաձգված գնման տարբերակներով"
         },
-        "clear": "Մաքրել"
+        "clear": "Մաքրել",
+        "expired_payment_method": "Ընտրված վճարման եղանակի ժամկետը լրացել է",
+        "payment_method_update_failed": "Վճարման եղանակի թարմացումը ձախողվեց։",
+        "payment_method_incompatible_with_payment_terms": "Վճարման եղանակը անհամատեղելի է վճարման պայմանների հետ։",
+        "proposed_gateway_unavailable": "Առաջարկվող վճարման դարպասը հասանելի չէ",
+        "pay_in_installments_split_pay_short": "%{amount}-ի 4 վճարում",
+        "gift_cards_unavailable": "Ձեր նվեր քարտը այլևս չի կարող կիրառվել այս պատվերի համար և հեռացվել է։",
+        "payment_flexibility_terms_id_mismatch": "Վճարման ճկունության պայմանների նույնականացման անհամապատասխանություն",
+        "payment_option": {
+          "accessibility_label": "Ընտրեք վճարման տարբերակ"
+        },
+        "bank_account_type": {
+          "checking": "Ստուգում",
+          "savings": "Խնայողություններ"
+        },
+        "bank_account_choose": "Ընտրեք հաշիվ՝ գնումն անվտանգ կերպով ավարտելու համար",
+        "bank_account_connect_another": "Կապեք մեկ այլ բանկային հաշիվ",
+        "bank_account_connect": "Միացնել բանկային հաշիվը",
+        "bank_account_missing": "Բանկային հաշիվը պետք է միացված լինի"
       },
       "throttle": {
         "too_many_attempts": {
@@ -1903,7 +1921,72 @@
         "split_cart_international_shipping_not_supported": "Բոլոր ապրանքները պետք է օգտագործեն նույն առաքման եղանակը միջազգային առաքման ժամանակ: Թարմացրեք առաքման եղանակը կամ ստեղծեք մի քանի պատվերներ:",
         "invalid_delivery_address_reference_handle": "Առաքման հասցեի հղման ձևը չի կարող համապատասխանեցվել որևէ հասանելի առաքման հասցեի։",
         "must_use_available_delivery_address": "Առաքման հասցեն պետք է ընտրվի առկա առաքման հասցեներից։",
-        "must_use_available_shipping_rate": "Առաքման գինը պետք է ընտրվի առկա առաքման գներից։"
+        "must_use_available_shipping_rate": "Առաքման գինը պետք է ընտրվի առկա առաքման գներից։",
+        "handle_phone_invalid": "Մուտքագրեք վավեր հեռախոսահամար",
+        "handle_email_invalid": "Մուտքագրեք վավեր էլ․ հասցե",
+        "email_invalid": "Մուտքագրեք վավեր էլ․ հասցե",
+        "email_or_phone_blank": "Մուտքագրեք էլ․ հասցե կամ հեռախոսահամար",
+        "email_or_phone_invalid": "Մուտքագրեք վավեր էլ․ հասցե կամ բջջային հեռախոսահամար",
+        "address_first_name_blank": "Մուտքագրեք անուն",
+        "address_first_name_too_long": "Անունը չափազանց երկար է (առավելագույնը 255 նիշ է)",
+        "address_first_name_contains_emojis": "Անունը չի կարող պարունակել էմոջիներ",
+        "address_first_name_contains_html_tags": "Անունը չի կարող պարունակել HTML թեգեր։",
+        "address_first_name_contains_url": "Անունը չի կարող URL պարունակել",
+        "address_first_name_contains_mathematical_symbols": "Անունը չի կարող պարունակել մաթեմատիկական նշաններ",
+        "address_last_name_blank": "Մուտքագրեք ազգանուն",
+        "address_last_name_too_long": "Ազգանունը չափազանց երկար է (առավելագույնը 255 նիշ)",
+        "address_last_name_contains_emojis": "Ազգանունը չի կարող պարունակել էմոջիներ",
+        "address_last_name_contains_html_tags": "Ազգանունը չի կարող HTML թեգեր պարունակել։",
+        "address_last_name_contains_url": "Ազգանունը չի կարող URL պարունակել",
+        "address_last_name_contains_mathematical_symbols": "Ազգանունը չի կարող պարունակել մաթեմատիկական նշաններ",
+        "address_address1_blank": "Մուտքագրեք հասցե",
+        "address_address1_too_long": "Առաջին հասցեի տողը չափազանց երկար է (առավելագույնը 255 նիշ է):",
+        "address_address1_contains_emojis": "Հասցե1-ը չի կարող պարունակել էմոջիներ",
+        "address_address1_contains_html_tags": "Address1-ը չի կարող պարունակել HTML թեգեր։",
+        "address_address1_contains_mathematical_symbols": "Առաջին հասցեի տողը չի կարող պարունակել մաթեմատիկական նշաններ",
+        "address_address2_blank": "Մուտք գործեք բնակարան, համար և այլն։",
+        "address_address2_too_long": "Երկրորդ հասցեի տողը չափազանց երկար է (առավելագույնը 255 նիշ է):",
+        "address_address2_contains_emojis": "Address2-ը չի կարող պարունակել էմոջիներ",
+        "address_address2_contains_html_tags": "Address2-ը չի կարող պարունակել HTML թեգեր։",
+        "address_address2_contains_mathematical_symbols": "Երկրորդ հասցեի տողը չի կարող պարունակել մաթեմատիկական նշաններ",
+        "address_city_blank": "Մուտքագրեք քաղաք",
+        "address_city_too_long": "Քաղաքը չափազանց երկար է (առավելագույնը 255 նիշ է)",
+        "address_city_contains_emojis": "Քաղաքը չի կարող պարունակել էմոջիներ",
+        "address_city_contains_html_tags": "Քաղաքը չի կարող պարունակել HTML թեգեր։",
+        "address_city_contains_mathematical_symbols": "Քաղաքը չի կարող պարունակել մաթեմատիկական նշաններ",
+        "address_country_blank": "Ընտրեք երկիր/տարածաշրջան",
+        "address_country_not_supported": "Մենք չենք առաքում այս երկիր կամ տարածաշրջան: Մուտքագրեք նոր առաքման հասցե և փորձեք կրկին:",
+        "address_province_blank": "Ընտրեք նահանգ / մարզ",
+        "address_province_invalid": "Ընտրեք վավեր նահանգ/մարզ",
+        "address_company_blank": "Մուտքագրեք ընկերության անվանումը",
+        "address_company_too_long": "Ընկերության անվանումը չափազանց երկար է (առավելագույնը 255 նիշ)",
+        "address_company_contains_emojis": "Ընկերությունը չի կարող պարունակել էմոջիներ",
+        "address_company_contains_html_tags": "Ընկերությունը չի կարող պարունակել HTML թեգեր։",
+        "address_company_contains_mathematical_symbols": "Ընկերությունը չի կարող պարունակել մաթեմատիկական նշաններ",
+        "address_phone_blank": "Մուտքագրեք վավեր հեռախոսահամար",
+        "address_phone_contains_emojis": "Հեռախոսահամարը չի կարող պարունակել էմոջիներ",
+        "address_phone_invalid": "Մուտքագրեք վավեր հեռախոսահամար",
+        "address_zip_blank": "Մուտքագրեք փոստային ինդեքսը",
+        "address_zip_blocked_address": "Այս վայրը չի աջակցվում",
+        "address_zip_too_long": "Փոստային ինդեքսը չափազանց երկար է (առավելագույնը 255 նիշ)",
+        "address_zip_not_supported": "Այս վայրը չի աջակցվում",
+        "address_zip_invalid_for_country": "Մուտքագրեք %{country}-ի վավեր փոստային ինդեքսը",
+        "address_zip_invalid_for_province": "Մուտքագրեք %{province}-ի վավեր փոստային ինդեքսը",
+        "address_zip_invalid_for_country_and_province": "Մուտքագրեք %{province}, %{country}-ի վավեր փոստային ինդեքսը",
+        "address_zip_contains_emojis": "Փոստային ինդեքսը չի կարող պարունակել էմոջիներ",
+        "address_zip_contains_mathematical_symbols": "Փոստային ինդեքսը չի կարող պարունակել մաթեմատիկական նշաններ",
+        "address_generic_blank": "Պարտադիր դաշտ",
+        "address_generic_invalid": "Անվավեր գրառում",
+        "address_generic_error": "Դաշտի սխալ",
+        "credit_card_name_blank": "Մուտքագրեք ձեր անունը ճիշտ այնպես, ինչպես այն գրված է ձեր քարտի վրա",
+        "credit_card_name_invalid": "Մուտքագրեք ձեր անունը ճիշտ այնպես, ինչպես այն գրված է ձեր քարտի վրա",
+        "credit_card_number_invalid": "Մուտքագրեք վավեր քարտի համար",
+        "credit_card_expiry_invalid": "Մուտքագրեք վավեր ժամկետի ավարտ",
+        "credit_card_month_invalid": "Մուտքագրեք վավեր ժամկետի ավարտի ամիս",
+        "credit_card_year_invalid": "Մուտքագրեք վավեր ժամկետի ավարտման տարի",
+        "credit_card_start_invalid": "Մուտքագրեք քարտի վավեր մեկնարկի ամսաթիվը",
+        "credit_card_start_month_invalid": "Մուտքագրեք վավեր քարտի մեկնարկի ամիսը",
+        "credit_card_start_year_invalid": "Մուտքագրեք քարտի վավեր մեկնարկի տարեթիվը"
       },
       "store_credit_errors": {
         "generic_error": "Ձեր խանութի վարկային հաշվի հետ կապված խնդիր առաջացավ։ Փորձեք կրկին կամ վերաբեռնեք էջը։"
@@ -1930,6 +2013,35 @@
         "duplicate_variant_id": "%{position} %{name} merchandise հրահանգը պարունակում է կրկնօրինակ տարբերակի ID %{variant_id}:",
         "invalid_variant_id_target": "%{name} ապրանքային հրահանգը հղում է կատարում %{variant_id} տարբերակի ID-ին, սակայն այդ տարբերակը ապրանքային գծերում չկա։",
         "invalid_price_override_target": "%{stable_id} տողի ապրանքի գնի փոխարինման հրահանգը անվավեր է, քանի որ այն փաթեթային բաղադրիչ է։"
+      },
+      "billing": {
+        "billing_address_title": "Հաշիվը",
+        "billing_address_rollup_accessibility_label": "Հաշիվը լրացնելու տարբերակներ",
+        "same_as_shipping": "Նույնն է, ինչ առաքման հասցեն",
+        "add_address": "Օգտագործեք այլ հասցե",
+        "edit": "Խմբագրել",
+        "delete": "Ջնջել",
+        "address_more": "Ավելի շատ գործողություններ այս հասցեի համար",
+        "address_edit": "Խմբագրել հասցեն",
+        "address_delete": "Ջնջել հասցեն",
+        "address_confirm": "Վստա՞հ եք, որ ուզում եք ջնջել այս հասցեն ձեր հաշվից։",
+        "address_form": {
+          "add_address": "Ավելացնել հասցե",
+          "save": "Պահպանել",
+          "cancel": "Չեղարկել"
+        }
+      },
+      "company_location": {
+        "location_title": "Ընկերության գտնվելու վայրը",
+        "location_rollup_accessibility_label": "Ընկերության գտնվելու վայրի տարբերակներ"
+      },
+      "payment_summary": {
+        "gift_card_current_balance_notice": "Ընթացիկ մնացորդ %{amount}",
+        "credit_card_expires_on_notice": "Սպառվում է %{month}/%{year}-ին",
+        "express_payment_gateway_label": "Էքսպրես",
+        "manual_payment_gateway_label": "Ձեռնարկ",
+        "billing_address_title": "Հաշվառման հասցե",
+        "free_label": "Անվճար"
       }
     },
     "notices": {
