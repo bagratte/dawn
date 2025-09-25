@@ -2234,14 +2234,23 @@
                 "due_later": "Մնացորդը {{translatedName}} պայմաններով է և վճարման ենթակա է {{dueDate}} ամսաթվին։",
                 "due_on_fulfillment": "Մնացորդը պետք է վճարվի այս պատվերի բոլոր կետերը կատարելուց հետո։",
                 "due_on_receipt": "Դուք կստանաք հաշիվ-ապրանքագիր մնացած մնացորդի համար։",
-                "due_on_date": "Մնացորդը պետք է վճարվի {{dueDate}} ամսաթվին։"
-              }
+                "due_on_date": "Մնացորդը պետք է վճարվի {{dueDate}} ամսաթվին։",
+                "title": "Վճարումը պետք է կատարվի"
+              },
+              "description": "Կատարեք վճարում՝ այս պատվերը հաստատելու համար։",
+              "title": "Վճարեք հաստատման համար"
             },
             "deposit": {
               "due_later": "{{depositAmount}} գումարը պետք է վճարվի ձեր պատվերի հաստատումից հետո։ Մնացորդը կլինի {{translatedName}} պայմաններով։",
               "due_on_fulfillment": "{{depositAmount}} գումարը պետք է վճարվի ձեր պատվերի հաստատումից հետո։ Մնացորդը պետք է վճարվի պատվերի կատարման ժամանակ։",
               "due_on_receipt": "{{depositAmount}} գումարը պետք է վճարվի ձեր պատվերի հաստատումից հետո։ Մնացորդը կվճարվի ավելի ուշ։",
               "due_on_date": "{{depositAmount}} պետք է վճարվի ձեր պատվերի հաստատումից հետո։ Մնացորդը պետք է վճարվի {{dueDate}} ին։"
+            },
+            "description": "Վճարման մանրամասները որոշվում են պատվերի հաստատման ժամանակ։",
+            "title": "Վճարումը դեռ չի ավարտվել",
+            "in_review": {
+              "description": "Վճարման մանրամասները որոշվում են պատվերի հաստատման ժամանակ։",
+              "title": "Վճարումը դեռ չի ավարտվել"
             }
           },
           "paid": {
@@ -2262,7 +2271,30 @@
           },
           "pay_now": "Վճարեք հիմա",
           "pay_now_accessibility_label": "Վճարեք հիմա {{orderName}} պատվերի համար",
-          "title": "Վճարման կարգավիճակը"
+          "title": "Վճարման կարգավիճակը",
+          "pending": {
+            "banner_overdue": {
+              "one": "Ձեր վճարումը {{count}} օր ուշացած է",
+              "other": "Ձեր վճարումը {{count}} օր ուշացած է"
+            },
+            "banner_due": {
+              "one": "Ձեր վճարումը պետք է կատարվի {{count}} օրից",
+              "other": "Ձեր վճարումը պետք է կատարվի {{count}} օրից"
+            },
+            "banner_due_today": "Ձեր վճարման ժամկետը այսօր է",
+            "title": "Վճարման ենթակա",
+            "title_with_date": "Վճարման ժամկետը {{date}}",
+            "title_due_on_receipt": "Վճարումը դեռ չի ավարտվել",
+            "title_due_on_fulfillment": "Կատարման դեպքում վճարման ենթակա վճարում",
+            "description_overdue": "Ձեր վճարումը ուշացել է։",
+            "description_partially_paid": "Այս պատվերը մասամբ վճարված է։ Դուք ունեք մնացորդ։",
+            "description_authorized": "Ձեր վճարման եղանակից գումարը կգանձվի վերջնաժամկետին, կամ կարող եք վճարել հիմա։",
+            "description_waiting_for_manual_payment": "Այս պատվերի վճարումը սպասվում է։ Մնացորդը կթարմացվի վճարումը ստանալուց հետո։",
+            "description_due_on_receipt": "Դուք կստանաք հաշիվ-ապրանքագիր, երբ վճարման ժամկետը լրանա։",
+            "description_due_on_receipt_partially_paid": "Այս պատվերը մասամբ վճարված է։ Դուք ունեք մնացորդ։ Դուք կստանաք հաշիվ-ապրանքագիր, երբ վճարման ժամկետը լրանա։",
+            "description_due_on_fulfillment": "Վճարումը կատարվում է այս պատվերի բոլոր կետերը կատարելուց հետո։",
+            "description_due_on_fulfillment_partially_paid": "Այս պատվերը մասամբ վճարված է։ Դուք ունեք մնացորդ։ Վճարումը պետք է կատարվի, երբ այս պատվերի բոլոր ապրանքները կատարվեն։"
+          }
         },
         "order_timeline": {
           "expand_events_label": "Ցուցադրել մանրամասները",
@@ -2271,7 +2303,10 @@
           "hide_events_accessibility_label": "Թաքցնել նախագծի պատվերի մանրամասները"
         },
         "subtitle": "Ներկայացվել է {{date}}",
-        "title": "Պատվեր {{name}}"
+        "title": "Պատվեր {{name}}",
+        "draft_order_subtitle": "Հաստատված է {{date}} ը {{draftOrderName}} պատվերից",
+        "loading": "Պատվերի մանրամասները բեռնվում են",
+        "loading_finished_accessibility_message": "Պատվերի մանրամասները բեռնվել են"
       },
       "payment_methods": {
         "payment_delete": {
@@ -2305,7 +2340,96 @@
       "locations": {
         "contact_email": "Էլ․ փոստ",
         "contact_list_title": "Մարդիկ",
-        "contact_name": "Անուն"
+        "contact_name": "Անուն",
+        "contact_permissions": "Թույլտվություններ",
+        "contact_phone_number": "Հեռախոսահամար",
+        "location_picker_label": "Տեղանքի անվանումը",
+        "location_picker_accessibility_label": "Տեղանքի անվանումը՝ {{locationName}}",
+        "net_payment_terms_description": "{{name}} : վճարումները պետք է կատարվեն {{numberOfDays}} օրվա ընթացքում",
+        "deposit_percentage": "{{percentage}} ավանդ",
+        "own_role_contact_name": "Դու",
+        "pagination": {
+          "load_more": "Բեռնել ավելին",
+          "load_more_accessibility_label": "Բեռնել ավելի շատ վայրեր"
+        },
+        "payment_details_title": "Վճարման մանրամասները",
+        "payment_terms": "Վճարման պայմաններ",
+        "permissions_label": "Ձեր թույլտվությունները",
+        "permissions_title": "Թույլտվություններ",
+        "section_title": "Գտնվելու վայրը",
+        "shipping_address_required": "Պատվերներ տեղադրելու համար ավելացրեք առաքման հասցե այս վայրին։",
+        "staff_and_permissions_title": "Անձնակազմ և թույլտվություններ",
+        "tax_details_title": "Հարկային մանրամասներ",
+        "tax_id": "Հարկային համարանիշ",
+        "tax_exemptions": "Հարկային ազատումներ",
+        "multiple_tax_exemptions": "{{taxExemptionsCount}} ավելին",
+        "multiple_tax_exemptions_and": "և",
+        "tax_exemptions_modal_close": "Փակել",
+        "taxes_none": "Ոչ մեկը",
+        "tax_exemption_not_applicable": "Հասանելի չէ",
+        "tax_exemptions_modal_button_accessibility_label": "Դիտել բոլոր հարկային արտոնությունները"
+      },
+      "location_selection": {
+        "continue_to_store": "Շարունակել պահելը",
+        "description": "Եթե ​​ձեր զամբյուղում արդեն ունեք ապրանքներ, գտնվելու վայրի փոփոխությունը կարող է ազդել զամբյուղի գների և քանակի վրա։",
+        "description_switch_later": "Դուք միշտ կարող եք անցնել ավելի ուշ",
+        "list_accessibility_label": "Գտնվելու վայրերի ցանկ",
+        "list_item_without_address_accessibility_label": "{{name}} : Հասցե չկա",
+        "list_loading_accessibility_message": "Գտնվելու վայրերի ցանկը բեռնվում է",
+        "list_loading_address_accessibility_message": "Բեռնվում է {{locationName}} հասցեն",
+        "list_loading_finished_accessibility_message": "Գտնվելու վայրերի ցանկը բեռնվել է",
+        "loading_store_accessibility_message": "Գնում եմ խանութ",
+        "no_location_title": "Միայն անհատական ​​պատվերներ",
+        "no_location_description": "Դուք այլևս չունեք {{company}} ի համար պատվերներ տեղադրելու թույլտվություն։ Դուք դեռ կարող եք անձնական պատվերներ տեղադրել։",
+        "no_locations_found": "Գտնվելու վայրեր չեն գտնվել",
+        "search": "Որոնել վայրեր",
+        "search_location_title": "Ընտրեք տեղանք",
+        "selection_cancel_button": "Չեղարկել",
+        "selection_confirmation_button": "Ընտրեք տեղանքը",
+        "selection_continue_button": "Շարունակել",
+        "title": "Ո՞ր վայրի համար եք գնում։",
+        "title_choose_location": "Ընտրեք տեղանք",
+        "clear_search": "Մաքրել որոնումը",
+        "try_new_search": "Փորձեք նոր որոնում"
+      },
+      "addresses": {
+        "add_billing_address_button": "Ավելացնել վճարման հասցե",
+        "add_billing_address_section_accessibility_label": "Ավելացրեք վճարման հասցե",
+        "add_shipping_address_button": "Ավելացնել առաքման հասցե",
+        "add_shipping_address_section_accessibility_label": "Ավելացնել առաքման հասցե",
+        "billing_address_card_title": "Հաշվառման հասցե",
+        "cancel_adding_billing_address_accessibility_label": "Չեղարկել հաշվարկային հասցեի ավելացումը",
+        "cancel_adding_shipping_address_accessibility_label": "Չեղարկել առաքման հասցեի ավելացումը",
+        "save_new_billing_address_accessibility_label": "Պահպանել վճարման հասցեն",
+        "save_new_shipping_address_accessibility_label": "Պահպանել առաքման հասցեն",
+        "shipping_address_card_title": "Առաքման հասցե"
+      },
+      "orders": {
+        "draft_order_list": {
+          "hide_all": "Թաքցնել բոլորը",
+          "show_all": "Ցուցադրել բոլորը",
+          "hide_all_accessibility_label": "Թաքցնել բոլոր պատվերները վերանայման մեջ",
+          "show_all_accessibility_label": "Ցուցադրել բոլոր պատվերները վերանայման մեջ",
+          "show_all_orders_in_review": "Ցուցադրել բոլոր պատվերները վերանայման մեջ",
+          "show_less_orders_in_review": "Ցուցադրել ավելի քիչ պատվերներ վերանայման մեջ",
+          "title": "Սպասող",
+          "pending_tab_accessibility_label": {
+            "no_pending_orders": "Դուք սպասվող պատվերներ չունեք",
+            "pending_orders": {
+              "one": "Դուք ունեք {{count}} սպասվող պատվեր",
+              "other": "Դուք ունեք {{count}} սպասվող պատվեր"
+            },
+            "more_than_pagination_length": "Դուք ունեք ավելի քան {{count}} սպասվող պատվեր"
+          },
+          "pending_orders_count_more_than_pagination_length": "{{count}} +",
+          "pagination": {
+            "nav_accessibility_label": "«Պատվերներ վերանայման մեջ» նավիգացիոն կոճակներ"
+          }
+        },
+        "order_list_column_headers_location": "Գտնվելու վայրը",
+        "order_list_column_headers_contact": "Կապ",
+        "order_list_column_headers_status": "Կարգավիճակ",
+        "removed_company_contact_tooltip": "Հեռացվել է ընկերությունից"
       }
     },
     "errors": {
