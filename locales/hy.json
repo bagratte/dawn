@@ -616,7 +616,121 @@
           }
         },
         "saved_by_payment_method": "Պահպանվել է %{payment_method}-ի կողմից",
-        "pay_with_payment_method": "Վճարեք %{payment_method}-ով"
+        "pay_with_payment_method": "Վճարեք %{payment_method}-ով",
+        "different_credit_card_label": "Օգտագործեք այլ վարկային քարտ",
+        "same_billing_address_label": "Նույնն է, ինչ առաքման հասցեն",
+        "different_billing_address_label": "Օգտագործեք այլ վճարային հասցե",
+        "billing_address_associated_with_mandate": "Օգտագործեք վճարման մեթոդին կից հասցեն",
+        "billing_address_associated_with_mandate_info": "Եթե ​​ցանկանում եք փոխել ձեր վճարային հասցեն, խնդրում ենք հեռացնել և վերամուտքագրել ձեր վարկային քարտի տվյալները։",
+        "free_order_notice_html": "Ձեր պատվերը <strong>անվճար</strong> է։ Վճարում չի պահանջվում։",
+        "express_checkout_free_order": "Անվճար պատվերի համար ձեզանից գումար չի գանձվի",
+        "order_covered_by_gift_cards_notice": {
+          "one": "Ձեր պատվերը ծածկված է ձեր նվեր քարտով։",
+          "other": "Ձեր պատվերը ծածկված է ձեր նվեր քարտերով։"
+        },
+        "offsite_gateway_redirect_hint": "«%{button_label}» կոճակը սեղմելուց հետո դուք կուղղորդվեք %{gateway_label} կայք՝ ձեր գնումն անվտանգ կերպով ավարտելու համար։",
+        "offsite_gateway_review_page_redirect_hint": "Ձեր պատվերը վերանայելուց հետո դուք կուղղորդվեք %{gateway_label} կայք՝ գնումն անվտանգ կերպով ավարտելու համար։",
+        "offsite_gateway_redirect_hint_multi_currency_html": "%{gateway_label} ընդհանուր %{total_shop_price}",
+        "offsite_gateway_redirect_hint_no_button_label": "Շարունակելուց հետո դուք կուղղորդվեք %{gateway_label}՝ ձեր գնումն անվտանգ կերպով ավարտելու համար։",
+        "receiver_payment_experience_hint": "Պատվերը տեղադրելուց հետո դուք կստանաք վճարման մանրամասները: Կատարեք վճարումը Multibanco-ում կամ առցանց՝ %{due_days} օրվա ընթացքում:",
+        "billing_address_title": "Հաշվառման հասցե",
+        "billing_address_rollup_accessibility_label": "Հաշվարկային հասցեի ընտրանքներ",
+        "billing_address_description": "Ընտրեք ձեր քարտի կամ վճարման եղանակին համապատասխանող հասցեն։",
+        "billing_address_description_no_shipping_address": "Մուտքագրեք ձեր քարտի կամ վճարման եղանակին համապատասխանող հասցեն։",
+        "no_js_credit_card_fields_redirect_hint": "Դուք կվերահղվեք ձեր վճարման տեղեկությունները ավելացնելու համար։",
+        "card_fields_container_prefix": "Դաշտային կոնտեյներ՝ հետևյալի համար՝",
+        "card_fields_unavailable_html": {
+          "one": "Վարկային և դեբետային քարտերով վճարումները ներկայումս հասանելի չեն։<br> <a href=\"%{current_url}\">Թարմացրեք այս էջը</a> կամ փորձեք կրկին ավելի ուշ։",
+          "other": "Վարկային և դեբետային քարտերով վճարումները ներկայումս հասանելի չեն։<br> <a href=\"%{current_url}\">Թարմացրեք այս էջը</a> կամ փորձեք վճարման այլ եղանակ։"
+        },
+        "card_fields_processing_error": "Վճարման մշակման հետ կապված խնդիր առաջացավ։ Փորձեք թարմացնել այս էջը կամ ստուգել ձեր ինտերնետային կապը։",
+        "technical_error": "Վճարումները չեն կարող մշակվել այս պահին տեխնիկական խնդրի պատճառով։ Փորձեք կրկին մի քանի րոպեից։",
+        "no_method_error": "Այս խանութը այս պահին չի կարող ընդունել վճարումներ։",
+        "not_configured_error": "Այս խանութը այս պահին չի կարող ընդունել վճարումներ։",
+        "missing_credit_card_error": "Մուտքագրեք ձեր քարտի տվյալները՝ վճարումն ավարտելու համար",
+        "shop_pay_ideal_unavailable_error": "iDEAL-ը հասանելի չէ այս պատվերի համար։ Ընտրեք վճարման այլ եղանակ։",
+        "payment_method_not_available_for_shipping_address_error": "Վճարման եղանակը հասանելի չէ ընտրված առաքման հասցեի համար։ Ընտրեք վճարման այլ եղանակ։",
+        "billing_address_not_supported_for_payment_method_error": "Այս վճարման եղանակը հասանելի չէ ձեր հաշվարկային հասցեի և արժույթի համար։ Խնդրում ենք փորձել վճարման այլ եղանակ։",
+        "generic_incorrect_card_info": "Ձեր վճարման տվյալները չհաջողվեց հաստատել։ Ստուգեք ձեր քարտի տվյալները և կրկին փորձեք։",
+        "sofort_label": "Սոֆորտ բանկային փոխանցում",
+        "paypal_wallet_label": "PayPal դրամապանակ",
+        "shop_pay_installments_label": "Խանութի վճարում մաս-մաս",
+        "paypal_modal": {
+          "order_contains_subscriptions": "Բաժանորդագրություն",
+          "order_contains_fixed_selling_plans": "Ընդհանուր գումարը կարող է չներառել հարկերը, առաքման վճարները, հետաձգված վճարները և որոշ զեղչեր: Շարունակեք վճարումը կատարել այսօր՝ վճարման ենթակա գումարը ստուգելու համար:"
+        },
+        "klarna_label": "Կլարնա",
+        "klarna_pay_later_label": "Վճարեք ավելի ուշ Klarna-ի միջոցով",
+        "klarna_pay_now_label": "Վճարեք հիմա Klarna-ով",
+        "multibanco_label": "Մուլտիբանկո",
+        "eps_label": "eps-Ավելի շատ բան",
+        "klarna_slice_it_label": "Ֆինանսներ Klarna-ի հետ",
+        "ideal_label": "իդեալական գործարք",
+        "bank_picker_label": "Բանկ",
+        "afterpay_label": "Հետվճարում",
+        "cashapppay_label": "Վճարում կանխիկի հավելվածով",
+        "przelewy24_label": "Պրզելևի24",
+        "blik_label": "Բլիկ",
+        "twint_label": "Թվինթ",
+        "mobilepay_label": "Մոբայլ վճարում",
+        "swish_label": "Սվիշ",
+        "vipps_label": "Վիպպներ",
+        "kcp_creditcard_label": "KCP վարկային քարտ",
+        "usdc_label": "ԱՄՆ դոլարի դոլար",
+        "usdc_cashback_title": "1% քեշբեք",
+        "usdc_cashback_additional_info": "Ստացեք 1% վերադարձ USDC-ով անմիջապես ձեր դրամապանակում։",
+        "usdc_cashback_terms": "Կիրառվում են պայմաններ",
+        "purchase_options_card_update_agreement_label_html": "Ձեր վճարման եղանակը թարմացնելով՝ դուք թույլատրում եք վճարումներ կատարել ցանկացած կրկնվող կամ հետաձգված գնման համար՝ համաձայն այս խանութի <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{cancellation_policy}\" href=\"%{policy_href}\">չեղարկման քաղաքականության</a> ։",
+        "subscription_card_update_agreement_label": "Վճարման եղանակի փոփոխությունը կթարմացնի ձեր բաժանորդագրությունը և ապագա կրկնվող վճարումները։",
+        "subscription_agreement_label": "Ձեր զամբյուղում մեկ կամ մի քանի ապրանքներ հետաձգված կամ բաժանորդագրական գնում են: Շարունակելով վճարումը՝ դուք համաձայնում եք, որ ձեր վճարման եղանակից ավտոմատ կերպով կգանձվի այս էջում նշված գնով և հաճախականությամբ մինչև դրա ավարտը կամ ձեր կողմից չեղարկումը: Բոլոր չեղարկումները ենթակա են %{cancelled}-ի:",
+        "subscription_agreement_cancelled": "չեղարկման քաղաքականություն",
+        "subscription_heading": "Բաժանորդագրության պայմանագիր",
+        "subscription_agreement_label_html": "Ես հասկանում եմ, որ համաձայն եմ բաժանորդագրությանը։ Այն կերկարաձգվի նշված գնով և հաճախականությամբ մինչև դրա ավարտը կամ\n <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">չեղարկված</a> ։\n",
+        "purchase_options_agreement_label": "Ձեր զամբյուղում մեկ կամ մի քանի ապրանքներ հետաձգված կամ կրկնվող գնում են: Շարունակելով վճարումը՝ դուք համաձայնում եք, որ ձեր վճարման եղանակից ավտոմատ կերպով կգանձվի այս էջում նշված գնով և հաճախականությամբ մինչև դրա ավարտը կամ ձեր կողմից չեղարկումը: Բոլոր չեղարկումները ենթակա են %{cancellation_policy_label}-ի:",
+        "purchase_options_agreement_label_html": "Ես հասկանում եմ, որ իմ զամբյուղում գտնվող մեկ կամ մի քանի ապրանքներ հետաձգված կամ կրկնվող գնում են։ Շարունակելով՝ ես համաձայն եմ \n<a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">չեղարկման քաղաքականություն</a>\n և լիազորում եմ ձեզ գանձել իմ վճարման եղանակից այս էջում նշված գներով, հաճախականությամբ և ամսաթվերով մինչև իմ\n Պատվերը կատարված է, կամ ես չեղարկում եմ այն, եթե թույլատրվում է։\n",
+        "purchase_options_agreement_label_wallets": "Վճարումը շարունակելով՝ դուք համաձայնում եք այս էջում նշված ապագա գանձումներին և չեղարկման քաղաքականությանը։",
+        "change_currency_section_description": "Ընտրեք արժույթի տարբերակ",
+        "no_real_orders_dev_store": "Այս խանութը չի կարող ընդունել իրական պատվերներ կամ իրական վճարումներ։",
+        "waiting_on_payment_methods": "Հասանելի վճարման եղանակների ստացում...",
+        "apple_pay_payment_error": "Ձեր վճարումը չհաջողվեց ավարտել։ Փորձեք կրկին կամ օգտագործեք վճարման այլ եղանակ։",
+        "taxes_not_included": "Հարկերը չեն ներառվում",
+        "no_taxes_banner_content": "Այս պատվերից հարկեր չեն գանձվի։ Վճարումը կատարելուց հետո հարկերը այլևս չեն կարող ավելացվել։",
+        "paypal": {
+          "connect": "Սեղմեք՝ ձեր PayPal հաշիվը միացնելու համար"
+        },
+        "apple": {
+          "connect": "Սեղմեք՝ ձեր Apple Pay հաշիվը միացնելու համար",
+          "not_available": "Apple Pay-ը հասանելի չէ այս դիտարկիչում: Ձեր Apple Pay հաշիվը միացնելու համար անհրաժեշտ է օգտագործել Safari-ն Apple սարքի վրա:"
+        },
+        "google": {
+          "connect": "Սեղմեք՝ ձեր Google Pay հաշվին միանալու համար",
+          "error_authorizing": "Վճարման հաստատման սխալ"
+        },
+        "account_connected": "Հաշիվը միացված է։",
+        "mor_disclaimer_html": "Ստորև սեղմելով և ձեր պատվերը կատարելով՝ դուք համաձայնում եք գնել ձեր ապրանք(ներ)ը Global-e-ից՝ որպես գրանցված վաճառող։\n այս գործարքի համար՝ Global-e-ի <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{mor_terms}\" href=\"%{terms_href}\">օգտագործման կանոններին և պայմաններին</a> համապատասխան\n և <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{privacy_policy}\" href=\"%{policy_href}\">գաղտնիության քաղաքականություն</a> ։ Global-e-ն միջազգային\n կատարման ծառայությունների մատակարար %{shop_name}-ին\n",
+        "pending_payment": {
+          "due_notice": "Ձեր %{amount_due} վճարման ժամկետը սահմանված է %{due_date}-ին։",
+          "multibanco": {
+            "buyer_action_info": "Ձեր վճարումը՝ %{amount_due}, պետք է վճարվի։",
+            "instruction_html": "Կատարեք ձեր վճարումը Multibanco-ում կամ առցանց՝ օգտագործելով ստորև նշված տվյալները: Հարցերի կամ վճարման մանրամասները թարմացնելու համար՝ %{contact_us}:",
+            "entity": "Կազմակերպություն",
+            "reference": "Հղում",
+            "amount": "Գումար",
+            "find_nearest_atm": "Գտեք ամենամոտ բանկոմատը"
+          }
+        },
+        "update_payment_method": "Թարմացնել վճարման եղանակը",
+        "order_covered_by_store_credit_notice": "Ձեր պատվերը ծածկվում է ձեր խանութի կրեդիտով։",
+        "order_covered_by_redeemables_notice": "Ձեր պատվերը ծածկված է։",
+        "store_credit": {
+          "label": "Խանութի վարկ",
+          "apply_label": "Կիրառել խանութի վարկը",
+          "add_label": "Ավելացնել խանութի կրեդիտ",
+          "manage_label": "Կառավարեք խանութի վարկը",
+          "buying_gift_card": "Դուք չեք կարող խանութի կրեդիտը օգտագործել նվեր քարտ գնելու համար",
+          "no_fixed_selling_plans": "Դուք չեք կարող օգտագործել խանութի վարկը հետաձգված գնման տարբերակներով"
+        },
+        "clear": "Մաքրել"
       },
       "throttle": {
         "too_many_attempts": {
