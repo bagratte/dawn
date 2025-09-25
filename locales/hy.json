@@ -1649,11 +1649,47 @@
         "comment": "Մեկնաբանություն",
         "send": "Ուղարկել",
         "post_success": "Շնորհակալություն մեզ հետ կապվելու համար։ Մենք կկապնվենք ձեզ հետ հնարավորինս շուտ։",
-        "error_heading": "Խնդրում եմ կարգավորել հետևյալը՝"
+        "error_heading": "Խնդրում եմ կարգավորել հետևյալը՝",
+        "title": "Կապի ձև",
+        "name": "Անուն",
+        "email": "Էլ․ փոստ",
+        "phone": "Հեռախոսահամար"
       }
     },
     "404": {
       "title": "Էջը չի գտնվել"
+    },
+    "search": {
+      "no_results": "« {{ terms }} » բառի համար արդյունքներ չեն գտնվել։ Ստուգեք ուղղագրությունը կամ օգտագործեք այլ բառ կամ արտահայտություն։",
+      "page": "Էջ",
+      "products": "Արտադրանքներ",
+      "results_pages_with_count": {
+        "one": "{{ count }} էջ",
+        "other": "{{ count }} էջ"
+      },
+      "results_suggestions_with_count": {
+        "one": "{{ count }} առաջարկ",
+        "other": "{{ count }} առաջարկ"
+      },
+      "results_products_with_count": {
+        "one": "{{ count }} ապրանք",
+        "other": "{{ count }} արտադրանք"
+      },
+      "results_with_count": {
+        "one": "{{ count }} արդյունք",
+        "other": "{{ count }} արդյունք"
+      },
+      "results_with_count_and_term": {
+        "one": "Գտնվել է {{ count }} արդյունք « {{ terms }} » բառի համար",
+        "other": "Գտնվել է {{ count }} արդյունք « {{ terms }} » բառի համար"
+      },
+      "title": "Որոնման արդյունքներ",
+      "search_for": "Որոնել « {{ terms }} »",
+      "suggestions": "Առաջարկություններ",
+      "pages": "Էջեր"
+    },
+    "cart": {
+      "cart": "Զամբյուղ"
     }
   },
   "localization": {
@@ -1770,6 +1806,107 @@
     "reset_password": {
       "title": "Հաշվի գաղտնաբառի վերականգնում",
       "subtext": "Մուտքագրեք նոր գաղտնաբառ"
+    }
+  },
+  "products": {
+    "product": {
+      "inventory_low_stock_show_count": "Քիչ քանակություն՝ մնացել է {{ quantity }}",
+      "inventory_out_of_stock": "Սպառված է",
+      "inventory_out_of_stock_continue_selling": "Պահեստում կա",
+      "on_sale": "Զեղչ",
+      "product_variants": "Արտադրանքի տարբերակներ",
+      "media": {
+        "gallery_viewer": "Պատկերասրահի դիտիչ",
+        "load_image": "Բեռնել {{ index }} պատկերը պատկերասրահի դիտման մեջ",
+        "load_model": "Բեռնել 3D մոդելը {{ index }} պատկերասրահի տեսքով",
+        "load_video": "Նվագարկել {{ index }} տեսանյութը պատկերասրահի դիտման մեջ",
+        "image_available": "Պատկեր {{ index }} այժմ հասանելի է պատկերասրահի տեսքով",
+        "open_media": "Բացել {{ index }} մեդիան մոդալ ձևով",
+        "play_model": "Նվագարկել 3D Viewer-ը",
+        "play_video": "Նվագարկել տեսանյութը"
+      },
+      "quantity": {
+        "label": "Քանակ",
+        "input_label": "Քանակ {{ product }} համար",
+        "increase": "Մեծացնել {{ product }} -ի քանակը",
+        "decrease": "Նվազեցնել {{ product }} -ի քանակը",
+        "minimum_of": "Նվազագույնը {{ quantity }}",
+        "maximum_of": "Առավելագույնը {{ quantity }}",
+        "multiples_of": "{{ quantity }} ի աճեր",
+        "min_of": "Նվազագույն {{ quantity }}",
+        "max_of": "Առավելագույն {{ quantity }}",
+        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}</span> զամբյուղում",
+        "note": "Դիտել քանակի կանոնները"
+      },
+      "volume_pricing": {
+        "title": "Ծավալային գնագոյացում",
+        "note": "Հասանելի է ծավալային գներ",
+        "minimum": "{{ quantity }} +",
+        "price_at_each_html": "{{ price }} /հատ"
+      },
+      "pickup_availability": {
+        "view_store_info": "Դիտել խանութի տեղեկատվությունը",
+        "check_other_stores": "Ստուգեք առկայությունը այլ խանութներում",
+        "pick_up_available": "Հնարավոր է վերցնել",
+        "pick_up_available_at_html": "Վերցնել հնարավոր է <span class=\"color-foreground\">{{ location_name }}</span> հասցեից",
+        "pick_up_unavailable_at_html": "Վերցնելու ծառայությունը ներկայումս հասանելի չէ <span class=\"color-foreground\">{{ location_name }}</span> ից",
+        "unavailable": "Չհաջողվեց բեռնել վերցնելու հասանելիությունը",
+        "refresh": "Թարմացնել"
+      },
+      "price": {
+        "from_price_html": "Սկսած {{ price }} ից",
+        "regular_price": "Սովորական գին",
+        "sale_price": "Վաճառքի գին",
+        "unit_price": "Միավորի գինը"
+      },
+      "share": "Կիսվեք այս ապրանքով",
+      "sold_out": "Վաճառված է",
+      "unavailable": "Անհասանելի է",
+      "vendor": "Վաճառող",
+      "value_unavailable": "{{ option_value }} - Հասանելի չէ",
+      "variant_sold_out_or_unavailable": "Տարբերակը վաճառված է կամ անհասանելի է",
+      "video_exit_message": "{{ title }} բացում է լիաէկրան տեսանյութը նույն պատուհանում։",
+      "view_full_details": "Դիտել բոլոր մանրամասները",
+      "xr_button": "Դիտել ձեր տարածքում",
+      "xr_button_label": "Դիտել ձեր տարածքում, բեռնել տարրը լրացված իրականության պատուհանում",
+      "taxes_included": "Հարկերը ներառված են։",
+      "duties_included": "Պարտականությունները ներառված են։",
+      "duties_and_taxes_included": "Ներառված են տուրքեր և հարկեր։",
+      "shipping_policy_html": "<a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">Առաքման արժեքը</a> հաշվարկվում է վճարման ժամանակ։"
+    },
+    "modal": {
+      "label": "Մեդիա պատկերասրահ"
+    },
+    "facets": {
+      "filter_and_operator_subtitle": "Համապատասխանեցնել բոլորը",
+      "apply": "Կիրառել",
+      "clear": "Մաքրել",
+      "clear_all": "Հեռացնել բոլորը",
+      "from": "Սկսած",
+      "filter_and_sort": "Զտել և տեսակավորել",
+      "filter_by_label": "Ֆիլտր՝",
+      "filter_button": "Ֆիլտր",
+      "filters_selected": {
+        "one": "Ընտրված է {{ count }}",
+        "other": "Ընտրված է {{ count }}"
+      },
+      "filter_selected_accessibility": "{{ type }} (ընտրված է {{ count }} ֆիլտր)",
+      "show_more": "Ցուցադրել ավելին",
+      "show_less": "Ցուցադրել ավելի քիչ",
+      "max_price": "Ամենաբարձր գինը {{ price }} է",
+      "product_count": {
+        "one": "{{ product_count }} {{ count }} ապրանքից",
+        "other": "{{ product_count }} {{ count }} ապրանքներից"
+      },
+      "product_count_simple": {
+        "one": "{{ count }} ապրանք",
+        "other": "{{ count }} արտադրանք"
+      },
+      "reset": "Վերագործարկում",
+      "sort_button": "Դասավորել",
+      "sort_by_label": "Դասավորել ըստ՝",
+      "to": "Դեպի",
+      "clear_filter": "Հեռացնել ֆիլտրը"
     }
   }
 }
