@@ -1077,13 +1077,162 @@
           "pick_up_in_store_shipping_method_html": "Վերցնել խանութից · %{location_name}"
         }
       }
+    },
+    "notices": {
+      "cart": {
+        "items_changed": "Մեկ կամ մի քանի տարր փոխվել է։",
+        "product_sold_out": "«%{name}» ապրանքն արդեն վաճառված է։",
+        "variant_not_found": "Հնարավոր չէ գտնել տարբերակը",
+        "variant_requires_selling_plan": "Տարբերակը կարելի է գնել միայն վաճառքի պլանով։",
+        "selling_plan_not_available_for_company_locations": "B2B պատվերների համար հասանելի է միայն մեկանգամյա գնում",
+        "digital_product_not_available_for_company_locations": "Այս ապրանքը չի կարող ավելացվել B2B պատվերին",
+        "buyer_cannot_purchase_for_company_locations": "Դուք չեք կարող գնել այս վայրի համար",
+        "selling_plan_not_applicable": "Հնարավոր չէ կիրառել վաճառքի պլանը տարբերակի համար",
+        "shipping_address_not_required": "Այս զամբյուղը առաքման կարիք չունի",
+        "shipping_address_invalid": "Առաքման սակագները հաշվարկելիս խնդիր առաջացավ: Պատվերն ավարտելուց առաջ շարունակեք վճարումը՝ առաքման սակագին ընտրելու համար:",
+        "bundle_requires_components": "«%{name}» փաթեթային ապրանքը չի կարող ավելացվել զամբյուղին։",
+        "gift_card_with_components_not_supported": "«%{name}» փաթեթային ապրանքը չի կարող ավելացվել զամբյուղին։",
+        "gift_card_price_must_be_greater_than_zero": "«%{name}» փաթեթային ապրանքը չի կարող ավելացվել զամբյուղին։",
+        "gift_card_recipient_validation_error": "Նշված նվեր քարտի ստացողը անվավեր է",
+        "view_lines_limit_reached": "Գծերը պետք է լինեն %{limit}-ից փոքր",
+        "cart_too_large": "Զամբյուղը չափազանց մեծ է։",
+        "cart_attributes_error": "Զամբյուղի ատրիբուտները պարունակում են անվավեր տվյալներ։",
+        "merchandise_line_transformers": {
+          "run_error": "Ձեր զամբյուղում սխալ է տեղի ունեցել։"
+        },
+        "merchandise_not_applicable": "Ապրանքը հնարավոր չէ գնել կարգավորված ձևով։"
+      },
+      "storefront": {
+        "invalid_password": "Գաղտնաբառը սխալ է, խնդրում ենք կրկին փորձել։"
+      },
+      "tags": {
+        "add_articles": "Նեղացրեք որոնումը միայն %{tag} պիտակով հոդվածների վրա",
+        "add_products": "Նեղացրեք ընտրությունը %{tag} պիտակին համապատասխանող ապրանքներին",
+        "remove_articles": "Ընդլայնել որոնումը՝ ներառելով այն հոդվածները, որոնք նշված չեն %{tag} պիտակով",
+        "remove_products": "Հեռացնել %{tag} պիտակը"
+      }
+    },
+    "email_marketing": {
+      "subscribed": {
+        "confirmation": "Շնորհակալություն մեր փոստային ցուցակին բաժանորդագրվելու համար։",
+        "disclaimer": "Դուք կարող եք հրաժարվել բաժանորդագրությունից ցանկացած պահի։",
+        "unsubscribe": "Հրաժարվել բաժանորդագրությունից"
+      },
+      "unsubscribed": {
+        "confirmation": "Դուք հրաժարվել եք մեր փոստային ցուցակից։",
+        "disclaimer": "Դուք այլևս մեզանից մարքեթինգային թարմացումներ չեք ստանա։ Կարող եք կրկին բաժանորդագրվել ցանկացած պահի։",
+        "preview": "Դուք նախադիտում եք, թե ինչ կտեսնեն հաճախորդները, երբ հրաժարվեն բաժանորդագրությունից։"
+      },
+      "open_tracking": {
+        "opt_in": {
+          "opted_in_html": "<b>Դուք միացրել եք բացումների հետևման էլփոստային ուղին։</b>",
+          "visibility": "Էլ․փոստի բացման մակարդակները կհրապարակվեն անանուն կերպով։ Մենք կտեսնենք միայն այն դեպքում, եթե դուք էլ․փոստ եք բացել որպես էլ․փոստի բացման ընդհանուր մակարդակի մաս։",
+          "opt_out_html": "Դուք կարող եք <a style=\"text-decoration:underline;\" href=\"%{link}\">հրաժարվել</a> էլփոստի բացման հետևումից, եթե չեք ցանկանում կիսվել այս տեղեկատվությամբ։",
+          "preview_bar": "Դուք նախադիտում եք, թե ինչ կտեսնեն հաճախորդները, երբ միացնեն էլփոստով բացված նամակների հետևման գործառույթը։"
+        },
+        "opt_out": {
+          "opted_out_html": "<b>Դուք հրաժարվել եք էլփոստի բացման հետևումից։</b>",
+          "visibility": "Մենք չենք տեսնի, թե արդյոք դուք բացել եք մեր էլեկտրոնային նամակները։",
+          "opt_in_html": "<a style=\"text-decoration:underline;\" href=\"%{link}\">Միացեք</a> էլփոստով բացումների հետևմանը։",
+          "preview_bar": "Դուք նախադիտում եք, թե ինչ կտեսնեն հաճախորդները, երբ հրաժարվեն էլփոստի բացման հետևումից։"
+        },
+        "no_longer_track": {
+          "status_html": "<b>Մենք այլևս չենք հետևում բացված էլեկտրոնային նամակներին։</b>",
+          "privacy_policy": "Այս էլ. նամակն ուղարկելուց հետո մենք թարմացրեցինք մեր գաղտնիության քաղաքականությունը, և մենք այլևս չենք հետևում բացումներին։"
+        },
+        "track": {
+          "status_html": "<b>Հաղորդվում է էլ.փոստի բացման հետևման մասին։</b>",
+          "visibility": "Մենք կտեսնենք միայն այն դեպքում, եթե դուք բացել եք նամակը, որպես նամակների ընդհանուր բացման ցուցանիշի մաս։"
+        },
+        "updated_policy": {
+          "status_html": "<b>Հաղորդվում է էլ.փոստի բացման հետևման մասին։</b>",
+          "visibility": "Մենք թարմացրել ենք մեր քաղաքականությունը, և այժմ կարելի է հետևել բացված էլեկտրոնային նամակներին։ Էլեկտրոնային նամակների բացման մակարդակը կհաղորդվի անանուն կերպով։ Մենք կտեսնենք միայն այն դեպքում, եթե դուք բացել եք էլեկտրոնային նամակ՝ որպես էլեկտրոնային նամակների բացման ընդհանուր մակարդակի մաս։",
+          "opt_out_html": "Եթե ​​չեք ցանկանում կիսվել այս տեղեկատվությամբ, կարող եք <a style=\"text-decoration:underline;\" href=\"%{link}\">հրաժարվել բաժանորդագրությունից։</a>"
+        }
+      }
+    },
+    "filters": {
+      "availability": {
+        "value": {
+          "in_stock": "Պահեստում կա",
+          "out_of_stock": "Սպառված է"
+        }
+      },
+      "boolean": {
+        "true_label": "Այո",
+        "false_label": "Ոչ"
+      }
+    },
+    "search": {
+      "error": "Որոնման արդյունքները բեռնելիս խնդիր առաջացավ։ Խնդրում ենք թարմացնել էջը կամ փորձել կրկին ավելի ուշ։",
+      "sorting": {
+        "relevance": "Համապատասխանություն",
+        "price_ascending": "Գինը՝ ցածրից բարձր",
+        "price_descending": "Գինը՝ բարձրից ցածր"
+      }
+    },
+    "page_titles": {
+      "blog_or_article_with_error": "Սխալ - %{title}",
+      "products": "Արտադրանքներ",
+      "shopping_cart": "Ձեր գնումների զամբյուղը",
+      "account": "Հաշիվ",
+      "create_account": "Ստեղծել հաշիվ",
+      "reset_account": "Հաշվի վերագործարկում",
+      "addresses": "Հասցեներ",
+      "order": "Պատվեր %{name}",
+      "search": "Որոնում",
+      "search_results": {
+        "one": "Որոնում՝ գտնվել է %{count} արդյունք «%{terms}»-ի համար",
+        "other": "Որոնում՝ գտնվել է %{count} արդյունք «%{terms}»-ի համար"
+      },
+      "collections": "Հավաքածուներ",
+      "not_found": "404 չի գտնվել",
+      "challenge": "Մարտահրավեր",
+      "checkpoint": "Հսկիչ կետ"
+    },
+    "cart": {
+      "discounts_with_count": "Կիրառվել են %{count} զեղչեր"
+    },
+    "challenge": {
+      "message": "Շարունակելու համար տեղեկացրեք մեզ, որ դուք ռոբոտ չեք։",
+      "error": "Ձեր պատասխանը ճիշտ չէր, խնդրում ենք կրկին փորձել։",
+      "submit_button_text": "Ուղարկել"
+    },
+    "checkpoint": {
+      "message": "Լուծեք Captcha-ն՝ շարունակելու համար",
+      "error": "Captcha-ի վավերացումը ձախողվեց",
+      "submit_button_text": "Ուղարկել"
+    },
+    "store_availability": {
+      "pick_up_time": {
+        "one_hour": "Սովորաբար պատրաստ է 1 ժամում",
+        "two_hours": "Սովորաբար պատրաստ է 2 ժամում",
+        "four_hours": "Սովորաբար պատրաստ է 4 ժամում",
+        "twenty_four_hours": "Սովորաբար պատրաստ է 24 ժամվա ընթացքում",
+        "two_to_four_days": "Սովորաբար պատրաստ է լինում 2-4 օրվա ընթացքում",
+        "five_or_more_days": "Սովորաբար պատրաստ է լինում 5+ օրվա ընթացքում",
+        "zero_to_two_hours": "Սովորաբար պատրաստ է 2 ժամում",
+        "two_to_four_hours": "Սովորաբար պատրաստ է 4 ժամում",
+        "immediately": "Պատրաստ է վերցնելու համար հիմա",
+        "next_day": "Պատրաստ է հաջորդ օրը վերցնելու համար"
+      }
+    },
+    "subscriptions": {
+      "buyer_consent_product": "Այս ապրանքը կրկնվող կամ հետաձգված գնում է։ Շարունակելով՝ ես համաձայն եմ %{cancellationPolicyLink}-ի հետ և լիազորում եմ ձեզ գանձել իմ վճարման եղանակից այս էջում նշված գներով, հաճախականությամբ և ամսաթվերով մինչև իմ պատվերի կատարումը կամ չեղարկումը, եթե թույլատրվում է։",
+      "buyer_consent_cart": "Ձեր զամբյուղում գտնվող ապրանքներից մեկը կամ մի քանիսը կրկնվող կամ հետաձգված գնումներ են: Շարունակելով՝ ես համաձայնում եմ %{cancellationPolicyLink}-ի հետ և լիազորում եմ ձեզ գանձել իմ վճարման եղանակից այս էջում նշված գներով, հաճախականությամբ և ամսաթվերով մինչև իմ պատվերի կատարումը կամ չեղարկումը, եթե թույլատրվում է:",
+      "cancellation_policy": "չեղարկման քաղաքականություն"
     }
   },
   "customer_accounts": {
     "navigation_and_structure": {
       "account_menu": {
         "close_menu_accessibility_label": "Հաշվի նավիգացիայի փակում",
-        "loading_message": "Հաշվի նավիգացիայի բեռնում"
+        "loading_message": "Հաշվի նավիգացիայի բեռնում",
+        "hide_accessibility_label": "Թաքցնել հաշվի ընտրացանկը",
+        "label": "Հաշիվ",
+        "show_accessibility_label": "Ցուցադրել հաշվի ընտրացանկը",
+        "nav_accessibility_label": "Հաշվի նավիգացիա",
+        "open_menu_accessibility_label": "Բացել հաշվի նավիգացիան"
       },
       "action_menu_accessibility_label": "Ավելի շատ գործողություններ",
       "close_menu_accessibility_label": "Փակել գլխավոր նավիգացիան",
@@ -1517,6 +1666,29 @@
           "generic": "Google Pay-ի հետ խնդիր առաջացավ։ Փորձեք կրկին կամ օգտագործեք վճարման այլ եղանակ։",
           "missing_billing_address": "Google Pay-ը պահանջում է վճարման հասցե։ Խնդրում ենք ավելացնել այն ձեր հաշվին։"
         }
+      },
+      "payment_delete": {
+        "deleted_successfully": "Վճարման եղանակը հաջողությամբ ջնջվեց։",
+        "loading_available_payment_methods_accessibility_label": "Բեռնվում են վճարման հասանելի եղանակները"
+      },
+      "add_payment_method": {
+        "title": "Ավելացնել վճարման եղանակ",
+        "payment_method_added_confirmation": "Վճարման եղանակն ավելացված է",
+        "replace_mode_warning": "Այս վճարման եղանակը ջնջելը կազդի բաժանորդագրությունների կամ նախնական պատվերների վրա: Փոխարինեք այն այլընտրանքային վճարման եղանակով՝ առաջիկա պատվերները շարունակելու համար:",
+        "choose_from_list": "Ընտրեք ցանկից",
+        "add_new_button": "Ավելացնել նորը",
+        "billing_address": {
+          "title": "Հաշվառման հասցե",
+          "add_billing_address_button": "Ավելացնել նորը",
+          "add_billing_address_button_accessibility_label": "Ավելացնել նոր վճարային հասցե",
+          "choose_billing_address_from_list_button": "Ընտրեք ցանկից",
+          "choose_billing_address_from_list_button_accessibility_label": "Ընտրեք վճարման հասցե ցանկից",
+          "missing_billing_address_error_message": "Խնդրում ենք նշել վճարման հասցեն",
+          "default_checkbox": "Սահմանել որպես լռելյայն վճարման եղանակ"
+        }
+      },
+      "three_d_secure": {
+        "title": "3D անվտանգ"
       }
     },
     "order_details": {
@@ -1785,7 +1957,113 @@
       "save_accessibility_label": "Պահպանել հասցեն {{address}}",
       "section_title_accessibility_label": "Ավելացնել հասցե",
       "update_success_notification": "Հասցեն թարմացված է"
-    }
+    },
+    "payment_method_brands": {
+      "visa": "Վիզա",
+      "mastercard": "Մաստերքարդ",
+      "discover": "Բացահայտեք",
+      "jcb": "Ջեյ Սի Բի Սի",
+      "elo": "Էլո",
+      "visaelectron": "Վիզա Էլեկտրոն",
+      "maestro": "Մաեստրո",
+      "forbrugsforeningen": "Ֆորբրուգսֆորենինգեն",
+      "dankort": "Դանկորտ",
+      "hipercard": "Հիպերքարտ",
+      "laser": "Լազեր",
+      "shoppay": "Խանութի վճարում",
+      "storecredit": "Խանութի վարկ",
+      "bogus": "Կեղծ"
+    },
+    "privacy_banner": {
+      "cookie_preferences_link": "Քուքիների նախընտրություններ"
+    },
+    "ui_components": {
+      "clear": "Մաքրել",
+      "clipboardCopied": "Պատճենված է",
+      "clipboardFailedToCopy": "Չհաջողվեց պատճենել",
+      "closeNotification": "Փակել",
+      "expandNotification": "Դիտել ավելին",
+      "closeModal": "Փակել",
+      "submit": "Ուղարկել",
+      "processing": "Մշակվում է…",
+      "increase": "Մեծացնել {{type}}",
+      "decrease": "Նվազեցնել {{type}}",
+      "minimumReached": "Հասել է {{value}} նվազագույն արժեքին",
+      "maximumReached": "Հասել է {{value}} առավելագույն արժեքին",
+      "january": "հունվար",
+      "february": "Փետրվար",
+      "march": "մարտ",
+      "april": "ապրիլ",
+      "may": "Մայիս",
+      "june": "հունիս",
+      "july": "Հուլիս",
+      "august": "օգոստոս",
+      "september": "սեպտեմբեր",
+      "october": "Հոկտեմբեր",
+      "november": "Նոյեմբեր",
+      "december": "Դեկտեմբեր",
+      "monday": "Երկուշաբթի",
+      "tuesday": "Երեքշաբթի",
+      "wednesday": "չորեքշաբթի",
+      "thursday": "Հինգշաբթի",
+      "friday": "Ուրբաթ",
+      "saturday": "Շաբաթ",
+      "sunday": "Կիրակի",
+      "mondayAbbreviation": "Ամս",
+      "tuesdayAbbreviation": "Երեքշաբթի",
+      "wednesdayAbbreviation": "Մենք",
+      "thursdayAbbreviation": "Հինգ",
+      "fridayAbbreviation": "Ուրբ",
+      "saturdayAbbreviation": "Շաբ",
+      "sundayAbbreviation": "Կիր",
+      "showNextMonth": "Ցուցադրել հաջորդ ամիսը՝ {{month}} {{year}}",
+      "showPreviousMonth": "Ցուցադրել նախորդ ամիսը՝ {{month}} {{year}}",
+      "rangeStart": "Հեռավորության սկիզբ",
+      "inRange": "Շահույթի մեջ",
+      "rangeEnd": "Շարքի վերջ",
+      "autocompleteOptionsAvailable": {
+        "one": "{{count}} ապրանք հասանելի է",
+        "other": "{{count}} ապրանք հասանելի է"
+      },
+      "removeItem": "Հեռացնել {{label}}",
+      "removeTag": "Հեռացնել պիտակը",
+      "month": {
+        "one": "ամիս",
+        "other": "ամիսներ"
+      },
+      "mapClusterTitle": {
+        "one": "{{number}} նշիչի կլաստեր",
+        "other": "{{number}} մարկերների կլաստեր"
+      },
+      "expandSheet": "Ընդարձակել",
+      "qrCode": "QR կոդ",
+      "addFile": "Ավելացնել ֆայլ",
+      "dropzoneInvalidFileType": "Ֆայլի տեսակը չի աջակցվում",
+      "dropzoneDraggedOver": "Ֆայլը գցեք վերբեռնելու համար"
+    },
+    "profile_preview_bar": {
+      "customize_button": "Անհատականացնել",
+      "hide_bar": "Թաքցնել գոտին",
+      "navigate_to_admin": "Անցնել ադմինիստրատորի բաժին",
+      "close_preview": "Փակել նախադիտումը",
+      "previewing": "Դուք նախադիտում եք՝",
+      "saved_at": "Պահպանվել է {{date}} ին {{time}}",
+      "viewing": "Դուք դիտում եք՝",
+      "not_available": "Պրոֆիլի տվյալները հասանելի չեն"
+    },
+    "date": {
+      "humanize": {
+        "lessThanOneHourAgo": {
+          "one": "{{count}} րոպե առաջ",
+          "other": "{{count}} րոպե առաջ"
+        },
+        "lessThanOneMinuteAgo": "Հենց հիմա",
+        "yesterday": "Երեկ ժամը {{time}}",
+        "today": "Այսօր՝ {{time}}",
+        "tomorrow": "Վաղը ժամը {{time}}"
+      }
+    },
+    "enable_javascript": "Ձեր հաշիվը դիտելու համար միացրեք JavaScript-ը ձեր դիտարկիչի կարգավորումներում կամ մուտք գործեք մեկ այլ դիտարկիչով։"
   },
   "templates": {
     "contact": {
