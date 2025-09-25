@@ -1282,7 +1282,107 @@
           "close": "Փակել",
           "expand": "Ընդարձակել",
           "collapse": "Ծալել"
-        }
+        },
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone_payment": "Վճարումն ավարտելուց հետո դուք կստանաք հաստատող էլ.փոստ՝ ձեր պատվերի համարով։",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone_pick_up": "Վճարումն ավարտելուց հետո դուք կստանաք հաստատող էլ.փոստ՝ ձեր պատվերի համարով։",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email": "Վճարումն ավարտելուց հետո դուք կստանաք հաստատող էլ.փոստ՝ ձեր պատվերի համարով։",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_payment": "Վճարումն ավարտելուց հետո դուք կստանաք հաստատող էլ.փոստ՝ ձեր պատվերի համարով։",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_pick_up": "Վճարումն ավարտելուց հետո դուք կստանաք հաստատող էլ.փոստ՝ ձեր պատվերի համարով։",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone": "Վճարումն ավարտելուց հետո դուք կստանաք հաստատող տեքստային հաղորդագրություն՝ ձեր պատվերի համարով։",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone_payment": "Վճարումն ավարտելուց հետո դուք կստանաք հաստատող տեքստային հաղորդագրություն՝ ձեր պատվերի համարով։",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone_pick_up": "Վճարումն ավարտելուց հետո դուք կստանաք հաստատող տեքստային հաղորդագրություն՝ ձեր պատվերի համարով։",
+        "thank_you_payments_app_pending_payment_description_provider_action_required_default": "Ձեր վճարումը մշակվում է: Դուք կստանաք էլ.փոստ, երբ վճարումը հաստատվի:",
+        "track_your_order_link_text": "Հետևեք ձեր պատվերին",
+        "checkout_on_remote_shop_link_text": "Վճարում %{remoteShopName}-ում",
+        "order_status_confirmed_order_with_email": "Դուք կստանաք էլ.փոստ, երբ ձեր պատվերը պատրաստ լինի։",
+        "order_status_confirmed_order_with_phone": "Դուք կարող եք հաղորդագրություն ստանալ, երբ ձեր պատվերը պատրաստ լինի։",
+        "order_status_confirmed_order_with_email_and_phone": "Դուք կստանաք էլ.փոստ, երբ ձեր պատվերը պատրաստ լինի։",
+        "order_status_confirmed_order_with_email_payment": "Դուք վճարում եք կատարել ձեր %{date} պատվերի համար։",
+        "order_status_confirmed_order_with_phone_payment": "Դուք վճարում եք կատարել ձեր %{date} պատվերի համար։",
+        "order_status_confirmed_order_with_email_and_phone_payment": "Դուք վճարում եք կատարել ձեր %{date} պատվերի համար։",
+        "order_status_confirmed_order_with_email_pick_up": "Դուք կստանաք էլ.փոստ, երբ ձեր պատվերը պատրաստ լինի վերցնելու համար։",
+        "order_status_confirmed_order_with_phone_pick_up": "Դուք կստանաք հաղորդագրություն, երբ ձեր պատվերը պատրաստ լինի վերցնելու համար։",
+        "order_status_confirmed_order_with_email_and_phone_pick_up": "Դուք կստանաք էլ.փոստ և հաղորդագրություն, երբ ձեր պատվերը պատրաստ լինի վերցնելու համար։",
+        "order_status_payments_app_pending_payment_description_default_with_missing": "Պատվերի հաստատում ստանալու համար կապվեք մեզ հետ էլեկտրոնային փոստով կամ հեռախոսով։",
+        "order_status_payments_app_pending_payment_description_default_with_missing_payment": "Պատվերի հաստատում ստանալու համար կապվեք մեզ հետ էլեկտրոնային փոստով կամ հեռախոսով։",
+        "order_status_payments_app_pending_payment_description_default_with_missing_pick_up": "Պատվերի հաստատում ստանալու համար կապվեք մեզ հետ էլեկտրոնային փոստով կամ հեռախոսով։",
+        "order_status_payments_app_pending_payment_description_default_with_email_and_phone": "Շուտով կստանաք հաստատման էլ. նամակ։ Հետևեք ձեր պատվերին՝ օգտագործելով Shop հավելվածը։",
+        "order_status_payments_app_pending_payment_description_default_with_email_and_phone_payment": "Շուտով կստանաք հաստատման էլ. նամակ։ Հետևեք ձեր պատվերին՝ օգտագործելով Shop հավելվածը։",
+        "order_status_payments_app_pending_payment_description_default_with_email_and_phone_pick_up": "Շուտով կստանաք հաստատման էլ. նամակ։ Հետևեք ձեր պատվերին՝ օգտագործելով Shop հավելվածը։",
+        "order_status_payments_app_pending_payment_description_default_with_email": "Շուտով կստանաք հաստատման էլ. նամակ։ Հետևեք ձեր պատվերին՝ օգտագործելով Shop հավելվածը։",
+        "order_status_payments_app_pending_payment_description_default_with_email_payment": "Շուտով կստանաք հաստատման էլ. նամակ։ Հետևեք ձեր պատվերին՝ օգտագործելով Shop հավելվածը։",
+        "order_status_payments_app_pending_payment_description_default_with_email_pick_up": "Շուտով կստանաք հաստատման էլ. նամակ։ Հետևեք ձեր պատվերին՝ օգտագործելով Shop հավելվածը։",
+        "order_status_payments_app_pending_payment_description_default_with_phone": "Շուտով կստանաք հաստատման հաղորդագրություն։ Հետևեք ձեր պատվերին՝ օգտագործելով Shop հավելվածը։",
+        "order_status_payments_app_pending_payment_description_default_with_phone_payment": "Շուտով կստանաք հաստատման հաղորդագրություն։ Հետևեք ձեր պատվերին՝ օգտագործելով Shop հավելվածը։",
+        "order_status_payments_app_pending_payment_description_default_with_phone_pick_up": "Շուտով կստանաք հաստատման հաղորդագրություն։ Հետևեք ձեր պատվերին՝ օգտագործելով Shop հավելվածը։",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_missing": "Պատվերի հաստատում ստանալու համար կապվեք մեզ հետ էլեկտրոնային փոստով կամ հեռախոսով։",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_missing_payment": "Պատվերի հաստատում ստանալու համար կապվեք մեզ հետ էլեկտրոնային փոստով կամ հեռախոսով։",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_missing_pick_up": "Պատվերի հաստատում ստանալու համար կապվեք մեզ հետ էլեկտրոնային փոստով կամ հեռախոսով։",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone": "Վճարումն ավարտելուց հետո դուք կստանաք հաստատման էլ.փոստ։ Հետևեք ձեր պատվերին՝ օգտագործելով Shop հավելվածը։",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone_payment": "Վճարումն ավարտելուց հետո դուք կստանաք հաստատման էլ.փոստ։ Հետևեք ձեր պատվերին՝ օգտագործելով Shop հավելվածը։",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone_pick_up": "Վճարումն ավարտելուց հետո դուք կստանաք հաստատման էլ.փոստ։ Հետևեք ձեր պատվերին՝ օգտագործելով Shop հավելվածը։",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email": "Վճարումն ավարտելուց հետո դուք կստանաք հաստատման էլ.փոստ։ Հետևեք ձեր պատվերին՝ օգտագործելով Shop հավելվածը։",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email_payment": "Վճարումն ավարտելուց հետո դուք կստանաք հաստատման էլ.փոստ։ Հետևեք ձեր պատվերին՝ օգտագործելով Shop հավելվածը։",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email_pick_up": "Վճարումն ավարտելուց հետո դուք կստանաք հաստատման էլ.փոստ։ Հետևեք ձեր պատվերին՝ օգտագործելով Shop հավելվածը։",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_phone": "Վճարումն ավարտելուց հետո դուք կստանաք հաստատման հաղորդագրություն: Հետևեք ձեր պատվերին՝ օգտագործելով Shop հավելվածը:",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_phone_payment": "Վճարումն ավարտելուց հետո դուք կստանաք հաստատման հաղորդագրություն: Հետևեք ձեր պատվերին՝ օգտագործելով Shop հավելվածը:",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_phone_pick_up": "Վճարումն ավարտելուց հետո դուք կստանաք հաստատման հաղորդագրություն: Հետևեք ձեր պատվերին՝ օգտագործելով Shop հավելվածը:",
+        "order_status_payments_app_failed_pending_payment": "Ձեր պատվերի համար գումար չի գանձվել։ Վերադարձեք ձեր զամբյուղ՝ պատվերը վերանայելու և կրկին վճարելու համար։",
+        "order_status_payments_app_failed_pending_payment_payment": "Ձեր պատվերի համար գումար չի գանձվել։ Վերադարձեք ձեր զամբյուղ՝ պատվերը վերանայելու և կրկին վճարելու համար։",
+        "order_status_payments_app_failed_pending_payment_pick_up": "Ձեր պատվերի համար գումար չի գանձվել։ Վերադարձեք ձեր զամբյուղ՝ պատվերը վերանայելու և կրկին վճարելու համար։",
+        "order_status_confirmed_order_local": "Մենք պատրաստում ենք ձեր պատվերը առաքման։",
+        "order_status_confirmed_order_local_pick_up": "Մենք պատրաստում ենք ձեր պատվերը։",
+        "order_status_confirmed_order_local_payment": "Մենք պատրաստում ենք ձեր պատվերը։",
+        "order_status_updates_with_email": "Դուք կստանաք առաքման և առաքման թարմացումներ էլեկտրոնային փոստով։",
+        "order_status_updates_with_phone": "Դուք կարող եք ստանալ առաքման և առաքման թարմացումներ SMS-ով։",
+        "order_status_updates_with_email_and_phone": "Դուք կստանաք առաքման և առաքման թարմացումներ էլեկտրոնային փոստով։",
+        "order_status_updates_with_missing": "Ընտրեք, թե ինչպես եք ուզում ստանալ առաքման թարմացումները։",
+        "order_status_confirmed_with_installments_payment_return": "Խնդրում ենք Ձեր ուշադրությունը կրկին հրավիրել վաճառքի մասնագետի վրա։",
+        "order_status_confirmed_with_installments_payment_confirm": "Շուտով դուք կստանաք հաստատող էլ.փոստ՝ ձեր պատվերի համարով և վճարման ժամանակացույցի մանրամասներով։",
+        "confirmed_title": "Ձեր պատվերը հաստատված է",
+        "confirmed_description": "Մենք ընդունել ենք Ձեր պատվերը և այն պատրաստում ենք։ Վերադարձեք այս էջ՝ Ձեր առաքման կարգավիճակի վերաբերյալ թարմացումներ ստանալու համար։",
+        "confirmed_orders_title": "Ձեր պատվերները հաստատված են",
+        "ready_for_pickup_title": "Ձեր պատվերը պատրաստ է վերցնելու համար",
+        "ready_for_pickup_description": "Ձեր պատվերը պատրաստ է վերցնելու համար։ Խնդրում ենք պատվերը վերցնելիս ձեզ հետ բերել պատվերի հաստատումը։",
+        "ready_for_delivery_title": "Ձեր պատվերը պատրաստ է առաքման",
+        "ready_for_delivery_description": "Մենք պատրաստել ենք ձեր պատվերը։",
+        "order_updates_title": "Պատվերի թարմացումներ",
+        "shop_phone_description": "Դուք կստանաք հաղորդագրություն՝ Shop հավելվածի հղումով, որը կօգնի ձեզ հետևել ձեր պատվերին։",
+        "order_updates_description_html": "Թարմացումները կուղարկվեն %{customer_contact} հասցեին",
+        "order_updates_current_step_prefix": "Ընթացիկ քայլը՝",
+        "order_updates_past_step_prefix": "Անցած քայլը.",
+        "order_updates_upcoming_step_prefix": "Առաջիկա քայլը.",
+        "in_transit": "Ճանապարհին է",
+        "in_transit_title": "Ձեր պատվերը ճանապարհին է",
+        "in_transit_description": "Դուք կստանաք թարմացումներ դրա ընթացքի վերաբերյալ։",
+        "in_transit_description_days": "Դուք պետք է ստանաք ձեր պատվերը հաջորդ %{number} օրվա ընթացքում։",
+        "in_transit_description_today": "Դուք պետք է ստանաք ձեր պատվերը այսօր։",
+        "in_transit_description_tomorrow": "Դուք պետք է ստանաք ձեր պատվերը հաջորդ օրը։",
+        "no_tracking_number": "Այս պատվերի համար հետևման համարանիշ չկա։",
+        "out_for_delivery": "Առաքման համար է",
+        "out_for_delivery_title": "Ձեր պատվերը առաքման համար է",
+        "out_for_delivery_description_html": "Ձեր պատվերը ճանապարհին է և պետք է հասնի այսօր։ Եթե այն չհասցվի հաջորդ 2 օրվա ընթացքում, %{contact_us}։",
+        "out_for_delivery_local_title": "Ձեր պատվերը առաքման համար է",
+        "out_for_delivery_local_description_html": "Ձեր պատվերը շուտով կհասնի։",
+        "attempted_delivery": "Փորձված առաքում",
+        "attempted_delivery_title": "Ձեր պատվերը առաքելու փորձ է արվել",
+        "attempted_delivery_description_html": "Ձեր պատվերը առաքելու փորձ արվեց, բայց այն անհաջող էր։ %{contact_us}՝ առաքման մեկ այլ փորձ կազմակերպելու համար։",
+        "attempted_delivery_local_title": "Բաց թողնված առաքում",
+        "attempted_delivery_local_description_html": "Մենք չկարողացանք առաքել ձեր պատվերը։ Մեկ այլ առաքում պլանավորելու համար՝ %{contact_us}։",
+        "delivered": "Առաքված է",
+        "delivered_title": "Ձեր պատվերը առաքվել է",
+        "delivered_description_html": "Ձեր պատվերը հասցվել է ձեր տրամադրած հասցեին։ Եթե այն դեռ չեք ստացել կամ ունեք որևէ այլ խնդիր, %{contact_us}:",
+        "delivered_local_title": "Ձեր պատվերը առաքվել է",
+        "delivered_local_description_html": "Չե՞ք ստացել Ձեր պատվերը։ %{let_us_know}։",
+        "choose_payment_method_later": "Ընտրեք վճարման եղանակը ավելի ուշ",
+        "picked_up_title": "Ձեր պատվերը վերցված է",
+        "picked_up_description_html": "Ձեր պատվերը վերցվել է %{location_name}-ից %{date}-ին։",
+        "contact_us": "Կապ մեզ հետ",
+        "contact_us_lowercase": "կապվեք մեզ հետ",
+        "contact_us_html": "Օգնություն պե՞տք է։ %{contact_us}",
+        "updated_time": "Թարմացվել է %{time_ago} առաջ",
+        "failure": "Չի առաքվել",
+        "failed_title": "Ձեր պատվերը չհաջողվեց առաքել"
       },
       "vaulted": {
         "change_button": "Փոփոխություն"
@@ -1306,7 +1406,166 @@
           "change_shipping_address_link_label": "Փոխել առաքման հասցեն",
           "change_shipping_method_link_label": "Փոխել առաքման եղանակը",
           "change_payment_method_link_label": "Փոխել վճարման եղանակը",
-          "pick_up_in_store_shipping_method_html": "Վերցնել խանութից · %{location_name}"
+          "pick_up_in_store_shipping_method_html": "Վերցնել խանութից · %{location_name}",
+          "purchase_order_number_title": "Գնման պատվերի համարը",
+          "change_purchase_order_number_label": "Փոխել պատվերի համարը",
+          "change_delivery_method_link_label": "Փոխել առաքման եղանակը",
+          "no_address": "(Հասցե չկա)",
+          "no_purchase_order_number": "(Գնման պատվերի համար չկա)",
+          "due_after_order_reviewed_html": "Վճարվում է պատվերի վերանայումից հետո",
+          "review_title_free_order": "Վերանայեք և ավարտեք ձեր պատվերը",
+          "payment_method_saved_company_location": "Պահպանել քարտը այս վայրի համար",
+          "company_location": "Ընկերության գտնվելու վայրը"
+        },
+        "block_title": "Վերանայեք ձեր տեղեկությունները",
+        "item_header": {
+          "change_value": "Փոխել արժեքը",
+          "section": "Բաժին",
+          "value": "Արժեք"
+        }
+      },
+      "marketing": {
+        "accept_marketing_checkbox_label": "Գրեք ինձ էլ. փոստով՝ նորություններով և առաջարկներով։",
+        "post_accept_marketing_checkbox_label": "Դուք բաժանորդագրված եք նորություններ և առաջարկներ էլեկտրոնային փոստով ստանալու համար",
+        "pending_accept_marketing_checkbox_label": "Ստուգեք ձեր էլ. փոստը՝ նորություններին և առաջարկներին բաժանորդագրվելու համար",
+        "accept_sms_checkbox_label": "Գրեք ինձ նորությունների և առաջարկների մասին հաղորդագրություն ուղարկելու համար",
+        "disclaimer": {
+          "privacy_policy": "Գաղտնիության քաղաքականություն",
+          "terms_of_service": "Ծառայության պայմաններ"
+        },
+        "sms": {
+          "disclaimer": {
+            "privacy_policy": "Գաղտնիության քաղաքականություն",
+            "terms_of_service": "Ծառայության պայմաններ",
+            "description_html": "Գրանցվելով SMS-ի միջոցով՝ դուք համաձայնում եք ստանալ կրկնվող ավտոմատացված մարքեթինգային հաղորդագրություններ, այդ թվում՝ զամբյուղի հիշեցումներ, տրամադրված հեռախոսահամարով: Համաձայնությունը գնման պայման չէ: Պատասխանեք STOP՝ բաժանորդագրությունը չեղարկելու համար: Պատասխանեք HELP՝ օգնություն ստանալու համար: Հաղորդագրությունների հաճախականությունը տարբեր է: Կարող են կիրառվել հաղորդագրությունների և տվյալների սակագներ: Դիտեք մեր %{privacy_policy_link} և %{terms_of_service_link}:",
+            "description_transactional_html": "Դուք կարող եք ստանալ պատվերի հաստատման և առաքման թարմացումների վերաբերյալ տեքստային հաղորդագրություններ: Պատասխանեք STOP՝ բաժանորդագրությունը չեղարկելու համար: Պատասխանեք HELP՝ օգնություն ստանալու համար: Հաղորդագրությունների հաճախականությունը տարբեր է: Կարող են կիրառվել հաղորդագրությունների և տվյալների սակագներ: Դիտեք մեր %{privacy_policy_modal_link} և %{terms_of_service_modal_link}:"
+          },
+          "mobile_phone_number": "Բջջային հեռախոսահամար",
+          "get_offers_by_text": "Ստացեք առաջարկներ SMS-ով"
+        },
+        "unsubscribe": {
+          "title": "Դուք հրաժարվել եք բաժանորդագրությունից",
+          "description": "Դուք մեզանից այլևս զամբյուղի հիշեցումներ չեք ստանա։"
+        },
+        "accept_shop_pay_marketing_checkbox_label": "Գրանցեք ինձ այս խանութի նորություններին և առաջարկներին ծանոթանալու համար"
+      },
+      "shop_policies": {
+        "policy_label": "Քաղաքականություն",
+        "policies_label": "Քաղաքականություններ",
+        "select_policy_label": "Ընտրեք քաղաքականություն",
+        "refund_policy": "Վերադարձի քաղաքականություն",
+        "privacy_policy": "Գաղտնիության քաղաքականություն",
+        "terms_of_service": "Ծառայության պայմաններ",
+        "legal_notice": "Իրավական ծանուցում",
+        "shipping_policy": "Առաքում",
+        "terms_of_sale": "Վաճառքի պայմաններ",
+        "subscription_policy": "Չեղարկումներ",
+        "purchase_options_policy": "Գնման տարբերակների քաղաքականություն",
+        "contact_information": "Կապ",
+        "purchase_options_cancellation_policy": "Չեղարկումներ",
+        "cookie_preferences": "Քուքիներ"
+      },
+      "mor_policies": {
+        "terms_and_conditions": "Գրանցված վաճառողի օգտագործման կանոններն ու պայմանները",
+        "privacy_policy": "Գրանցված վաճառողի գաղտնիության քաղաքականություն"
+      },
+      "markets": {
+        "invalid_market_manager_error": "Վճարումն ավարտելուց առաջ ստուգեք ձեր կոնտակտային տվյալները"
+      },
+      "notifications": {
+        "title": "Ծանուցումներ"
+      },
+      "order_payment_collection": {
+        "custom_line_item_description": "%{order_name} պատվերի համար վճարման ենթակա գումար",
+        "changes_summary": {
+          "added": {
+            "one": "Ավելացված է",
+            "other": "Ավելացված է %{count}"
+          },
+          "removed": "Հեռացված է",
+          "subtracted": "Հեռացված է %{count}",
+          "returned": "Վերադարձվել է %{count}",
+          "return_line_item_removed": "%{count}-ը հեռացվել է վերադարձից"
+        },
+        "additional_payment_requested": "Անհրաժեշտ է վճարել %{total_outstanding}",
+        "checkout_review_and_pay": "Ձեր %{order_name} պատվերը թարմացվել է։ Ստուգեք այս փոփոխությունները, ապա վճարեք՝ ձեր պատվերը հաստատելու համար։",
+        "order_updated_on": "Ձեր պատվերը թարմացվել է %{last_edited_at}-ին։",
+        "order_review_and_pay": "Ձեր պատվերը թարմացվել է: Վերանայեք և վճարեք՝ պատվերը հաստատելու համար:",
+        "pay_now": "Վճարեք հիմա"
+      },
+      "change_currency": {
+        "credit_card_will_be_charged_html": "Ձեր վարկային քարտից կգանձվի %{amount}",
+        "payment_total_label": "Վճարման ընդհանուր գումարը",
+        "change_currency_link": "Փոխել %{currency_name}-ի",
+        "card_provider_fx_charges_warning": "Ձեր քարտի մատակարարը կարող է վճար գանձել %{currency_code} գործարքների համար։",
+        "currency_not_supported_by_shop": "Ձեր ընտրած արժույթը այլևս հասանելի չէ։ Բոլոր գները այժմ %{currency_code}-ով են։"
+      },
+      "change_country": {
+        "cart_updated_based_on_country": "Ձեր զամբյուղը թարմացվել է՝ հիմնվելով ձեր առաքման երկրի վրա։",
+        "cart_and_currency_updated_based_on_country": "Ձեր զամբյուղը և արժույթը թարմացվել են՝ հիմնվելով ձեր առաքման երկրի վրա։"
+      },
+      "change_cart_localization": {
+        "verify_shipping_address": "Ձեր երկիրը/տարածաշրջանը թարմացվել է: Մուտքագրեք ձեր առաքման հասցեն՝ վճարումը շարունակելու համար:"
+      },
+      "tips": {
+        "title": "Ավելացնել թեյավճար",
+        "description": "Ցույց տվեք ձեր աջակցությունը %{shop_name} թիմին",
+        "presets_description": "Ընտրեք թեյավճարի տոկոսը",
+        "custom_label": "Հատուկ թեյավճար",
+        "add_tip": "Ավելացնել թեյավճար",
+        "update_tip": "Թարմացման խորհուրդ",
+        "message": "Շնորհակալություն, մենք գնահատում ենք դա։",
+        "no_tip_label": "Ոչ մեկը"
+      },
+      "open_graph_meta_tag": {
+        "title_with_products": {
+          "zero": "Գնել %{product_name}",
+          "one": "Գնեք %{product_name} և %{count} այլ ապրանք",
+          "other": "Գնեք %{product_name} և %{count} այլ ապրանքներ"
+        }
+      },
+      "subscriptions": {
+        "recurring_total_intervals": {
+          "day": {
+            "one": "օր",
+            "other": "%{count} օր"
+          },
+          "week": {
+            "one": "շաբաթ",
+            "other": "%{count} շաբաթ"
+          },
+          "month": {
+            "one": "ամիս",
+            "other": "%{count} ամիս"
+          },
+          "year": {
+            "one": "տարի",
+            "other": "%{count} տարի"
+          }
+        },
+        "recurring_totals": "%{total_price} յուրաքանչյուր %{interval}",
+        "recurring_totals_with_initial_order_shipping_discount": "Առաջին վճարումը՝ %{total_price_with_discount}, ապա՝ %{recurring_total}",
+        "recurring_totals_with_policies": {
+          "first_cycles": {
+            "one": "Առաջին վճարումը %{total_price}",
+            "other": "Առաջին %{count} վճարումները %{total_price} յուրաքանչյուրը"
+          },
+          "following_cycles": ", ապա %{total_price} յուրաքանչյուր %{interval}-ը"
+        },
+        "recurring_totals_with_initial_order_shipping_discount_with_policies": {
+          "first_cycles": {
+            "one": ", ապա %{count} վճարում %{total_price}-ով",
+            "other": ", ապա %{count} վճարումներ՝ յուրաքանչյուրը %{total_price}-ով"
+          }
+        }
+      },
+      "customer_payment_methods": {
+        "page_title": "Վճարման մեթոդներ",
+        "title": "Վճարման մեթոդներ",
+        "update_card_button_label": "Թարմացնել քարտը",
+        "delete_customer_mandate": {
+          "generic_error": "Ձեր հարցումը մշակելիս խնդիր առաջացավ։",
+          "success_message": "Ձեր վճարման եղանակը հաջողությամբ ջնջվել է"
         }
       }
     },
