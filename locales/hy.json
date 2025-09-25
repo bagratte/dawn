@@ -123,17 +123,135 @@
             "selected_pickup_option_no_longer_available": "Նախկինում ընտրված վերցնելու տարբերակը այլևս հասանելի չէ։",
             "local_pickup_no_delivery_strategy_available": "Տեղական առաքման ռազմավարություն չի գտնվել։",
             "origin_location_id_required": "Մանրածախ առաքման մեթոդի հարցում կատարելիս պահանջվում է սկզբնակետի ID-ն։",
-            "invalid_origin_location_id": "Հնարավոր չէ գտնել սկզբնական գտնվելու վայրի ID-ին համապատասխանող տեղանք։"
+            "invalid_origin_location_id": "Հնարավոր չէ գտնել սկզբնական գտնվելու վայրի ID-ին համապատասխանող տեղանք։",
+            "origin_location_id_not_allowed": "Հարցված առաքման մեթոդները չեն աջակցում սկզբնական գտնվելու վայրի ID-ն։",
+            "auto_fulfill_not_allowed": "Այս սեսիան լիազորված չէ անտեսելու կատարման վարքագիծը։",
+            "auto_fulfill_required": "Ավտոմատ կատարումը պարտադիր է, երբ պահանջվում է RETAIL առաքման մեթոդը։",
+            "prefetch_shipping_rates_used": "Նախապես ստացված առաքման սակագները երբեք չպետք է վերադարձնեն սակագները։",
+            "fulfillment_constraints_not_satisfied": "Մեկ կամ ավելի կատարման սահմանափակումներ չեն բավարարվել։",
+            "must_fulfill_from_constraint_not_satisfied": "Կատարման սահմանափակումները չեն բավարարվում, քանի որ տարրերը չեն կարող կատարվել պահանջվող վայրերից։",
+            "must_fulfill_from_same_location_constraint_not_satisfied": "Կատարման սահմանափակումները չեն բավարարվում, քանի որ տարրերը չեն կարող կատարվել նույն տեղանքից։",
+            "delivery_strategy_conditions_not_satisfied": "Այս վայրի համար հասանելի են առաքման ռազմավարություններ, բայց դրանց պայմանները չեն բավարարվում։",
+            "out_of_stock_at_origin_location": "Սկզբնական վայրում պաշար չկա։",
+            "invalid_signature": "Անվավեր զեղչի ստորագրություն։"
           },
           "captcha": {
             "token_invalid": "Տրամադրված captcha թոքենը անվավեր էր: Լրացրեք նոր captcha՝ վճարումը շարունակելու համար:",
-            "token_not_valid_for_session": "Տրամադրված captcha-ն չի կարող օգտագործվել այս վճարման ժամանակ։"
+            "token_not_valid_for_session": "Տրամադրված captcha-ն չի կարող օգտագործվել այս վճարման ժամանակ։",
+            "metadata_missing": "Այս վճարման համար անհրաժեշտ է լրացնել captcha-ն։",
+            "metadata_mismatch": "Տրամադրված captcha մատակարարը և տեսակը չեն համապատասխանում սպասվող արժեքներին։",
+            "token_missing": "Այս վճարումն ավարտելու համար անհրաժեշտ է տրամադրել captcha թոքեն։",
+            "job_enqueue_failed": "Captcha-ի վավերացման աշխատանքը չհաջողվեց հերթագրել։",
+            "job_already_queued": "Captcha-ի վավերացումը արդեն հերթագրված է այս captcha տոկենի համար։",
+            "token_expired": "Տրամադրված captcha տոկենի ժամկետը լրացել է: Լրացրեք նոր captcha՝ վճարումը շարունակելու համար:"
           },
           "fx_reconciliation_override": {
             "shop_currency_mismatch": "Ստացված գումարը պետք է լինի խանութի արժույթով։"
           },
           "checkout_source": {
             "revoked": "Այս վճարումը այլևս հասանելի չէ։"
+          },
+          "discount": {
+            "discounts_not_allowed_for_b2b": "B2B խանութներում զեղչերը թույլատրված չեն։",
+            "custom_discount_not_honoured": "Մատուցված անհատական ​​զեղչը չի պահպանվել։",
+            "unsupported_expectation": "Մատակարարված զեղչի գիծը պարունակում էր մի սպասում, որը քաղաքականությունը չէր կարող մեկնաբանել։",
+            "additional_requested_discount_code_discarded": "{{code}} վավեր է, բայց կիրառելի չէ։ Ստուգեք զեղչի պայմանները։",
+            "additional_requested_discount_discarded": "Ձեր զեղչը վավեր է, բայց կիրառելի չէ։ Ստուգեք զեղչի պայմանները։",
+            "allocations_mismatch": "Ձեր զեղչի կոդը փոխվել է։ Վերանայեք ձեր զամբյուղը և փորձեք կրկին։",
+            "discount_code_not_honoured": "<strong style=\"text-transform:uppercase\">%{զեղչի_մերժման_հաղորդագրություն}</strong>",
+            "discount_title_too_long": "Զեղչի վերնագիրը չի կարող լինել 255 նիշից ավելի։"
+          },
+          "tax": {
+            "new_tax_must_be_accepted": "Ձեր պատվերին կապված հարկերը փոխվել են: Վերանայեք և կրկին փորձեք:",
+            "unresolvable_tax_terms": "Առաջարկվող պայմաններն անլուծելի են՝ հաշվի առնելով բանակցային ներկայիս համատեքստը։",
+            "delivery_price_is_abstract": "Առաքման հետ կապված գինը վերացական է։",
+            "tax_inclusivity_mismatch": "Վերաբանակցություններ վարել կոնկրետ totalTaxAndDutyAmount կամ totalAmountIncludedInTarget արժեքով։",
+            "tax_exemption_not_supported": "Հարկային արտոնությունները չեն աջակցվում ընթացիկ բանակցային նստաշրջանի համար։",
+            "delivery_tax_exemption_not_supported": "Առաքման գծերի հարկային արտոնությունները ներկայումս չեն աջակցվում։",
+            "proposed_allocations_required": "«Առաջարկվող հատկացումներ» դաշտը բացակայում է։",
+            "merchandise_terms_must_be_defined": "Ապրանքային տերմինները պետք է սահմանվեն։",
+            "delivery_terms_must_be_defined": "Պետք է սահմանվեն մատակարարման պայմանները։",
+            "merchandise_discount_terms_must_be_defined": "Պետք է սահմանվեն ապրանքի զեղչի պայմանները։",
+            "delivery_discount_terms_must_be_defined": "Պետք է սահմանվեն առաքման զեղչի պայմանները։",
+            "allocated_required": "«Հատկացված» դաշտը բացակայում է։",
+            "value_required": "«Արժեք» դաշտը բացակայում է։",
+            "line_splits_not_supported": "«ապրանքային գծեր» դաշտը պետք է բաժանված լինի այնպես, որ վաճառողի առաջարկի մեջ յուրաքանչյուրը ունենա մեկ տողային բաղադրիչ։"
+          },
+          "payment": {
+            "manual_payments_not_allowed_for_b2b": "B2B խանութներում ձեռքով վճարումները թույլատրված չեն։",
+            "positive_amount_expected": "Վճարման ենթակա գումարը պետք է լինի 0-ից մեծ։",
+            "total_amount_mismatch": "Վճարման ենթակա ընդհանուր գումարը չի համապատասխանում վճարումների գումարին։",
+            "subscription_terms_not_accepted": "Բաժանորդագրության պայմանները չեն ընդունվել։",
+            "missing_session_id": "Վարկային քարտի սեսիայի մասին տեղեկությունները բացակայում են։",
+            "gateway_not_supported": "Վճարային դարպասը չի աջակցում վճարման եղանակի պահպանումը։",
+            "credit_card_last_name_required": "«ազգանունը» չի կարող զրո լինել։",
+            "credit_card_update_failed": "Վարկային քարտի թարմացումը ձախողվեց։",
+            "installments_amount_invalid": "Մասնակի վճարումների գործարքի համար անվավեր գումար է։",
+            "installments_test_mode_not_allowed": "Փորձարկման ռեժիմը թույլատրված չէ։",
+            "installments_gift_card_not_allowed": "Մասնակի վճարումները թույլ չեն տալիս օգտագործել նվեր քարտեր։",
+            "installments_unsupported_currency": "Այս արժույթը չի աջակցվում մաս-մաս վճարումներով։",
+            "installments_unsupported_shipping": "Այս հասցեով առաքումը մաս-մաս վճարումներով չի իրականացվում։",
+            "installments_unsupported_billing": "Այս վճարային հասցեն չի աջակցվում մաս-մաս վճարումներով։",
+            "installments_unsupported_subscriptions": "Մասնակի վճարումները չեն աջակցվում բաժանորդագրություններին։",
+            "installments_ineligible_line_item": "Այս գնման մեջ մեկ ապրանքի համար մաս-մաս վճարումները անջատված են։",
+            "shop_cash_not_found": "Խանութի կանխիկը չի գտնվել։",
+            "shop_cash_not_allowed": "Առանց Shop Pay-ի կանխիկ վճարումը թույլատրելի չէ։",
+            "shop_cash_unsupported_checkout_source": "Shop Cash-ը չի աջակցում այս վճարմանը։",
+            "shop_cash_gift_card_not_allowed": "Shop Cash-ը թույլ չի տալիս նվեր քարտեր գնել։",
+            "shop_cash_not_enabled": "Խանութի կանխիկը միացված չէ այս խանութի համար։",
+            "shop_cash_not_available": "Այս վճարման ժամանակ Shop Cash-ը չի աջակցվում։",
+            "shop_cash_unsupported_subscriptions": "Shop Cash-ը չի աջակցում բաժանորդագրություններին։",
+            "shop_cash_unsupported_shipping": "Shop Cash-ը չի աջակցում առաքման կարիք չունեցող ապրանքներին։",
+            "invalid_address_type": "Նշված հասցեի տեսակը անվավեր է այս վճարման մեթոդի համար։",
+            "missing_retail_attributions": "Վարկային քարտով ձեռքով մուտքագրված վճարումների համար պահանջվում է մանրածախ առևտրի վերագրում։",
+            "unexpected_retail_attributions": "Վարկային քարտով վճարման համար անսպասելիորեն տրամադրվել են մանրածախ վերագրումներ։",
+            "invalid_card_source": "Այս սեսիան թույլտվություն չունի օգտագործելու այս քարտի աղբյուրը։",
+            "wallet_content_missing": "Դրամապանակի պարունակությունը բացակայում է։",
+            "payment_instrument_not_found": "Չհաջողվեց գտնել վճարման եղանակը",
+            "unauthorized_capture_method": "Վճարման գրանցման եղանակը կարգավորելը թույլատրված չէ։",
+            "saved_payment_methods_not_allowed": "Պահպանված վճարման եղանակները թույլատրված չեն։",
+            "saved_payment_methods_not_enabled": "Պահպանված վճարման մեթոդները միացված չեն այս խանութի համար։",
+            "saved_payment_methods_cvv_verification_disabled": "Ընտրված վճարման եղանակը պահանջում է CVV ստուգում, որը միացված չէ այս խանութի համար: Ընտրեք վճարման այլ եղանակ:",
+            "store_credit_not_enabled": "Այս խանութի համար խանութի վարկը միացված չէ։",
+            "store_credit_account_not_found": "Խանութի վարկային հաշիվը չի գտնվել։",
+            "store_credit_account_mismatch": "Խանութի վարկային հաշիվը չի համապատասխանում գնորդի ինքնությանը։",
+            "store_credit_mismatched_currency": "Խանութի վարկային հաշվի արժույթը չի համապատասխանում վճարման արժույթին։",
+            "store_credit_insufficient_funds": "Խանութի վարկային հաշվին բավարար միջոցներ չկան։",
+            "store_credit_buying_gift_card": "Դուք չեք կարող խանութի կրեդիտը օգտագործել նվեր քարտ գնելու համար։",
+            "gift_cards_not_allowed_for_b2b": "B2B խանութներում նվեր քարտերը թույլատրված չեն։",
+            "method_required": "Պետք է առաջարկվի վճարման եղանակ։",
+            "paypal_express_address_invalid": "PayPal-ը վերադարձրեց անվավեր հասցե։",
+            "shop_cash_unsupported_currency": "Shop Cash-ը չի աջակցում այս արժույթը։"
+          },
+          "tip": {
+            "not_accepted_by_shop": "Խանութը թեյավճարներ չի ընդունում։",
+            "only_one_tip_line_allowed": "Բազմակի հուշումների տողերը չեն աջակցվում։",
+            "tips_not_allowed_for_b2b": "B2B խանութներում թեյավճարներ տալը թույլատրված չէ։",
+            "currency_change_reset": "Թեյավճարը վերակայվել է արժույթի փոփոխության պատճառով։",
+            "tips_not_allowed_for_deferred_purchase_options": "Հետաձգված գնման տարբերակների համար թեյավճարները դեռևս չեն աջակցվում։"
+          },
+          "sale_attribution": {
+            "draft_order_not_exist": "Այս նախնական պատվերը գոյություն չունի ներկայիս խանութում։",
+            "staff_member_not_exist": "Այս անձնակազմը գոյություն չունի ներկայիս խանութում։",
+            "location_not_exist": "Այս վայրը գոյություն չունի ներկայիս խանութում։",
+            "point_of_sale_device_not_exist": "Այս վաճառքի կետի սարքը գոյություն չունի ներկայիս խանութում։",
+            "unresolvable_target_merchandise_lines": "Առաջարկվող վաճառքի վերագրումները անլուծելի են՝ հաշվի առնելով բանակցային ներկայիս համատեքստը։"
+          },
+          "non_negotiable": {
+            "missing_non_negotiable_terms": "Ձեր գնորդի առաջարկը պետք է պարունակի ոչ բանակցելի_պայմաններ։",
+            "invalid_signature": "{{target_terms}} ի ստորագրությունը անվավեր է։"
+          },
+          "inventory": {
+            "missing_quantity_value": "Գնորդի գույքագրման տողերում քանակի դաշտը բացակայում է։",
+            "changing_behavior_not_allowed": "Այս հաճախորդը թույլտվություն չունի փոխելու գույքագրման վարքագիծը։",
+            "only_one_inventory_behavior_allowed": "Ներկայումս մեկ վճարման համար թույլատրվում է միայն մեկ գույքագրման վարքագիծ։"
+          },
+          "optional_duties": {
+            "optional_duties_not_permitted": "Այս վճարման համար պարտականություններից հրաժարվելը թույլատրելի չէ։"
+          },
+          "attribution": {
+            "retail_attribution_not_allowed": "Այս վճարման համար մանրածախ առևտրի վերագրումը թույլատրված չէ։",
+            "retail_attribution_required": "Այս վճարման համար անհրաժեշտ է նշել մանրածախ առևտրի անվանումը։"
           }
         },
         "full_price": "Լրիվ գինը՝",
