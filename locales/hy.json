@@ -932,6 +932,150 @@
           "one": "Ենթամجموع · %{count} ապրանք",
           "other": "Ենթամجموع · %{count} տարր"
         }
+      },
+      "thank_you": {
+        "failed_contact_merchant": "Կապվեք %{company}-ի հետ՝ առաքումը կազմակերպելու համար։",
+        "failed_contact_merchant_no_company": "Կապվեք մեզ հետ՝ առաքումը կազմակերպելու համար։",
+        "non_shippable_title": "Ձեր պատվերը կատարված է",
+        "let_us_know": "Տեղեկացրեք մեզ",
+        "login_title": "Մուտք գործեք՝ պատվերի բոլոր մանրամասները դիտելու համար",
+        "login_description": "Դուք կարող եք գտնել ձեր պատվերի համարը էլեկտրոնային փոստով ստացված կտրոնում։",
+        "login_description_phone": "Դուք կարող եք գտնել ձեր պատվերի համարը SMS հաղորդագրությամբ ստացված կտրոնում։",
+        "login_not_customer_html": "Դուք %{name}-ը չեք՞։ Դուք կարող եք %{link}",
+        "login_reorder_link_text": {
+          "one": "գնեք նաև այս ապրանքը",
+          "other": "գնեք նաև այս ապրանքները"
+        },
+        "customer_information_hidden_fields_message": "Մուտք գործեք՝ հաճախորդի բոլոր տեղեկությունները դիտելու համար։",
+        "cancelled_title": "Ձեր պատվերը չեղարկվել է",
+        "cancelled_description": "Ձեր պատվերը չեղարկվել է %{date}-ին։ Կապվեք մեզ հետ, եթե հարցեր ունեք։",
+        "order_number_label": "Պատվերի համարը",
+        "customer_validation_error": "Մուտքագրեք վավեր էլ․ հասցե կամ պատվերի համար։",
+        "customer_validation_error_phone": "Մուտքագրեք վավեր հեռախոսահամար կամ պատվերի համար։",
+        "login": "Մուտք գործել",
+        "unfulfilled_items_title": "Պատրաստվում է առաքմանը",
+        "unfulfilled_items_description": "Այս պահին մենք պատրաստում ենք այս իրերը առաքման համար։",
+        "marker": {
+          "current": "Առաքման ներկայիս վայրը",
+          "shipping": "Առաքման հասցե"
+        },
+        "pick_up_in_store_marker": {
+          "current": "Առաքման ներկայիս վայրը",
+          "shipping": "Վերցնելու վայրը"
+        },
+        "fulfillment": {
+          "fulfilled_table_title": "Այս առաքման մեջ գտնվող ապրանքները",
+          "unfulfilled_table_title": "Առաքման համար պատրաստվող իրեր",
+          "product_image_label": "Արտադրանքի պատկեր",
+          "description_label": "Նկարագրություն",
+          "quantity_label": "Քանակ"
+        },
+        "order_updates_description_missing": "Դուք չեք ստանում առաքման թարմացումներ։",
+        "order_updates_subscribe_to_email_notifications": "Ստացեք առաքման թարմացումները էլեկտրոնային փոստով",
+        "order_updates_subscribe_to_email_or_phone_notifications": "Ստացեք առաքման թարմացումներ էլեկտրոնային փոստով կամ SMS-ով",
+        "order_updates_subscribe_to_phone_notifications": "Ստացեք առաքման թարմացումները SMS-ով",
+        "order_updates_submit_subscription": "Ուղարկել",
+        "track_shipment": "Հետևել առաքմանը",
+        "other_options": "Այլ տարբերակներ",
+        "delivery_information_label": "Առաքման տեղեկատվություն՝",
+        "gift_card_sent_confirmation": "Նվեր քարտերն ուղարկվել են",
+        "qr_code": {
+          "send_link_to_phone": "Կամ ուղարկեք հղում ձեր հեռախոսին",
+          "title": "Հետևեք ձեր հեռախոսին"
+        },
+        "shop_qr_with_sms_upsell": {
+          "qr_code": {
+            "title": "Սկանավորեք ձեր հեռախոսով"
+          },
+          "sms": {
+            "title": "Կամ ուղարկեք հղում ձեր հեռախոսին"
+          }
+        },
+        "view_business_customer_account": "Դիտել հաշիվը",
+        "breadcrumbs_submitted": "Ուղարկված է",
+        "breadcrumbs_in_review": "Վերանայման փուլում",
+        "breadcrumbs_confirmed": "Հաստատված է",
+        "missing_shipping_address_banner": {
+          "title": "Պատվերը չունի առաքման հասցե",
+          "text_html": "%{contact_us}՝ ձեր հասցեն ավելացնելու համար",
+          "contact_us": "Կապ մեզ հետ"
+        },
+        "first_payment_complete": "Առաջին վճարումն ավարտված է",
+        "in_store_purchase": "Խանութում գնում",
+        "company_location_section_title": "Ընկերությունը և գտնվելու վայրը",
+        "thank_you_ready_for_picked_up": "Ձեր պատվերը վերցվել է %{address} հասցեից։",
+        "ready_for_delivery": "Պատրաստ է առաքման",
+        "order_updates_subscribe_to_email_notifications_failed": "Մենք չենք կարող պահպանել այս էլ.փոստը թարմացումների համար: Խնդրում ենք կրկին փորձել կամ օգտագործել մեկ այլ էլ.փոստ:",
+        "order_updates_subscribe_to_email_notifications_email_already_exists": "Ձեր մուտքագրած էլ․ հասցեն արդեն գոյություն ունի։",
+        "subscriptions_management": {
+          "title": "Բաժանորդագրություն",
+          "description": "Անցեք ձեր հաշիվ՝ ձեր բաժանորդագրությունները դիտելու և կառավարելու համար։",
+          "button_label": "Կառավարեք ձեր բաժանորդագրությունը"
+        },
+        "manage_order_label": "Կառավարեք ձեր պատվերը",
+        "gift_card_confirmation_by_text_typ": {
+          "one": "Դուք մի քանի րոպեից կստանաք ձեր նվեր քարտի հետ կապված SMS հաղորդագրություն։",
+          "other": "Դուք մի քանի րոպեից կստանաք ձեր նվեր քարտերով SMS հաղորդագրություն։"
+        },
+        "gift_card_confirmation_by_email_typ": {
+          "one": "Դուք մի քանի րոպեից կստանաք ձեր նվեր քարտի հետ կապված էլ. նամակ։",
+          "other": "Դուք մի քանի րոպեից կստանաք ձեր նվեր քարտերով էլեկտրոնային նամակ։"
+        },
+        "gift_card_email_title": {
+          "one": "Նվեր քարտը ուղարկվել է էլեկտրոնային փոստով",
+          "other": "Նվեր քարտերը ուղարկվել են էլեկտրոնային փոստով"
+        },
+        "gift_card_text_title": {
+          "one": "Նվեր քարտը ուղարկվել է SMS հաղորդագրությամբ",
+          "other": "Նվեր քարտերը ուղարկվել են SMS հաղորդագրությամբ"
+        },
+        "resend_gift_cards_by_email": "Կրկին ուղարկել էլ. նամակը",
+        "resend_gift_cards_by_text": "Կրկին ուղարկել տեքստային հաղորդագրությունը",
+        "gift_card_resent_confirmation": {
+          "one": "Նվեր քարտը վերաուղարկվեց։",
+          "other": "Նվեր քարտերը վերաուղարկվեցին։"
+        },
+        "gift_card_resend_failure": {
+          "one": "Ձեր նվեր քարտը վերուղարկելու հետ կապված խնդիր առաջացավ։ Փորձեք կրկին կամ կապվեք մեզ հետ։",
+          "other": "Ձեր նվեր քարտերը վերուղարկելու հետ կապված խնդիր առաջացավ։ Փորձեք կրկին կամ կապվեք մեզ հետ։"
+        },
+        "vat_invoices": {
+          "title": "ԱԱՀ հաշիվ-ապրանքագրեր"
+        },
+        "verify_shop_account_title": "Հաստատեք ձեր խանութի հաշիվը",
+        "verify_shop_account_message": "Ձեր տեղեկությունները պահպանվել են Shop-ում, հաստատեք ձեր հաշիվը՝ այն ավտոմատ կերպով միլիոնավոր խանութներում օգտագործելու համար։",
+        "verify_shop_account_cta": "Հաստատեք ձեր հաշիվը",
+        "verify_shop_account_confirmation": "Վճարման մանրամասները պահպանվել են",
+        "announcement": {
+          "close": "Փակել",
+          "expand": "Ընդարձակել",
+          "collapse": "Ծալել"
+        }
+      },
+      "vaulted": {
+        "change_button": "Փոփոխություն"
+      },
+      "review": {
+        "title": "Վերանայել",
+        "review_title": "Ավարտեք ձեր պատվերը",
+        "review_and_confirm_title": "Վերանայել և հաստատել",
+        "checkout_as_guest": "Ելք որպես հյուր",
+        "account_more_actions": "Այս հաշվի համար ավելի շատ գործողություններ",
+        "checkout_a_different_way": "Ստուգեք այլ կերպ",
+        "blocks": {
+          "contact_method_title": "Կապ",
+          "billing_address_title": "Հաշվառում",
+          "shipping_address_title": "Առաքում",
+          "shipping_method_title": "Առաքման եղանակը",
+          "payment_method_title": "Վճարման եղանակ",
+          "change_link_label": "Փոփոխություն",
+          "change_contact_method_link_label": "Փոխել կոնտակտային տվյալները",
+          "change_billing_address_link_label": "Փոխել վճարման հասցեն",
+          "change_shipping_address_link_label": "Փոխել առաքման հասցեն",
+          "change_shipping_method_link_label": "Փոխել առաքման եղանակը",
+          "change_payment_method_link_label": "Փոխել վճարման եղանակը",
+          "pick_up_in_store_shipping_method_html": "Վերցնել խանութից · %{location_name}"
+        }
       }
     }
   },
