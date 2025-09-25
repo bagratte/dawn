@@ -390,6 +390,308 @@
           "tax_credential_it": "Հարկային կոդ (ըստ ցանկության)",
           "tax_email_it": "PEC (ըստ ցանկության)"
         }
+      },
+      "payment": {
+        "billing_must_match_shipping_notice": "Ձեր վճարման եղանակի հաշվարկային հասցեն պետք է համընկնի առաքման հասցեի հետ։",
+        "same_billing_address_checkbox_label": "Օգտագործեք առաքման հասցեն որպես վճարման հասցե",
+        "location_billing_address_label": "Գտնվելու վայրի վճարման հասցե",
+        "fact_billing_address_label": "Հաշվառման հասցե",
+        "location_shipping_address_label": "Գտնվելու վայրի առաքման հասցե",
+        "use_order_billing_address_label": "Օգտագործեք պատվերի վճարման հասցեն",
+        "use_location_billing_address_label": "Օգտագործել գտնվելու վայրի վճարային հասցեն",
+        "use_location_shipping_address_label": "Օգտագործել գտնվելու վայրի առաքման հասցեն",
+        "no_working_method_error": "Այս խանութը այս պահին չի կարող ընդունել վճարումներ: Թարմացրեք այս էջը կամ վերադարձեք ավելի ուշ:",
+        "brand_not_available": "Այս խանութը չի ընդունում {{brand}} : Խնդրում ենք օգտագործել այլ քարտ վճարելու համար:",
+        "shipping_rate_updated": "Հասանելի առաքման մեթոդները թարմացվել են: Հաստատեք ձեր ընտրությունը նախքան գնում կատարելը:",
+        "billing_address_invalid_phone": "Շարունակելու համար թարմացրեք ձեր հաշվարկային հասցեում նշված հեռախոսահամարը {{label}} {{last_digits}} ի համար։",
+        "billing_address_invalid_phone_no_card": "Շարունակելու համար թարմացրեք ձեր հաշվարկային հասցեում նշված հեռախոսահամարը։",
+        "preview_not_available": {
+          "title": "Նախադիտումը հասանելի չէ",
+          "content": "Մի անհանգստացեք, այս արագ վճարման համակարգը հարմար է ձեր հաճախորդների համար։",
+          "button": "Լավ"
+        },
+        "card_fields": {
+          "errors": {
+            "required": {
+              "issue_date": "Մուտքագրեք վավեր թողարկման ամսաթիվ",
+              "issue_number": "Մուտքագրեք վավեր թողարկման համար"
+            },
+            "invalid": {
+              "verification_value": "Մուտքագրեք վավեր CVV կամ անվտանգության կոդ"
+            }
+          }
+        },
+        "simulated_checkout": "Նախադիտումը շուտով կլինի",
+        "simulated_express_checkout": "Դրամապանակները խմբագրիչի նախադիտման մեջ հասանելի չեն ձեր տարածաշրջանի կամ դիտարկիչի պատճառով",
+        "vaulting_agreement_label": "Պահպանել իմ վճարման տեղեկությունները %{company}-ում՝ ավելի արագ վճարման համար։",
+        "business_customer_vaulting_payment_label": "Պահպանեք այս քարտը վճարման ժամանակ և լիազորեք %{company}-ին գանձել այն այս վայրի ապագա գնումների համար: Այս վայրին կցված բոլոր կոնտակտները կարող են օգտագործել քարտը:",
+        "purchase_options_and_vaulting_agreement_label": "Ձեր զամբյուղում մեկ կամ մի քանի ապրանքներ հետաձգված կամ բաժանորդագրական գնում են: Շարունակելով վճարումը՝ դուք համաձայնում եք, որ ձեր վճարման եղանակից ավտոմատ կերպով կգանձվի այս էջում նշված գնով և հաճախականությամբ մինչև դրա ավարտը կամ ձեր կողմից չեղարկումը: Բոլոր չեղարկումները ենթակա են %{cancellation_policy_label}-ի:",
+        "purchase_options_cancellation_policy_label": "չեղարկման քաղաքականություն",
+        "use_different_credit_card_label": "Օգտագործեք այլ քարտ",
+        "saved_credit_card": "Ձեր պահպանված վարկային քարտը",
+        "saved_credit_card_info": "Վերջին չորս թվանշանները",
+        "saved_credit_card_cvv_verification": "Հաստատման նպատակով, խնդրում ենք մուտքագրել ձեր քարտի անվտանգության կոդը։",
+        "saved_credit_card_actions": {
+          "edit": "Խմբագրել",
+          "delete": "Ջնջել"
+        },
+        "saved_credit_cards_modal": {
+          "view_all_label": "Դիտել բոլոր պահպանված քարտերը",
+          "done": "Կատարված է",
+          "cancel": "Չեղարկել"
+        },
+        "add_credit_card_modal": {
+          "title": "Ավելացնել քարտ",
+          "save": "Պահպանել",
+          "cancel": "Չեղարկել"
+        },
+        "delete_credit_card_modal": {
+          "title": "Ջնջել քարտը",
+          "confirmation": "Վստա՞հ եք, որ ուզում եք ջնջել {{brandName}} որը վերջանում է {{lastDigits}} ով։",
+          "cancel": "Չեղարկել",
+          "delete": "Ջնջել"
+        },
+        "edit_credit_card_modal": {
+          "title": "Խմբագրել քարտը",
+          "done": "Կատարված է",
+          "cancel": "Չեղարկել",
+          "description": "Դուք կարող եք փոփոխել միայն ձեր քարտի հաշվարկային հասցեն։",
+          "fields": {
+            "default": "Սահմանել որպես լռելյայն",
+            "card_number": "Քարտի համարը",
+            "expiry": "Սպառման ամսաթիվ",
+            "security_code": "Անվտանգության կոդ",
+            "name": "Քարտի վրա անունը",
+            "billing": "Հաշիվը"
+          }
+        },
+        "expired_cards_info": {
+          "one": "Կա %{count} ժամկետանց քարտ, որը կարող եք դիտել և խմբագրել ձեր հաշվում։",
+          "other": "Կան %{count} ժամկետանց քարտեր, որոնք կարող եք դիտել և խմբագրել ձեր հաշվում։"
+        },
+        "local_payment_method_receiver_notice": "Պատվերը տեղադրելուց հետո դուք կստանաք վճարման մանրամասները: Կատարեք վճարումը բանկոմատով կամ առցանց {{dueDays}} օրվա ընթացքում:",
+        "order_edit_banner_title": "Անհրաժեշտ է վճարել {{amount_owed}}",
+        "order_edit_banner_subtitle": "Ձեր պատվերը {{order_number}} թարմացվել է։ Ստուգեք այս փոփոխությունները, այնուհետև վճարեք՝ ձեր պատվերը հաստատելու համար։",
+        "order_edit_banner_items_added": {
+          "one": "Ավելացված է",
+          "other": "Ավելացված է %{count}"
+        },
+        "order_edit_banner_items_removed": {
+          "in_full": "Հեռացված է",
+          "with_quantities": "Հեռացվել է {{delta}} {{quantity}} ը"
+        },
+        "order_edit_banner_items_returned": {
+          "in_full": "Վերադարձված է {{quantity}}",
+          "with_quantities": "Վերադարձվել է {{delta}} ՝ {{quantity}} ից"
+        },
+        "order_edit_banner_items_return_line_item_removed": {
+          "in_full": "Հեռացված է վերադարձից",
+          "with_quantities": "{{delta}} հեռացվել է վերադարձից"
+        },
+        "order_edit_banner_single_item_added": "Ավելացված է",
+        "order_edit_banner_multiple_items_added": "Ավելացված է {{amount}}",
+        "order_edit_banner_single_item_removed": "Հեռացված է",
+        "order_edit_banner_multiple_items_removed": "Հեռացված է {{amount}}",
+        "order_edit_banner_single_item_returned": "Վերադարձված է",
+        "order_edit_banner_multiple_items_returned": "Վերադարձվել է {{amount}}",
+        "order_edit_banner_single_item_return_line_item_removed": "Հեռացված է վերադարձից",
+        "order_edit_banner_multiple_items_return_line_item_removed": "{{amount}} հեռացվել է վերադարձից",
+        "order_edit_banner_updated_order_label": "Թարմացված պատվեր",
+        "gift_card_wrapper": {
+          "heading": "Նվեր քարտ",
+          "apply_gift_card_label": "Կիրառեք նվեր քարտ",
+          "apply_another_gift_card_label": "Կիրառեք մեկ այլ նվեր քարտ",
+          "gift_card_label": "Նվեր քարտ %{identifier}",
+          "payment_tag": "Նվեր քարտ",
+          "add_label": "Ավելացնել նվեր քարտ",
+          "manage_label": "Կառավարեք նվեր քարտերը"
+        },
+        "gift_card_store_credit": {
+          "add_label": "Ավելացրեք նվեր քարտ կամ խանութի կրեդիտ",
+          "manage_label": "Կառավարեք նվեր քարտերը կամ խանութի վարկային պատմությունը"
+        },
+        "gift_card_checkbox_label": "Կիրառել նվեր քարտը",
+        "custom_onsite_payment_method_modal": {
+          "title": "Տեղում վճարման հաստատում"
+        },
+        "markets_pro_disclaimer_label": "Ստորև սեղմելով և ձեր պատվերը կատարելով՝ դուք համաձայնում եք գնել ձեր ապրանք(ներ)ը Global-e-ից՝ որպես այս գործարքի գրանցված վաճառող, Global-e-ի %{markets_pro_terms} և %{privacy_policy} կանոններին համապատասխան։ Global-e-ն %{shop_name}-ի միջազգային պատվերների կատարման ծառայությունների մատակարար է։",
+        "markets_pro_disclaimer_terms_and_conditions": "Պայմաններ և դրույթներ",
+        "markets_pro_disclaimer_privacy_policy": "Գաղտնիության քաղաքականություն",
+        "markets_pro_disclaimer_terms_and_conditions_title": "Գրանցված վաճառողի օգտագործման կանոններն ու պայմանները",
+        "markets_pro_disclaimer_privacy_policy_title": "Գրանցված վաճառողի գաղտնիության քաղաքականություն",
+        "markets_pro_disclaimer_label_express_checkout": "Գնելով՝ դուք համաձայնում եք մեր միջազգային ծառայություն մատուցող Global-e-ի %{markets_pro_terms} և %{privacy_policy} պայմաններին։",
+        "markets_pro_disclaimer_express_terms_and_conditions": "տերմիններ",
+        "markets_pro_disclaimer_express_privacy_policy": "գաղտնիության քաղաքականություն",
+        "purchase_order_number": {
+          "title": "Գնման պատվերի համարը",
+          "label": "Գնման պատվերի համարը (ըստ ցանկության)"
+        },
+        "alternative_payment_currency_total_notice": "Նշում. Ձեզանից կգանձվի %{amount_due}:",
+        "alternative_payment_currency_total_manual_payment_notice": "Նշում. փոխարկված ընդհանուր գումարը կազմում է %{amount_due}:",
+        "waiting_on_taxes_message": "Եթե ​​ձեր հարկերը չհաշվարկվեն հաջորդ մի քանի վայրկյանների ընթացքում, թարմացրեք էջը։",
+        "waiting_on_taxes_notice": "Հարկերի հաշվարկ",
+        "payment_method": "Վճարման եղանակ",
+        "payment_method_rollup_accessibility_label": "Վճարման եղանակի տարբերակներ"
+      },
+      "throttle": {
+        "too_many_attempts": {
+          "message": "Չափազանց շատ փորձեր",
+          "description": "Խնդրում ենք կրկին փորձել մի քանի րոպեից"
+        },
+        "line_to_check_out": "Դուք հերթում եք՝ վճարելու համար",
+        "cart_summary_heading": "Ձեր զամբյուղը",
+        "merchandise": {
+          "available": "Հասանելի է",
+          "sold_out": "Վաճառված է"
+        },
+        "inventory": {
+          "partial_inventory_banner": "Ձեր զամբյուղի մի մասը վաճառված է և հասանելի չի լինի գնման համար վճարման ժամանակ։",
+          "sold_out": {
+            "heading": "Ձեր զամբյուղը սպառվել է",
+            "storefront_body": "Վերադարձեք խանութ՝ գնումները շարունակելու համար",
+            "no_storefront_body": "Դժբախտաբար, այն ապրանքը, որը դուք ցանկանում եք գնել, այլևս հասանելի չէ։",
+            "link": "Վերադառնալ խանութ"
+          }
+        },
+        "title": "Հերթ",
+        "time_to_checkout_title": "Ժամանակն է դուրս գրվելու - {{shopName}}",
+        "estimated_wait_time": {
+          "calculating": "Մոտավոր սպասման ժամանակի հաշվարկ",
+          "less_than_one": "Մոտավոր սպասման ժամանակը. մեկ րոպեից պակաս",
+          "one": "Մոտավոր սպասման ժամանակը. {{count}} րոպե",
+          "other": "Մոտավոր սպասման ժամանակը. {{count}} րոպե"
+        },
+        "last_checked": "(Վերջին անգամ ստուգվել է՝ {{time}} )",
+        "footer": {
+          "heading": "Մի՛ թարմացրեք այս էջը, այն կթարմացվի ավտոմատ կերպով։",
+          "body": "Ձեր զամբյուղում գտնվող ապրանքները չեն ամրագրվի մինչև դուք չավարտեք վճարումը։"
+        }
+      },
+      "cart_checkout_validation": {
+        "runtime_error": "Ձեր հարցումը մշակելիս խնդիր առաջացավ, խնդրում ենք կապվել խանութի սեփականատիրոջ հետ։"
+      },
+      "no_address_location": {
+        "title": "Գտնվելու վայր՝ առանց հասցեի",
+        "header": "Դուք չունեք առաքման հասցե այս վայրի համար",
+        "alt_header": "Առաքման հասցեն բացակայում է",
+        "message": "Կապվեք մեզ հետ՝ այս վայրի հասցեն ավելացնելու և վճարումն ավարտելու համար։",
+        "email_us_button_label": "Ուղարկեք մեզ էլ. նամակ"
+      },
+      "order_errors": {
+        "creation_failure": "Ձեր պատվերը ստեղծելիս խնդիր առաջացավ։ Փորձեք կրկին կամ կապվեք մեզ հետ՝ լրացուցիչ տեղեկություններ ստանալու համար։",
+        "network_failure": "Ձեր պատվերը չհաջողվեց ուղարկել ցանցային սխալի պատճառով։ Ստուգեք ձեր կապը և փորձեք կրկին։",
+        "inventory_reservation_failure": "Որոշ ապրանքներ այլևս հասանելի չեն։"
+      },
+      "session_errors": {
+        "session_not_unique": "Ձեր պատվերի մշակման հետ կապված խնդիր առաջացավ: Թարմացրեք այս էջը՝ խանութ վերադառնալու համար:",
+        "session_already_finished": "Այս պատվերն արդեն ուղարկվել է։ Դուք կարող եք վերադառնալ խանութ՝ նոր պատվեր սկսելու համար։"
+      },
+      "artifact_errors": {
+        "artifact_dissatisfaction_without_violation": "Ձեր պատվերի մշակման հետ կապված խնդիր առաջացավ։ Փորձեք կրկին մի քանի րոպեից։"
+      },
+      "pickup_point": {
+        "location_is_currently_closed": "Փակ է",
+        "business_hours": "Աշխատանքային ժամեր",
+        "no_business_hours": "Աշխատանքային ժամեր չկան",
+        "open_twenty_four_hours": "Բաց է 24/7",
+        "title": "Վերցման կետ",
+        "or": "կամ",
+        "search_button": "Որոնում",
+        "address_label": "Հասցե",
+        "selector_tabs": "Վերցման կետի ընտրիչ",
+        "selector_tab_map": "Քարտեզ",
+        "selector_tab_list": "Ցանկ",
+        "could_not_resolve_address": "Ձեր հասցեն չհաջողվեց գտնել։ Փորձեք կրկին կամ օգտագործեք այլ հասցե։",
+        "no_pickup_points_near_you": "Ընտրված հասցեի մոտ վերցման կետեր չեն գտնվել",
+        "no_pickup_points_near_location": "Ձեր գտնվելու վայրի մոտակայքում վերցման կետեր չեն գտնվել",
+        "pickup_unavailable_banner_title": {
+          "one": "Ձեր ապրանքի համար վերցման կետեր չկան",
+          "other": "Ձեր ապրանքների համար վերցման կետեր չկան"
+        },
+        "no_pickup_points_found": "Վերցնելու կետեր չեն գտնվել",
+        "paginator": {
+          "next_accessibility_label": "Հաջորդ էջ",
+          "previous_accessibility_label": "Նախորդ էջ",
+          "header": {
+            "one": "Ցուցադրվում է %{count} կետի %{first} - %{last}-ը",
+            "other": "Ցուցադրվում է %{count} միավորներից %{first} - %{last}"
+          },
+          "selected_pickup_point_label": {
+            "one": "%{pickup_point_index}՝ %{count} կետից",
+            "other": "%{pickup_point_index}՝ %{count} միավորից"
+          },
+          "selected_page": {
+            "one": "%{first} - %{last}՝ %{count} կետից",
+            "other": "%{first} - %{last}՝ %{count} միավորից"
+          }
+        },
+        "number_of_pickup_points_near_location": {
+          "one": "%{count} վերցման կետ ձեր գտնվելու վայրի մոտ",
+          "other": "%{count} վերցման կետեր ձեր գտնվելու վայրի մոտ"
+        },
+        "change": "Փոխել գտնվելու վայրը",
+        "waiting_on_pickup_point_location_notice": "Վերցման կետերի որոնում...",
+        "geolocation": {
+          "shared_location_button": "Օգտագործել իմ գտնվելու վայրը",
+          "errors": {
+            "unsuported_by_browser": "Ձեր դիտարկիչը չի աջակցում աշխարհագրական դիրքի որոշումը։ Փորձեք կրկին կամ օգտագործեք այլ դիտարկիչ։",
+            "permission_not_allowed": "Թույլատրել կիսվել ձեր գտնվելու վայրով։",
+            "permission_denied": "Չհաջողվեց ստանալ ձեր գտնվելու վայրը։ Փորձեք կրկին։"
+          }
+        }
+      },
+      "error_page": {
+        "terminal": {
+          "title": "Մեր վճարման հետ կապված խնդիր առաջացավ",
+          "message": "Թարմացրեք այս էջը կամ փորձեք կրկին մի քանի րոպեից",
+          "action": {
+            "cta": "Թարմացնել էջը"
+          },
+          "request_id": "Հարցման ID՝ {{requestId}}"
+        }
+      },
+      "notice_banner": {
+        "return_to_cart_link_text": "Վերադառնալ զամբյուղ",
+        "return_to_cart_to_update_quantities": "%{return_to_cart_link_text}՝ քանակները թարմացնելու համար",
+        "subscription_changed": "Ձեր բաժանորդագրություններից մեկը փոխվել է։",
+        "company_location_changed": "Ձեր զամբյուղը թարմացվել է: Վերանայեք ձեր պատվերը նախքան այն ուղարկելը:",
+        "company_location_changed_product_removed": "Ձեր զամբյուղը թարմացվել է, քանի որ որոշ ապրանքներ հասանելի չեն այս վայրում: Վերանայեք ձեր պատվերը նախքան այն ուղարկելը:",
+        "violations_title": "{{violation}} բացակայում է կամ անվավեր է",
+        "individual_violations_title": {
+          "DeliveryViolations": "Առաքման հասցե",
+          "PaymentViolations": "Հաշվառման հասցե",
+          "OtherViolations": "Պատվերի տեղեկատվություն",
+          "UnhandledViolations": "Պատվերի տեղեկատվություն"
+        },
+        "all_violations_content": "Զանգահարեք կամ {{emailLink}} գրեք մեզ՝ այս տեղեկատվությունը թարմացնելու և ձեր պատվերն ավարտելու համար։",
+        "all_violations_email_link": "էլ. փոստ",
+        "editable_shipping_address_violations_message_title": "Ավելացրեք այս տեղեկությունները ձեր պատվերն ավարտելու համար՝",
+        "editable_shipping_address_violations_message_footer": "Այս վայրի հասցեն մշտապես թարմացնելու համար {{emailLink}} :",
+        "editable_shipping_address_violations_email_link": "կապվեք մեզ հետ",
+        "shipping_address_incomplete_title": "Առաքման հասցեն թերի է",
+        "calculating_shipping": "Առաքման արժեքը դեռ հաշվարկվում է։ Փորձեք կրկին մի քանի վայրկյանից։ Ձեզանից գումար չի գանձվել։",
+        "calculating_taxes": "Հարկերը դեռ հաշվարկվում են։ Փորձեք կրկին մի քանի վայրկյանից։ Ձեզանից գումար չի գանձվել։",
+        "generic_processing_error": {
+          "title": "Ձեր պատվերի մշակման հետ կապված խնդիր առաջացավ",
+          "body": "Ձեզանից գումար չի գանձվել։ Փորձեք կրկին կամ օգտագործեք վճարման այլ եղանակ։"
+        },
+        "payment_method_not_available_with_payment_terms": "Ձեր ընտրած վճարման եղանակը այլևս հասանելի չէ, քանի որ այս պատվերի վճարումն այժմ {{paymentTerms}} պայմաններով է։",
+        "payment_method_not_available_with_fulfillment_terms": "Ձեր ընտրած վճարման եղանակը այլևս հասանելի չէ, քանի որ այս պատվերի համար վճարումը պետք է կատարվի կատարման պահին։",
+        "payment_method_not_available_with_fixed_terms": "Ձեր ընտրած վճարման եղանակը այլևս հասանելի չէ, քանի որ այս պատվերի վճարումը պետք է կատարվի ավելի ուշ։",
+        "payment_method_not_available_with_review_requirement": "Ձեր ընտրած վճարման եղանակը այլևս հասանելի չէ, քանի որ վճարումը պետք է կատարվի ձեր պատվերի հաստատումից հետո։",
+        "contact_information": {
+          "title": "Կոնտակտային տեղեկությունները անվավեր են",
+          "header": "Ձեր տեղեկությունները թարմացնելու համար {{emailLink}} ։",
+          "email_link": "կապվեք մեզ հետ"
+        }
+      },
+      "review_address_modal": {
+        "title": "Վերանայեք հասցեն",
+        "subtitle": {
+          "one": "Այս պատվերը կուղարկվի {{merchant}} ի կողմից տրամադրված հասցեին։",
+          "other": "Այս պատվերը կուղարկվի {{merchant}} ի կողմից տրամադրված հասցեին։ Ընտրեք առաքման հասցե։"
+        },
+        "subtitle_no_match": "Այս հասցեն չի համապատասխանում ձեր պահպանված հասցեներից ոչ մեկին։"
       }
     }
   }
