@@ -822,7 +822,133 @@
         "one_images_accessibility_label": "Պատվերը ներառում է {{lineItemName1}}",
         "two_images_accessibility_label": "Պատվերը ներառում է {{lineItemName1}} , {{lineItemName2}}",
         "three_images_accessibility_label": "Պատվերը ներառում է {{lineItemName1}} , {{lineItemName2}} , {{lineItemName3}}"
-      }
+      },
+      "order_status": {
+        "gift_card_label": {
+          "one": "Նվեր քարտ",
+          "other": "Նվեր քարտեր"
+        },
+        "gift_card_resend_button": {
+          "one": "Կրկին ուղարկել նվեր քարտը",
+          "other": "Վերուղարկել նվեր քարտերը"
+        },
+        "gift_resend_success": {
+          "one": "Նվեր քարտը վերահաստատվեց",
+          "other": "Նվեր քարտերը վերահրապարակվում են"
+        },
+        "gift_resend_failure": {
+          "one": "Ձեր նվեր քարտը վերուղարկելու հետ կապված խնդիր առաջացավ։ Փորձեք կրկին կամ կապվեք մեզ հետ։",
+          "other": "Ձեր նվեր քարտերը վերուղարկելու հետ կապված խնդիր առաջացավ։ Փորձեք կրկին կամ կապվեք մեզ հետ։"
+        },
+        "confirmed_gift_card_additional_description": {
+          "one": "Նվեր քարտը կուղարկվի առանձին էլեկտրոնային նամակով։",
+          "other": "Յուրաքանչյուր նվեր քարտ կուղարկվի առանձին էլեկտրոնային նամակով։"
+        },
+        "confirmed_gift_card_additional_description_text": {
+          "one": "Նվեր քարտը կուղարկվի առանձին հաղորդագրությամբ։",
+          "other": "Յուրաքանչյուր նվեր քարտ կուղարկվի առանձին հաղորդագրությամբ։"
+        },
+        "status_timestamp": "Թարմացվել է {{date}}",
+        "estimated_delivery": "Ակնկալվում է {{date}}",
+        "expected_by": "Ակնկալվում է մինչև {{date}}",
+        "was_expected_by": "Սպասվում էր մինչև {{date}}",
+        "delivered": "Ժամանել է {{date}}",
+        "buy_with_prime_logo_accessibility_label": "Amazon Buy Prime լոգոտիպով",
+        "in_review_label": "Վերանայման փուլում",
+        "in_review_title": "Ձեր պատվերը վերանայվում է",
+        "last_updated": "Վերջին թարմացումը {{date}}",
+        "multiple_shipments_label": "Բազմակի առաքումներ",
+        "multiple_statuses_label": "Բազմակի պատվերի կարգավիճակներ",
+        "no_tracking_number": "Այս առաքման համար հետևման համարանիշ չկա։",
+        "tracking_number": {
+          "one": "Հետևման համար",
+          "other": "Հետևման համարներ"
+        },
+        "on_its_way_label": "Ճանապարհին է",
+        "out_for_delivery_label": "Առաքման համար է",
+        "resume_tracking": "Վերսկսել հետևումը",
+        "submitted_label": "Ուղարկված է",
+        "submitted_description": "Ստուգեք պատվերի և վճարման մանրամասները։",
+        "there_was_a_problem_label": "Խնդիր կար",
+        "track_shipment": "Հետևել առաքմանը",
+        "request_return": "Վերադարձի հարցում",
+        "view_order_for_details": "Դիտել պատվերը՝ մանրամասների համար",
+        "external_promise_manage_button_label": {
+          "buy_with_prime": "Կառավարեք Amazon-ում"
+        },
+        "amazon_buy_with_prime": {
+          "order_tracking_link": {
+            "text": "Կառավարեք Amazon-ի միջոցով",
+            "new_window_disclaimer": "(բացվում է նոր պատուհանում)"
+          }
+        },
+        "delivery_promise_v2": {
+          "promise_line": {
+            "shop_promise_brand_label": "Առաքումը երաշխավորված է",
+            "external_promise_brand_label": "Առաքումը՝",
+            "not_delivered_by_label": "Առաքվել է {{date}} ից հետո",
+            "delivery_guarantee_expired_label": "Առաքման երաշխիքը ժամկետանց է",
+            "modal_accessibility_button_label": "Մատակարարման խոստման մանրամասները",
+            "download_shop_app_button_label": "Ներբեռնեք Shop-ը՝ հետևելու համար",
+            "track_with_shop_button_label": "Հետևեք խանութի միջոցով",
+            "claim_shop_cash_button_label": "Խանութի կանխիկի պահանջ"
+          },
+          "details_modal": {
+            "title": "Առաքման երաշխիք",
+            "active_delivery_guarantee_label": "Առաքում մինչև {{date}}",
+            "expired_delivery_guarantee_description": "Այս պատվերի 30-օրյա Shop Promise երաշխիքի ժամկետը լրացել է։",
+            "expired_badge_label": "Ժամկետանց",
+            "order_includes_guarantees_label": "Ձեր պատվերը ներառում է {{deliveryAgreementsCount}} երաշխիքներ",
+            "order_includes_guarantees_description": "Shop Promise-ը երաշխավորում է արագ և հուսալի առաքում: Վերցրեք Shop Cash-ը, եթե ձեր պատվերը ժամանի {{date}} ից հետո:",
+            "delivered_after_label": "Առաքվել է {{date}} ից հետո",
+            "delivered_after_description": "Քանի որ ձեր պատվերը ուշ ժամանեց, դուք իրավունք ունեք պահանջել {{amount}} Shop Cash:",
+            "claimed_shop_cash_description": "Քանի որ այս պատվերը ուշ ժամանեց, դուք պահանջեցիք {{amount}} Shop Cash:",
+            "eligible_to_claim_shop_cash_description": "Քանի որ ձեր պատվերը ուշ ժամանեց, դուք իրավունք ունեք պահանջել {{amount}} Shop Cash:",
+            "learn_more_button_label": "Իմանալ ավելին",
+            "claim_shop_cash_button_label": "Խանութի կանխիկի պահանջ",
+            "view_balance_in_shop_button_label": "Դիտել մնացորդը Խանութում",
+            "scan_to_claim_shop_cash_label": "Սկանավորեք {{amount}} գումարը պահանջելու համար"
+          }
+        },
+        "delivery_promise": {
+          "promise_line": {
+            "single_brand_label": "Առաքումը ապահովված է",
+            "mixed_brands_label": "Առաքումը երաշխավորված է",
+            "not_delivered_by_label": "Չի առաքվել մինչև {{date}}",
+            "modal_accessibility_button_label": "Մատակարարման խոստման մանրամասները"
+          },
+          "claim_shop_cash_cta": {
+            "has_shop_app_label": "Վերցրեք ձեր խանութի կանխիկ գումարը",
+            "no_shop_app_label": "{{appDownloadLink}} խանութի կանխիկ գումարը պահանջելու համար",
+            "download_shop_app_label": "Ներբեռնել խանութը"
+          },
+          "details_modal": {
+            "title": "Առաքումը ապահովված է",
+            "modal_accessiblity_label": "Մատակարարման խոստման մանրամասները",
+            "delivery_guarantee_label": "Առաքման երաշխիք",
+            "delivery_by_label": "Առաքում մինչև {{date}}",
+            "delivery_guaranteed_by_label": "Առաքումը երաշխավորված է {{date}} ի կողմից",
+            "shop_cash_claim": {
+              "may_be_eligible_label": "Shop Promise-ը երաշխավորում է արագ և հուսալի առաքում: Վերցրեք Shop Cash-ը, եթե ձեր պատվերը ուշանում է:",
+              "may_be_eligible_not_authorized_label": "Դուք կարող եք իրավունք ունենալ պահանջելու Shop Cash-ը, քանի որ այս պատվերը ուշացել է։ Մուտք գործեք՝ մանրամասները դիտելու համար։",
+              "redeemed_label": "Դուք արդեն ստացել եք Shop Cash-ը, քանի որ այս պատվերը ուշացել է։",
+              "expired_label": "Այս պատվերը չի կարող ենթարկվել ուշացած առաքման պահանջի, քանի որ 30-օրյա երաշխիքի ժամկետը լրացել է։",
+              "no_shop_cash_label": "Այս պատվերը չի կարող ենթարկվել ուշացած առաքման պահանջի, քանի որ այն չի վճարվել Shop Pay-ով։",
+              "no_longer_guaranteed_label": "Այս ապրանքները այլևս չեն ապահովվում առաքման երաշխիքով։",
+              "claim_shop_cash_title": "Սկանավորեք {{amount}} խանութի կանխիկ գումարից պահանջելու համար",
+              "claim_shop_cash_description": "Դուք կարող եք օգտագործել ձեր Shop Cash-ը Shop հավելվածում ապագա գնումների համար։"
+            }
+          }
+        }
+      },
+      "status_mark_as_delivered": "Նշել որպես առաքված",
+      "fulfillment_status_title": "Կատարման կարգավիճակը՝ {{status}}",
+      "buy_again": "Գնել կրկին",
+      "buy_again_accessibility_label": "Կրկին գնեք {{orderId}} պատվերի համար",
+      "manage": "Կառավարել",
+      "manage_accessiblity_label": "Կառավարել {{orderId}} պատվերը",
+      "group_title_label": "Մաս՝ {{groupTitle}}",
+      "group_title_label_with_parent": "Համար՝ {{groupTitle}}"
     },
     "B2B": {
       "draft_order_details": {
@@ -896,6 +1022,15 @@
         "modal_po_number_input_max_length_error": "Գնման պատվերի համարները կարող են ունենալ առավելագույնը {{maxLength}} նիշ։",
         "save": "Պահպանել",
         "title": "ՀԴՄ # {{poNumber}}"
+      },
+      "account_information": {
+        "company_card_name_label": "Ընկերության անվանումը",
+        "company_card_section_accessibility_label": "Ընկերություն"
+      },
+      "locations": {
+        "contact_email": "Էլ․ փոստ",
+        "contact_list_title": "Մարդիկ",
+        "contact_name": "Անուն"
       }
     },
     "errors": {
@@ -999,6 +1134,137 @@
           "missing_billing_address": "Google Pay-ը պահանջում է վճարման հասցե։ Խնդրում ենք ավելացնել այն ձեր հաշվին։"
         }
       }
+    },
+    "order_details": {
+      "shipment_timeline": {
+        "expand_events_label": "Ցուցադրել մանրամասները",
+        "expand_events_accessibility_label": "Ցուցադրել պատվերի առաքման մանրամասները",
+        "hide_events_label": "Թաքցնել մանրամասները",
+        "hide_events_accessibility_label": "Թաքցնել պատվերի առաքման մանրամասները"
+      },
+      "addresses_section_title": "Հաշվառում և առաքում",
+      "order_details": "Պատվերի մանրամասները",
+      "order_details_skeleton_accessibility_label": "Մուտք գործեք՝ պատվերի բոլոր մանրամասները դիտելու համար։",
+      "billing_address": "Հաշվառման հասցե",
+      "card_ending_with": "ավարտվում է {{lastDigits}} ով",
+      "contact": "Կապ",
+      "contact_information": "Կոնտակտային տեղեկություններ",
+      "company": "Ընկերություն",
+      "edit_summary": {
+        "added_with_quantity": "Ավելացված է {{quantity}}",
+        "removed": "Հեռացված է",
+        "removed_with_quantity": "Հեռացված է {{quantity}}",
+        "updated_at": "Ձեր պատվերը թարմացվել է {{date}} ին",
+        "returned": "Վերադարձված է",
+        "returned_with_quantities": "Վերադարձվել է {{delta}} ՝ {{total}} ից",
+        "removed_with_quantities": "Հեռացվել է {{delta}} ը {{total}} ից",
+        "return_line_item_removed": "Հեռացված է վերադարձից",
+        "return_line_item_removed_with_quantities": "{{delta}} հեռացվել է վերադարձից"
+      },
+      "shop_pay": {
+        "order_completed_with": "Պատվերն ավարտված է",
+        "learn_more": "Իմանալ ավելին"
+      },
+      "taxes": "Հարկեր",
+      "taxes_included": "Ներառյալ {{amount}} հարկերը",
+      "duties_and_taxes_included": "Ընդհանուր գումարը ներառում է տուրքեր և հարկեր։ Առաքման ժամանակ լրացուցիչ վճարներ չկան։",
+      "duties": "Պարտականություններ",
+      "ok_duties_tooltip": "Այս պատվերը ուղարկվում է մեկ այլ երկրից, ուստի ձեր պատվերի ընդհանուր գումարին ավելացվել են մաքսատուրքեր։",
+      "error_duties_tooltip": "Այս պատվերը ուղարկվում է մեկ այլ երկրից, ուստի առաքման ժամանակ կարող են գանձվել տուրքեր և հարկեր։",
+      "zero_duties_tooltip": "Այս պատվերը ուղարկվում է այլ երկրից: Այս արժեքի պատվերների համար տուրքեր չեն գանձվում:",
+      "tip": "Հուշում",
+      "title": "Պատվեր {{name}}",
+      "total": "Ընդհանուր",
+      "unit_price": "{{price}} /հատ",
+      "pagination": {
+        "load_more": "Բեռնել ավելին",
+        "load_more_accessibility_label": "Բեռնել ավելի շատ տարրեր",
+        "loading_accessibility_label": "Բեռնվում են տարրերը"
+      },
+      "login_to_view_all_order_details": "Մուտք գործեք՝ պատվերի բոլոր մանրամասները դիտելու համար։",
+      "log_in": "Մուտք գործել",
+      "logged_in_account_no_permission_to_order": "Դուք մուտք եք գործել որպես {{email}} : Այս հաշիվը թույլտվություն չունի կառավարելու այս պատվերը:",
+      "log_in_to_a_different_account": "Մուտք գործեք այլ հաշիվ",
+      "fees": {
+        "restocking_fee": "Վերամշակման վճար",
+        "return_shipping_fee": "Վերադարձի առաքում"
+      },
+      "vat_invoices": {
+        "title": "ԱԱՀ հաշիվ-ապրանքագրեր"
+      },
+      "link_sent": "Հղումն ուղարկվեց",
+      "cash_rounding": "Կանխիկի կլորացում",
+      "adjusted_payment": "Կարգավորված վճարում",
+      "adjusted_total": "Կարգավորված ընդհանուր",
+      "due_on_date": "Վճարման ժամկետը {{date}}",
+      "due_on_fulfillment": "Կատարման ենթակա",
+      "due_on_receipt": "Վճարման ենթակա է ստացման պահին"
+    },
+    "addresses": {
+      "add_button": "Ավելացնել հասցե",
+      "add_button_text": "Ավելացնել",
+      "add_button_accessibility_label": "Ավելացնել հասցե",
+      "back_button": "Հետ",
+      "back_button_accessibility_label": "Վերադառնալ խմբագրման հասցեին {{address}}",
+      "add_address_banner": "Ավելացրեք հասցեներ՝ վճարման ժամանակ օգտագործելու համար",
+      "no_addresses_banner": "Հասցեներ չեն ավելացվել",
+      "address_deleted_notification": "Հասցեն ջնջվել է",
+      "cancel_adding_address_accessibility_label": "Չեղարկել հասցեի ավելացումը",
+      "cancel_deletion_button": "Չեղարկել",
+      "cancel_deletion_button_accessibility_label": "Չեղարկել {{address}} ի ջնջումը",
+      "default_address": {
+        "title": "Լռելյայն հասցե",
+        "title_accessibility_label": "Լռելյայն հասցե՝ {{address}}"
+      },
+      "delete_button": "Ջնջել",
+      "delete_button_accessibility_label": "Ջնջել {{address}}",
+      "delete_confirmation_button": "Ջնջել հասցեն",
+      "delete_confirmation_button_accessibility_label": "Ջնջել {{address}}",
+      "delete_confirmation_message": "Ջնջե՞լ հասցեն։ Գոյություն ունեցող պատվերները չեն ազդվի։",
+      "delete_confirmation_title": "Ջնջե՞լ հասցեն։",
+      "delete_confirmation_description": "Գործող պատվերները չեն ազդվի։",
+      "edit_button": "Խմբագրել",
+      "edit_button_accessibility_label": "Խմբագրել {{address}}",
+      "edit_section_accessibility_label": "Խմբագրել {{address}}",
+      "edit_modal_title": {
+        "default": "Խմբագրել հասցեն",
+        "billing": "Խմբագրել հաշվի հասցեն",
+        "shipping": "Խմբագրել առաքման հասցեն"
+      },
+      "loading_accessibility_message": "Հասցեն բեռնվում է",
+      "loading_addresses_accessibility_message": "Հասցեների բեռնում",
+      "loading_billing_accessibility_message": "Բեռնվում է հաշվի հասցեն",
+      "loading_finished_accessibility_message": "Հասցեների նոր էջը բեռնվել է",
+      "loading_shipping_accessibility_message": "Առաքման հասցեն բեռնվում է",
+      "pagination": {
+        "load_more": "Բեռնել ավելին",
+        "load_more_accessibility_label": "Բեռնել ավելի շատ հասցեներ"
+      },
+      "save_new_address_accessibility_label": "Պահպանել հասցեն",
+      "title": "Հասցեներ",
+      "billing_address_dropdown_placeholder": "Հաշվառման հասցե"
+    },
+    "address_form": {
+      "attention": "Ուշադրություն",
+      "attention_company": "Ընկերություն/ուշադրություն",
+      "attention_help_text": "Անձի կամ բաժնի անունը",
+      "auto_complete_close_accessibility_label": "Փակել առաջարկները",
+      "auto_complete_title": "Առաջարկություններ",
+      "billing_address": "Օգտագործել որպես վճարման հասցե",
+      "cancel": "Չեղարկել",
+      "cancel_accessibility_label": "Չեղարկել {{address}} հասցեի խմբագրումը",
+      "creation_success_notification": "Հասցեն ավելացված է",
+      "default_address": "Սա իմ լռելյայն հասցեն է",
+      "default_address_creation_success_notification": "Ավելացվել է լռելյայն հասցե",
+      "default_address_update_success_notification": "Լռելյայն հասցեն թարմացվեց",
+      "loading_add_form_accessibility_message": "Նոր հասցեի ձևը բեռնվում է",
+      "loading_edit_form_accessibility_message": "Բեռնվում է հասցեի խմբագրման ձևը",
+      "loading_form_accessibility_message": "Հասցեի ձևը բեռնվում է",
+      "loading_finished_accessibility_message": "Հասցեի ձևը բեռնվել է",
+      "save": "Պահպանել",
+      "save_accessibility_label": "Պահպանել հասցեն {{address}}",
+      "section_title_accessibility_label": "Ավելացնել հասցե",
+      "update_success_notification": "Հասցեն թարմացված է"
     }
   },
   "templates": {
