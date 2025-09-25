@@ -2320,7 +2320,119 @@
         "estimated_delivery": "Ակնկալվում է {{date}}",
         "one_images_accessibility_label": "Պատվերը ներառում է {{lineItemName1}}",
         "two_images_accessibility_label": "Պատվերը ներառում է {{lineItemName1}} , {{lineItemName2}}",
-        "three_images_accessibility_label": "Պատվերը ներառում է {{lineItemName1}} , {{lineItemName2}} , {{lineItemName3}}"
+        "three_images_accessibility_label": "Պատվերը ներառում է {{lineItemName1}} , {{lineItemName2}} , {{lineItemName3}}",
+        "four_images_accessibility_label": "Պատվերը ներառում է {{lineItemName1}} , {{lineItemName2}} , {{lineItemName3}} , {{lineItemName4}}",
+        "more_than_three_products_accessibility_label": "Պատվերը ներառում է {{lineItemName1}} , {{lineItemName2}} և ևս {{numberOfAdditionalProducts}} ապրանք",
+        "more_than_four_products_accessibility_label": "Պատվերը ներառում է {{lineItemName1}} , {{lineItemName2}} , {{lineItemName3}} և ևս {{numberOfAdditionalProducts}} ապրանք",
+        "plus_more": "+ {{numberOfAdditionalProducts}}",
+        "plus_more_products": "+ {{numberOfAdditionalProducts}} արտադրանք",
+        "carousel": {
+          "one_products_accessibility_label": "Պատվերը ներառում է {{lineItemName1}} քանակ {{lineItemQuantity1}}",
+          "two_products_accessibility_label": "Պատվերը ներառում է {{lineItemName1}} քանակ {{lineItemQuantity1}} , {{lineItemName2}} քանակ {{lineItemQuantity2}}",
+          "three_products_accessibility_label": "Պատվերը ներառում է {{lineItemName1}} քանակ {{lineItemQuantity1}} , {{lineItemName2}} քանակ {{lineItemQuantity2}} , {{lineItemName3}} քանակ {{lineItemQuantity3}}",
+          "four_products_accessibility_label": "Պատվերը ներառում է {{lineItemName1}} քանակ {{lineItemQuantity1}} , {{lineItemName2}} քանակ {{lineItemQuantity2}} , {{lineItemName3}} քանակ {{lineItemQuantity3}} , {{lineItemName4}} քանակ {{lineItemQuantity4}}",
+          "five_products_accessibility_label": "Պատվերը ներառում է {{lineItemName1}} քանակ {{lineItemQuantity1}} , {{lineItemName2}} քանակ {{lineItemQuantity2}} , {{lineItemName3}} քանակ {{lineItemQuantity3}} , {{lineItemName4}} քանակ {{lineItemQuantity4}} , {{lineItemName5}} քանակ {{lineItemQuantity5}}",
+          "six_products_accessibility_label": "Պատվերը ներառում է {{lineItemName1}} քանակ {{lineItemQuantity1}} , {{lineItemName2}} քանակ {{lineItemQuantity2}} , {{lineItemName3}} քանակ {{lineItemQuantity3}} , {{lineItemName4}} քանակ {{lineItemQuantity4}} , {{lineItemName5}} քանակ {{lineItemQuantity5}} , {{lineItemName6}} քանակ {{lineItemQuantity6}}",
+          "six_and_more_products_accessibility_label": "Պատվերը ներառում է {{lineItemName1}} քանակ {{lineItemQuantity1}} , {{lineItemName2}} քանակ {{lineItemQuantity2}} , {{lineItemName3}} քանակ {{lineItemQuantity3}} , {{lineItemName4}} քանակ {{lineItemQuantity4}} , {{lineItemName5}} քանակ {{lineItemQuantity5}} , {{lineItemName6}} քանակ {{lineItemQuantity6}} և այլն",
+          "view_order_details": "Դիտել պատվերի մանրամասները",
+          "previous": "Նախորդը",
+          "next": "Հաջորդը"
+        },
+        "items": {
+          "one": "{{count}} տարր",
+          "other": "{{count}} տարր"
+        },
+        "no_filtered_results_description": "Հեռացրեք կամ կարգավորեք ֆիլտրերը՝ ձեր պատվերները տեսնելու համար",
+        "no_filtered_results_title": "Ֆիլտրված արդյունքներ չկան",
+        "order_link": "Դիտել {{name}} պատվերը",
+        "order_number": "Պատվեր {{name}}",
+        "orders_title": "Հաստատված է",
+        "pagination": {
+          "nav_accessibility_label": "Պատվերների նավիգացիոն կոճակներ",
+          "next": "Հաջորդը",
+          "next_accessibility_label": "Հաջորդ պատվերները",
+          "previous": "Նախորդ",
+          "previous_accessibility_label": "Նախորդ պատվերներ",
+          "load_more": "Բեռնել ավելին",
+          "load_more_accessibility_label": "Բեռնել ավելի շատ պատվերներ"
+        },
+        "order_status_message": {
+          "list_view": {
+            "view_order_for_details": "Դիտել պատվերը՝ մանրամասների համար",
+            "estimated_delivery": "Ակնկալվում է {{date}}",
+            "last_updated": "Վերջին թարմացումը {{date}}"
+          },
+          "table_view": {
+            "estimated_delivery": "Մոտավոր առաքում {{date}}"
+          }
+        },
+        "payment_status": {
+          "gallery_view": {
+            "overdue": "Վճարման ժամկետը լրացել է",
+            "due": "Վճարման ժամկետը {{date}}",
+            "due_today": "Վճարման ժամկետը՝ այսօր",
+            "due_without_date": "Վճարման ենթակա",
+            "due_on_fulfillment": "Կատարման դեպքում վճարման ենթակա վճարում",
+            "pay_to_confirm": "Վճարեք հաստատման համար",
+            "payment_not_due": "Վճարումը դեռ չի ավարտվել"
+          },
+          "list_view": {
+            "overdue": "Ժամկետանց",
+            "due": "Վճարման ժամկետը {{date}}",
+            "due_today": "Վճարման ժամկետը՝ այսօր",
+            "paid": "Վճարված",
+            "due_without_date": "Վճարման ժամկետը",
+            "due_on_fulfillment": "Կատարման ենթակա",
+            "pay_to_confirm": "Վճարեք հաստատման համար",
+            "payment_not_due": "Դեռևս ժամկետը չի լրացել"
+          }
+        },
+        "sort_by": "Դասավորել ըստ՝ {{option}}",
+        "sort_hide_options_accessibility_label": "Թաքցնել հաստատված պատվերների տեսակավորման տարբերակները։",
+        "sort_show_options_accessibility_label": "Ցուցադրել հաստատված պատվերների տեսակավորման տարբերակները։",
+        "sort_currently_sorted_by_accessibility_label": "Այժմ տեսակավորված է՝ {{option}}",
+        "sort_title": "Դասավորել",
+        "sort": {
+          "date": {
+            "newest": "Ամենանորից մինչև ամենահինը",
+            "oldest": "Ամենահինից մինչև ամենանորը"
+          },
+          "location": {
+            "ascending": "Գտնվելու վայրը (Արիզոնա)",
+            "descending": "Գտնվելու վայրը (ԶԱ)"
+          },
+          "order_number": {
+            "ascending": "Պատվերի համարը (ամենացածրից մինչև ամենամեծ)",
+            "descending": "Պատվերի համարը (բարձրից ցածր)"
+          },
+          "order_total": {
+            "ascending": "Պատվերի ընդհանուր գումարը (ցածրից մինչև բարձր)",
+            "descending": "Պատվերի ընդհանուր գումարը (բարձրից ցածր)"
+          }
+        },
+        "location_filter_picker": {
+          "all_location": "Բոլոր վայրերը",
+          "current_location": "Ընթացիկ գտնվելու վայրը",
+          "switch_view": "Փոխել դիտման ռեժիմը"
+        },
+        "filter_title": "Ֆիլտր",
+        "filter": {
+          "clear_section": "Մաքրել բաժինը",
+          "clear_all": "Մաքրել բոլորը",
+          "apply": "Կիրառել",
+          "date": {
+            "start_date": "Սկզբի ամսաթիվը",
+            "end_date": "Ավարտի ամսաթիվ",
+            "title": "Պատվերի ամսաթիվը",
+            "today": "Այսօր",
+            "last_7_days": "Վերջին 7 օրերը",
+            "last_30_days": "Վերջին 30 օրերը",
+            "last_90_days": "Վերջին 90 օրը",
+            "last_365_days": "Վերջին 12 ամիսները",
+            "custom": "Պատվերով"
+          }
+        },
+        "show_order_actions_accessibility_label": "Ցուցադրել {{name}} պատվերի պատվերի գործողությունները"
       },
       "order_status": {
         "gift_card_label": {
@@ -2438,6 +2550,32 @@
               "claim_shop_cash_description": "Դուք կարող եք օգտագործել ձեր Shop Cash-ը Shop հավելվածում ապագա գնումների համար։"
             }
           }
+        },
+        "attempted_delivery_label": "Փորձված առաքում",
+        "attempted_to_deliver_label": "Փորձել է առաքել",
+        "preparing_for_shipping_label": "Պատրաստվում է առաքմանը",
+        "ready_for_pickup_label": "Պատրաստ է վերցնելու համար",
+        "ready_for_pickup_description": "Այս ապրանքները պատրաստ են վերցնելու համար։ Խնդրում ենք ձեր պատվերի հաստատումը բերել պատվերը վերցնելիս։",
+        "ready_for_pickup_location": "Ձեր պատվերը պատրաստ է վերցման վայրից",
+        "picked_up_label": "Վերցված է",
+        "canceled_label": "Չեղարկված է",
+        "canceled_title": "Ձեր պատվերը չեղարկվել է",
+        "come_back": "Վերադարձեք այս էջ՝ ձեր առաքման կարգավիճակի վերաբերյալ թարմացումներ ստանալու համար։",
+        "company_tracking_number": "{{company}} հետևման համարը՝",
+        "confirmed_label": "Հաստատված է",
+        "confirmed_title": "Ձեր պատվերը հաստատված է",
+        "confirmed_description_pickup": "Դուք կստանաք էլ.փոստ, երբ ձեր պատվերը պատրաստ լինի վերցնելու համար։",
+        "confirmed_description_digital": "Դուք կստանաք էլ.փոստ, երբ ձեր պատվերը պատրաստ լինի։",
+        "confirmed_description_gift_card_text": "Դուք կստանաք հաղորդագրություն, երբ ձեր պատվերը պատրաստ լինի։",
+        "complete_label": "Ավարտված",
+        "delivered_label": "Առաքված է",
+        "delivered_description_gift_card": {
+          "one": "Նվեր քարտը ուղարկվել է էլեկտրոնային փոստով։",
+          "other": "Նվեր քարտերը ուղարկվել են էլեկտրոնային փոստով։"
+        },
+        "delivered_description_gift_card_text": {
+          "one": "Նվեր քարտը ուղարկվել է SMS-ով։",
+          "other": "Նվեր քարտերը ուղարկվել են SMS-ով։"
         }
       },
       "status_mark_as_delivered": "Նշել որպես առաքված",
