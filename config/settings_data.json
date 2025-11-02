@@ -140,12 +140,7 @@
     "blocks": {
       "7161394637304097644": {
         "type": "shopify://apps/convercy/blocks/switcher_embed_block/f5c93801-24e1-4f0e-89db-62f45c9c55b5",
-        "disabled": false,
-        "settings": {}
-      },
-      "1804893150726543839": {
-        "type": "shopify://apps/nova-multi-currency-converter/blocks/app-embed/a5be3c35-cbd0-46a1-ac3a-1ace57a9c1ce",
-        "disabled": false,
+        "disabled": true,
         "settings": {}
       }
     },
