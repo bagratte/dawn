@@ -375,7 +375,9 @@
         "emirate_placeholder": "Էմիրություն",
         "phone_label": "Հեռախոս",
         "phone_placeholder": "Հեռախոս",
-        "phone_country_code_label": "Հեռախոսահամարի երկրի կոդը"
+        "phone_country_code_label": "Հեռախոսահամարի երկրի կոդը",
+        "civic_number_warning": "Ավելացրեք տան համարը, եթե ունեք",
+        "different_shipping_address_text": "Այս պատվերի համար օգտագործեք միանգամյա հասցե"
       },
       "shipping": {
         "subscription_delivery_description": {
@@ -1135,7 +1137,8 @@
           "one": "Այս պատվերը կուղարկվի {{merchant}} ի կողմից տրամադրված հասցեին։",
           "other": "Այս պատվերը կուղարկվի {{merchant}} ի կողմից տրամադրված հասցեին։ Ընտրեք առաքման հասցե։"
         },
-        "subtitle_no_match": "Այս հասցեն չի համապատասխանում ձեր պահպանված հասցեներից ոչ մեկին։"
+        "subtitle_no_match": "Այս հասցեն չի համապատասխանում ձեր պահպանված հասցեներից ոչ մեկին։",
+        "subtitle_must_use": "Ձեր պատվերը կուղարկվի այս հասցեով։"
       },
       "stock": {
         "unfulfillable_product": {
@@ -1177,7 +1180,15 @@
         "price_column_header": "Գինը",
         "status_column_header": "Կարգավիճակ",
         "reduced_label": "Նվազեցված",
-        "remove": "Հեռացնել"
+        "remove": "Հեռացնել",
+        "items_unavailable_notice": "Որոշ ապրանքներ այլևս հասանելի չեն։",
+        "unpurchasable_product": {
+          "header": "Որոշ ապրանքներ հեռացվել են ձեր զամբյուղից",
+          "message": "Այս ապրանքները հասանելի չեն B2B պատվերների համար։"
+        },
+        "unpurchasable_product_generic": {
+          "header": "Որոշ ապրանքներ հեռացվել են ձեր զամբյուղից"
+        }
       },
       "contextual_availability": {
         "title": {
@@ -1685,7 +1696,37 @@
           "one": "1 տարր հաստատված չէ"
         },
         "thank_you_from_other_store": "Մեկ այլ խանութից",
-        "checkout_on_another_store": "Ստուգեք մեկ այլ խանութում"
+        "checkout_on_another_store": "Ստուգեք մեկ այլ խանութում",
+        "confirmation_email_sent_text": "Հաստատման էլ. նամակն ուղարկվել է %{email} հասցեին",
+        "purchase_order_number_title": "Գնման պատվերի համար #%{purchase_order_number}",
+        "failed_pending_payment_page_title": "Ձեր վճարման հետ կապված խնդիր կա",
+        "thank_you_title_review": "Ձեր պատվերը ուղարկվել է վերանայման",
+        "thank_you_title_payments_app_pending_default": "Ձեր վճարումը մշակվում է",
+        "thank_you_title_payments_app_failed_pending_payment": "Ձեր վճարումը չհաջողվեց մշակել",
+        "thank_you_confirmed_with_email_description": {
+          "single_store": "Դուք շուտով կստանաք հաստատման էլ. նամակ"
+        },
+        "thank_you_confirmed_with_phone_description": {
+          "single_store": "Դուք շուտով կստանաք հաստատման հաղորդագրություն"
+        },
+        "thank_you_confirmed_with_email_and_phone_description": {
+          "single_store": "Դուք շուտով կստանաք հաստատման էլ. նամակ"
+        },
+        "thank_you_confirmed_order_with_email_payment": "Դուք վճարում եք կատարել ձեր %{date} պատվերի համար։",
+        "thank_you_confirmed_order_with_phone_payment": "Դուք վճարում եք կատարել ձեր %{date} պատվերի համար։",
+        "thank_you_confirmed_order_with_email_and_phone_payment": "Դուք վճարում եք կատարել ձեր %{date} պատվերի համար։",
+        "thank_you_unconfirmed_items_description": {
+          "one": "Ձեզանից գումար չի գանձվել այս ամենի համար",
+          "other": "Ձեզանից գումար չի գանձվել սրանց համար"
+        },
+        "thank_you_confirmed_items_with_email": {
+          "one": "Դուք շուտով կստանաք հաստատման էլ. նամակ",
+          "other": "Դուք շուտով կստանաք հաստատման նամակներ"
+        },
+        "thank_you_confirmed_items_with_phone": {
+          "one": "Դուք շուտով կստանաք հաստատման հաղորդագրություն",
+          "other": "Դուք շուտով կստանաք հաստատման հաղորդագրություններ"
+        }
       },
       "vaulted": {
         "change_button": "Փոփոխություն"
@@ -2221,17 +2262,32 @@
       },
       "customer_account": {
         "sign_in_link_label": "Մուտք գործել",
-        "rollup_label": "Հաշիվ"
+        "rollup_label": "Հաշիվ",
+        "save_my_information_label": "Պահպանեք այս տեղեկատվությունը հաջորդ անգամվա համար",
+        "saved_address_option_description": {
+          "one": "Դուք ունեք {{count}} պահպանված հասցե։",
+          "other": "Դուք ունեք {{count}} պահպանված հասցե։"
+        }
       },
       "marketplaces": {
         "legal_notice": {
-          "legal_text": "Վերանայել"
+          "legal_text": "Վերանայել",
+          "link_label": "{{partnerDisplayName}} ի օգտագործման կանոններ և պայմաններ"
         }
       },
       "local_pickup": {
         "location_address_search_label": "Հասցե",
         "or": "ԿԱՄ",
-        "cancel": "Չեղարկել"
+        "cancel": "Չեղարկել",
+        "all_stores_far_away": {
+          "description": "Ընտրեք տեղանք կամ %{ship_to_address_link}"
+        },
+        "paginator": {
+          "label": {
+            "one": "%{first} - %{last}՝ %{count} խանութից",
+            "other": "%{first} - %{last}՝ %{count} խանութներից"
+          }
+        }
       },
       "clipboard": {
         "copied": "Պատճենված է"
@@ -2239,6 +2295,29 @@
       "wallets": {
         "scrim": {
           "cancel": "Չեղարկել"
+        },
+        "errors": {
+          "unsupported": {
+            "address": "Վաճառողը չի կարող առաքել այս հասցեով"
+          },
+          "invalid": {
+            "billing_zone": "Մուտքագրեք վավեր վճարային հասցե՝ նահանգ / մարզ",
+            "postal_code": "Մուտքագրեք վավեր փոստային ինդեքս",
+            "billing_phone": "Մուտքագրեք վավեր վճարային հասցեի հեռախոսահամար",
+            "reduction_code": "Մուտքագրեք վավեր զեղչի կոդ կամ նվեր քարտ"
+          },
+          "missing": {
+            "billing_first_name": "Մուտքագրեք վճարման հասցեի անունը",
+            "address2": "Մուտք գործեք բնակարան, համար և այլն։",
+            "billing_address2": "Մուտքագրեք վճարման հասցեն՝ բնակարան, համար և այլն։",
+            "billing_province": "Ընտրեք հաշվարկային հասցե՝ նահանգ/մարզ",
+            "billing_zip": "Մուտքագրեք վճարման հասցեն՝ փոստային ինդեքս"
+          },
+          "formatting": {
+            "postal_code_contains_emoji": "Ջնջեք էմոջիները ձեր փոստային ինդեքսից",
+            "first_name_too_long": "Անունը պարունակում է չափազանց շատ տառեր",
+            "last_name_too_long": "Ազգանունը պարունակում է չափազանց շատ տառեր"
+          }
         }
       },
       "units": {
@@ -2283,6 +2362,27 @@
           "currency_mismatch_removal": "Ապրանքը հեռացվել է ձեր զամբյուղից, քանի որ այն խանութից է, որն օգտագործում է այլ արժույթ։",
           "max_remote_shops_exceeded": "Այս ապրանքը չի կարող ավելացվել, քանի որ ձեր զամբյուղն արդեն ունի այլ խանութներից առավելագույնը։"
         }
+      },
+      "captcha": {
+        "title": "Լրացրեք CAPTCHA-ն՝ շարունակելու համար",
+        "errors": {
+          "not_solved": "Լրացրեք CAPTCHA-ն՝ շարունակելու համար"
+        }
+      },
+      "shop_pay_external": {
+        "errors": {
+          "problem_loading": "Խնդիր կա Shop Pay-ը բեռնելիս"
+        }
+      },
+      "one": {
+        "errors": {
+          "merchandise": {
+            "gift_card_price_must_be_greater_than_zero": "Նվեր քարտի գինը պետք է մեծ լինի 0-ից։"
+          }
+        }
+      },
+      "tooltip": {
+        "accessibility_label_context": "Ավելի շատ տեղեկություններ %{context}-ի մասին"
       }
     },
     "notices": {
@@ -2307,7 +2407,13 @@
         "merchandise_line_transformers": {
           "run_error": "Ձեր զամբյուղում սխալ է տեղի ունեցել։"
         },
-        "merchandise_not_applicable": "Ապրանքը հնարավոր չէ գնել կարգավորված ձևով։"
+        "merchandise_not_applicable": "Ապրանքը հնարավոր չէ գնել կարգավորված ձևով։",
+        "only_n_items_available": "Դուք կարող եք զամբյուղին ավելացնել միայն %{count} %{name}-ը։",
+        "too_many_items_in_cart": "Դուք չեք կարող զամբյուղին ավելացնել %{name}-ից ավելի։",
+        "less_than_minimum": "Այս տարրն ունի նվազագույնը %{min}:",
+        "more_than_maximum": "Այս տարրն ունի առավելագույնը %{max}։",
+        "all_items_in_cart": "Բոլոր %{count} %{name}-ները ձեր զամբյուղում են։",
+        "invalid_input": "%{parameter} պարամետրը անվավեր է։"
       },
       "storefront": {
         "invalid_password": "Գաղտնաբառը սխալ է, խնդրում ենք կրկին փորձել։"
@@ -2336,8 +2442,13 @@
           "error": "Սխալ"
         },
         "cancel_reason": {
-          "other": "Այլ"
+          "other": "Այլ",
+          "customer": "Հաճախորդը փոխել/չեղարկել է պատվերը"
         }
+      },
+      "customer": {
+        "no_account_found": "Այդ էլ․ հասցեով հաշիվ չի գտնվել։",
+        "signup_disabled": "Հաճախորդի հաշվի ստեղծումը անջատված է։"
       }
     },
     "email_marketing": {
@@ -2466,14 +2577,38 @@
       "region": "Տարածաշրջան",
       "state": "Պետություն",
       "county": "Շրջան",
-      "emirate": "Էմիրություն"
+      "emirate": "Էմիրություն",
+      "confirm": "Վստա՞հ եք, որ ցանկանում եք ջնջել այս հասցեն։"
     },
     "errors": {
       "shop_404": {
         "owner_ctas": {
           "admin_link_text": "ադմինիստրատոր"
+        },
+        "heros": {
+          "store_unavailable": "Կներեք, այս խանութը ներկայումս անհասանելի է։",
+          "no_storefront": "Այս խանութը դեռ կայք չունի։"
         }
-      }
+      },
+      "discount_disabled": "Այս զեղչը անջատված է",
+      "discount_expired": "Այս զեղչը այլևս վավեր չէ",
+      "discount_limit_reached": "Այս զեղչը հասել է իր օգտագործման սահմանաչափին",
+      "customer_already_used_once_per_customer_discount_notice": "Այս զեղչը հասել է իր օգտագործման սահմանաչափին",
+      "gift_card_already_applied": "Կոդն արդեն կիրառվել է ձեր վճարման համար",
+      "gift_card_depleted": "Այս նվեր քարտի վրա գումար չի մնացել",
+      "bad_domain": "պարունակում է անվավեր դոմեյնի անուն",
+      "too_short": "չափազանց կարճ է (նվազագույնը %{count} նիշ է)",
+      "too_long": "չափազանց երկար է (առավելագույնը՝ %{count} նիշ)",
+      "password_mismatch": "պետք է համապատասխանի տրամադրված գաղտնաբառին",
+      "invalid_for_country_and_province": "վավեր չէ %{province} և %{country} համար",
+      "invalid_province_in_country": "%{country}-ում վավեր մարզ չէ",
+      "invalid_state_in_country": "%{country}-ում վավեր նահանգ չէ",
+      "invalid_region_in_country": "%{country}-ում վավեր տարածաշրջան չէ",
+      "less_than_or_equal_to": "պետք է փոքր կամ հավասար լինի %{count}-ին",
+      "full_name_required": "Մուտքագրեք անուն և ազգանուն",
+      "invalid_type": "ներողություն, մենք չենք ընդունում այս տեսակի քարտեր",
+      "invalid_start_date_or_issue_number_for_debit": "պահանջվում է վավեր մեկնարկի ամսաթիվ կամ թողարկման համար",
+      "product_not_available": "Ապրանքը հրապարակված չէ այս հաճախորդի համար։"
     }
   },
   "customer_accounts": {
@@ -3217,12 +3352,17 @@
           "date_label": "Ամսաթիվ",
           "event_label": "Միջոցառում",
           "expirable_amounts_button": "Դիտել"
-        }
+        },
+        "accesibility_label": "Խանութի վարկ - {{formattedBalance}}"
       },
       "payment_details": {
         "close_payment_modal": "Փակել",
         "edit_payment_method_button": "Խմբագրել",
-        "replace_payment_method_button": "Փոխարինել"
+        "replace_payment_method_button": "Փոխարինել",
+        "close_payment_modal_accessibility_label": "Վճարման եղանակի մանրամասների փակում",
+        "next_payment_due": "Հաջորդ վճարումը՝ {{dueDateInMonthDayYear}}",
+        "edit_payment_method_button_accessibility_label": "Խմբագրել {{lastDigits}} ով ավարտվող վճարման եղանակը",
+        "default_checkbox_accessibility_label": "Սահմանել այս վճարման եղանակը որպես լռելյայն"
       },
       "edit_payment_method": {
         "save_payment_method_button": "Պահպանել",
@@ -3240,6 +3380,19 @@
       "link_expired": {
         "message": "Վճարման եղանակը թարմացնելու այս հղումը ժամկետանց է։",
         "return_home_button": "Վերադառնալ գլխավոր էջ"
+      },
+      "apple_pay": {
+        "errors": {
+          "not_available": "Apple Pay-ը հասանելի չէ այս սարքի վրա։"
+        }
+      },
+      "card_fields": {
+        "tooltip": {
+          "card_security_notice": "Բոլոր գործարքները անվտանգ են և կոդավորված։"
+        },
+        "field_errors": {
+          "credit_card_verification_value_blank": "Մուտքագրեք ձեր քարտի վրա նշված CVV կամ անվտանգության կոդը"
+        }
       }
     },
     "order_details": {
@@ -3617,7 +3770,10 @@
     "enable_javascript": "Ձեր հաշիվը դիտելու համար միացրեք JavaScript-ը ձեր դիտարկիչի կարգավորումներում կամ մուտք գործեք մեկ այլ դիտարկիչով։",
     "active_inspector": {
       "extension": {
-        "remove_tooltip": "Հեռացնել"
+        "remove_tooltip": "Հեռացնել",
+        "select": "Ընտրեք {{extensionName}} անունով ընդլայնումը",
+        "move_down": "Տեղափոխեք ընդլայնումը հաջորդ դիրքին",
+        "move_up": "Տեղափոխեք ընդլայնումը նախորդ դիրքին"
       }
     },
     "shop_ads": {
@@ -3655,10 +3811,16 @@
     "sign_in": {
       "step_one": {
         "input_field_label": "Էլ․ փոստ",
-        "or": "կամ"
+        "or": "կամ",
+        "subheading_with_sign_in_options": "Ընտրեք, թե ինչպես եք ցանկանում մուտք գործել"
       },
       "step_two": {
         "button": "Ուղարկել"
+      }
+    },
+    "settings": {
+      "log_out_everywhere": {
+        "warning_message": "Դուք նաև դուրս կգրվեք հաշվից այս սարքում։"
       }
     }
   },
