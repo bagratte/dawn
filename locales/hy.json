@@ -374,7 +374,8 @@
         "emirate_label": "Էմիրություն",
         "emirate_placeholder": "Էմիրություն",
         "phone_label": "Հեռախոս",
-        "phone_placeholder": "Հեռախոս"
+        "phone_placeholder": "Հեռախոս",
+        "phone_country_code_label": "Հեռախոսահամարի երկրի կոդը"
       },
       "shipping": {
         "subscription_delivery_description": {
@@ -962,7 +963,19 @@
         "bank_account_choose": "Ընտրեք հաշիվ՝ գնումն անվտանգ կերպով ավարտելու համար",
         "bank_account_connect_another": "Կապեք մեկ այլ բանկային հաշիվ",
         "bank_account_connect": "Միացնել բանկային հաշիվը",
-        "bank_account_missing": "Բանկային հաշիվը պետք է միացված լինի"
+        "bank_account_missing": "Բանկային հաշիվը պետք է միացված լինի",
+        "discount_show_more_warnings": {
+          "one": "Ցուցադրել ևս %{count}",
+          "other": "Ցուցադրել ևս %{count}"
+        },
+        "bank_account_vaulted_company_location": "Բանկային հաշիվը պահպանվել է այս վայրի համար",
+        "business_customer_with_bank_account_vaulting_payment_label": "Պահպանեք այս վճարման եղանակը վճարման ժամանակ և լիազորեք %{company}-ին գանձել ձեր հաշվից այս վայրի համար հաստատված ապագա գնումների համար, մինչև դուք չեղարկեք այն։ Այս վայրին կցված բոլոր կոնտակտները կարող են օգտագործել վճարման եղանակը։",
+        "new_bank_account_disclaimer": "Ձեր պատվերը կատարելով՝ դուք լիազորում եք %{shop_name}-ին ACH-ի միջոցով գանձել ստորև նշված հաշվից նշված գումարը և նշված ժամին։",
+        "bank_account_disclaimer": "ACH վճարումների մշակումը կարող է տևել մինչև 4 աշխատանքային օր։",
+        "bank_account_generic_error": "Չհաջողվեց ավելացնել բանկային հաշիվը։ Փորձեք կրկին ավելի ուշ։",
+        "separate_payments_label": "Ձեր ապրանքները մեկից ավելի խանութներից են։ Ձեզանից կգանձվի %{separate_payments_link}:",
+        "separate_payments_text": "առանձին վճարումներ",
+        "payments": "Վճարումներ"
       },
       "throttle": {
         "too_many_attempts": {
@@ -1445,7 +1458,10 @@
           "refund_policy_with_final_sale_description": "Վերջնական վաճառքը բացառված է։ Իմացեք ավելին մեր %{refund_policy_link_text}-ի մասին։",
           "final_sale_label": "Վերջնական վաճառք",
           "final_sale_description": "Վերջնական վաճառքը բացառված է։"
-        }
+        },
+        "order_discounts_apply_to_local_shop": "Պատվերի զեղչերը վերաբերում են միայն %{shop_name}-ի ապրանքներին",
+        "gift_cards_apply_to_local_shop": "Նվեր քարտերը վերաբերում են միայն %{shop_name}-ի ապրանքներին",
+        "estimated_taxes_label_short": "Մոտավոր"
       },
       "thank_you": {
         "failed_contact_merchant": "Կապվեք %{company}-ի հետ՝ առաքումը կազմակերպելու համար։",
@@ -1664,7 +1680,12 @@
         "contact_us_html": "Օգնություն պե՞տք է։ %{contact_us}",
         "updated_time": "Թարմացվել է %{time_ago} առաջ",
         "failure": "Չի առաքվել",
-        "failed_title": "Ձեր պատվերը չհաջողվեց առաքել"
+        "failed_title": "Ձեր պատվերը չհաջողվեց առաքել",
+        "thank_you_unconfirmed_items_heading": {
+          "one": "1 տարր հաստատված չէ"
+        },
+        "thank_you_from_other_store": "Մեկ այլ խանութից",
+        "checkout_on_another_store": "Ստուգեք մեկ այլ խանութում"
       },
       "vaulted": {
         "change_button": "Փոփոխություն"
@@ -1904,7 +1925,10 @@
         "selected_payment_method": "Ձեր ընտրած վճարման եղանակի հետ կապված խնդիր առաջացավ, և ձեզանից գումար չի գանձվել: Փորձեք կրկին կամ օգտագործեք վճարման այլ եղանակ:",
         "payment_method_billing_address": "Ձեր ընտրած վճարման եղանակի հաշվի հասցեի հետ կապված խնդիր առաջացավ, և ձեզանից գումար չի գանձվել: Ստուգեք հասցեն և կրկին փորձեք կամ օգտագործեք վճարման այլ եղանակ:",
         "call_issuer": "Ձեր քարտը մերժվել է: Օգտագործեք այլ վճարման եղանակ կամ կապվեք ձեր բանկի հետ՝ լրացուցիչ տեղեկություններ ստանալու համար:",
-        "test_mode_live_card": "Այս խանութը չի կարող ընդունել իրական պատվերներ կամ իրական վճարումներ։"
+        "test_mode_live_card": "Այս խանութը չի կարող ընդունել իրական պատվերներ կամ իրական վճարումներ։",
+        "test_mode_enabled_only_test_cards": "Փորձարկման ռեժիմը միացված է, միայն փորձնական վարկային քարտեր կարող են ավելացվել։",
+        "captcha_required": "Խնդրում ենք մուտքագրել վճարման տվյալները և լուծել captcha-ն՝ գնումն ավարտելու համար։",
+        "captcha_required_without_payment_information": "Խնդրում ենք լուծել captcha-ն՝ գնումն ավարտելու համար։"
       },
       "shipping_errors": {
         "shipping_method": "Ձեր պատվերի առաքման տարբերակները փոխվել են։ Խնդրում ենք վերանայել ձեր ընտրությունը։",
@@ -2237,6 +2261,28 @@
         "yard": "յարդ",
         "square_foot": "ֆուտ²",
         "item": "իր"
+      },
+      "remote_merchandise_only": {
+        "remote_only_notice": "Այս ապրանքները վաճառվում և առաքվում են այլ խանութների կողմից: Ստուգեք յուրաքանչյուր խանութում՝ գնումն ավարտելու համար:",
+        "checkout_on_shop_label": "Գնումներ կատարեք %{shop_name}-ում",
+        "single_shop_transition": "Ձեզ վերահղում ենք %{advertiser}՝ գնումն ավարտելու համար։"
+      },
+      "remote_policies": {
+        "unavailable_policy": "Այս խանութի համար %{policy_name} չի տրամադրվել։ Լրացուցիչ տեղեկությունների համար խնդրում ենք ուղղակիորեն կապվել %{shop_name}-ի հետ։"
+      },
+      "offsite_payment_failed": {
+        "title": "Արտաքին վճարումը ձախողվեց",
+        "payment_not_processed_title": "Վճարումը ձախողվեց",
+        "payment_not_processed_text": "Փորձեք կրկին սկանավորել QR կոդը։ Եթե այն դեռ չի աշխատում, տեղյակ պահեք մեր աշխատակիցներին և փորձեք վճարման այլ եղանակ։",
+        "payment_link_expired_title": "Վճարման հղումը ժամկետանց է",
+        "payment_link_expired_text": "Փորձեք կրկին սկանավորել QR կոդը։"
+      },
+      "remote": {
+        "errors": {
+          "currency_mismatch": "Այս ապրանքը չի կարող ավելացվել ձեր զամբյուղին, քանի որ այն խանութից է, որն օգտագործում է այլ արժույթ։",
+          "currency_mismatch_removal": "Ապրանքը հեռացվել է ձեր զամբյուղից, քանի որ այն խանութից է, որն օգտագործում է այլ արժույթ։",
+          "max_remote_shops_exceeded": "Այս ապրանքը չի կարող ավելացվել, քանի որ ձեր զամբյուղն արդեն ունի այլ խանութներից առավելագույնը։"
+        }
       }
     },
     "notices": {
@@ -3089,6 +3135,10 @@
         "title": "Սխալ",
         "description": "Թարմացրեք այս էջը կամ փորձեք կրկին մի քանի րոպեից։",
         "refresh_button": "Թարմացնել էջը"
+      },
+      "load_address_form_error": {
+        "title": "Անհնար է բեռնել հասցեի ձևը",
+        "description": "Հնարավոր չէ բեռնել հասցեի ձևը։"
       }
     },
     "throttle": {
@@ -3103,12 +3153,14 @@
       "add_payment_method_button": "Ավելացնել վճարման եղանակ",
       "add_payment_method_dropdown": {
         "credit_or_debit_card": "Վարկային կամ դեբետային քարտ",
-        "bank_account": "Բանկային հաշիվ"
+        "bank_account": "Բանկային հաշիվ",
+        "bank_account_consent": "Վճարման եղանակ ավելացնելով՝ դուք թույլատրում եք, որ ձեր քարտից գումար գանձվի կամ ձեր բանկային հաշվից գումար հանվի ձեր կողմից հաստատված ապագա գնումների համար, մինչև դուք չեղարկեք գնումը։"
       },
       "generic_error": "Ինչ-որ բան սխալ է գնացել։ Խնդրում ենք կրկին փորձել։",
       "bank_account": {
         "loading_accessibility_message": "Բանկային հաշվի կոճակը բեռնվում է",
-        "iframe_title_accessibility_label": "Բանկային հաշվի կարգավորում"
+        "iframe_title_accessibility_label": "Բանկային հաշվի կարգավորում",
+        "generic_error": "Չհաջողվեց ավելացնել բանկային հաշիվը։ Փորձեք կրկին ավելի ուշ։"
       },
       "add_payment_method_banner": "Ավելացրեք վճարման եղանակ՝ ավելի արագ վճարման կամ նախապես հաստատված ծառայությունների համար",
       "no_payment_methods_banner": "Վճարման եղանակներ չեն ավելացվել",
@@ -3169,14 +3221,25 @@
       },
       "payment_details": {
         "close_payment_modal": "Փակել",
-        "edit_payment_method_button": "Խմբագրել"
+        "edit_payment_method_button": "Խմբագրել",
+        "replace_payment_method_button": "Փոխարինել"
       },
       "edit_payment_method": {
         "save_payment_method_button": "Պահպանել",
         "cancel_edit_payment_method_button": "Չեղարկել"
       },
       "update_payment_method": {
-        "button_title": "Թարմացում"
+        "button_title": "Թարմացում",
+        "error_message": "Անհնար է թարմացնել վճարման եղանակը"
+      },
+      "pay_pal": {
+        "errors": {
+          "generic": "PayPal-ի հետ խնդիր առաջացավ։ Փորձեք կրկին կամ օգտագործեք վճարման այլ եղանակ։"
+        }
+      },
+      "link_expired": {
+        "message": "Վճարման եղանակը թարմացնելու այս հղումը ժամկետանց է։",
+        "return_home_button": "Վերադառնալ գլխավոր էջ"
       }
     },
     "order_details": {
@@ -3564,7 +3627,30 @@
       "update_payment_instrument": {
         "cancel": "Չեղարկել",
         "save": "Պահպանել"
-      }
+      },
+      "subscription_contracts": {
+        "title": "Կրկնվող պատվերների համար օգտագործեք վճարման եղանակը",
+        "more_items": {
+          "one": "{{count}} այլ ապրանք",
+          "other": "{{count}} այլ ապրանք"
+        },
+        "product_count": {
+          "one": "{{count}} ապրանք",
+          "other": "{{count}} ապրանք"
+        },
+        "subscription_contracts_updated": "{ {{total}} {{succeeded}} ը թարմացվել է",
+        "product_details": "Ապրանքի մանրամասները"
+      },
+      "updating_contracts": {
+        "one": "{{count}} բաժանորդագրության պայմանագրի թարմացում...",
+        "other": "{{count}} բաժանորդագրության պայմանագրերի թարմացում..."
+      },
+      "contracts_updated": {
+        "one": "{{count}} բաժանորդագրության պայմանագիրը հաջողությամբ թարմացվեց",
+        "other": "Հաջողությամբ թարմացվել է {{count}} բաժանորդագրության պայմանագիր"
+      },
+      "contracts_update_failed": "Չհաջողվեց թարմացնել որոշ բաժանորդագրության պայմանագրեր",
+      "invalid_wallet_type_error": "Անվավեր դրամապանակի տեսակ։"
     },
     "sign_in": {
       "step_one": {
