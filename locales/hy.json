@@ -370,7 +370,11 @@
         "state_placeholder": "Պետություն",
         "region_label": "Տարածաշրջան",
         "region_placeholder": "Տարածաշրջան",
-        "region_none": "Ոչ մեկը չի ընտրվել"
+        "region_none": "Ոչ մեկը չի ընտրվել",
+        "emirate_label": "Էմիրություն",
+        "emirate_placeholder": "Էմիրություն",
+        "phone_label": "Հեռախոս",
+        "phone_placeholder": "Հեռախոս"
       },
       "shipping": {
         "subscription_delivery_description": {
@@ -1156,7 +1160,11 @@
           "description": "Այս ապրանքները այլևս հասանելի չեն և հեռացվել են ձեր զամբյուղից։",
           "items_unavailable": "Որոշ ապրանքներ այլևս հասանելի չեն և հեռացվել են ձեր զամբյուղից։"
         },
-        "out_of_stock_in_context_label": "Այս ապրանքը հասանելի չէ ձեր երկրում/տարածաշրջանում։"
+        "out_of_stock_in_context_label": "Այս ապրանքը հասանելի չէ ձեր երկրում/տարածաշրջանում։",
+        "price_column_header": "Գինը",
+        "status_column_header": "Կարգավիճակ",
+        "reduced_label": "Նվազեցված",
+        "remove": "Հեռացնել"
       },
       "contextual_availability": {
         "title": {
@@ -2181,6 +2189,54 @@
         "manual_payment_gateway_label": "Ձեռնարկ",
         "billing_address_title": "Հաշվառման հասցե",
         "free_label": "Անվճար"
+      },
+      "delivery_options": {
+        "free_total_label": "Անվճար",
+        "ship": "Նավ",
+        "pick_up": "Վերցնել"
+      },
+      "customer_account": {
+        "sign_in_link_label": "Մուտք գործել",
+        "rollup_label": "Հաշիվ"
+      },
+      "marketplaces": {
+        "legal_notice": {
+          "legal_text": "Վերանայել"
+        }
+      },
+      "local_pickup": {
+        "location_address_search_label": "Հասցե",
+        "or": "ԿԱՄ",
+        "cancel": "Չեղարկել"
+      },
+      "clipboard": {
+        "copied": "Պատճենված է"
+      },
+      "wallets": {
+        "scrim": {
+          "cancel": "Չեղարկել"
+        }
+      },
+      "units": {
+        "milligram": "մգ",
+        "kilogram": "կգ",
+        "milliliter": "մլ",
+        "centiliter": "կլ",
+        "cubic_meter": "մ³",
+        "millimeter": "մմ",
+        "centimeter": "սմ",
+        "square_meter": "մ²",
+        "ounce": "ունցիա",
+        "pound": "ֆունտ",
+        "fluid_ounce": "հեղուկ ունցիա",
+        "pint": "կետ",
+        "quart": "քվարթ",
+        "gallon": "աղջիկ",
+        "inch": "մեջ",
+        "foot": "ֆուտ",
+        "yard": "յարդ",
+        "square_foot": "ֆուտ²",
+        "item": "իր"
       }
     },
     "notices": {
@@ -2215,6 +2271,27 @@
         "add_products": "Նեղացրեք ընտրությունը %{tag} պիտակին համապատասխանող ապրանքներին",
         "remove_articles": "Ընդլայնել որոնումը՝ ներառելով այն հոդվածները, որոնք նշված չեն %{tag} պիտակով",
         "remove_products": "Հեռացնել %{tag} պիտակը"
+      },
+      "order": {
+        "financial_status": {
+          "pending": "Սպասող",
+          "paid": "Վճարված",
+          "unpaid": "Չվճարված",
+          "voided": "Անվավեր է",
+          "expired": "Ժամկետանց"
+        },
+        "fulfillment_status": {
+          "partial": "Մասնակի"
+        },
+        "transaction_status": {
+          "success": "Հաջողություն",
+          "pending": "Սպասող",
+          "failure": "Անհաջողություն",
+          "error": "Սխալ"
+        },
+        "cancel_reason": {
+          "other": "Այլ"
+        }
       }
     },
     "email_marketing": {
@@ -2326,6 +2403,31 @@
       "buyer_consent_product": "Այս ապրանքը կրկնվող կամ հետաձգված գնում է։ Շարունակելով՝ ես համաձայն եմ %{cancellationPolicyLink}-ի հետ և լիազորում եմ ձեզ գանձել իմ վճարման եղանակից այս էջում նշված գներով, հաճախականությամբ և ամսաթվերով մինչև իմ պատվերի կատարումը կամ չեղարկումը, եթե թույլատրվում է։",
       "buyer_consent_cart": "Ձեր զամբյուղում գտնվող ապրանքներից մեկը կամ մի քանիսը կրկնվող կամ հետաձգված գնումներ են: Շարունակելով՝ ես համաձայնում եմ %{cancellationPolicyLink}-ի հետ և լիազորում եմ ձեզ գանձել իմ վճարման եղանակից այս էջում նշված գներով, հաճախականությամբ և ամսաթվերով մինչև իմ պատվերի կատարումը կամ չեղարկումը, եթե թույլատրվում է:",
       "cancellation_policy": "չեղարկման քաղաքականություն"
+    },
+    "pagination": {
+      "next": "Հաջորդը"
+    },
+    "feed": {
+      "more": "Ավելին"
+    },
+    "attributes": {
+      "email": "էլ. փոստ",
+      "body": "մարմին",
+      "signature": "Հասցե"
+    },
+    "addresses": {
+      "pincode": "Փոստային ինդեքս",
+      "region": "Տարածաշրջան",
+      "state": "Պետություն",
+      "county": "Շրջան",
+      "emirate": "Էմիրություն"
+    },
+    "errors": {
+      "shop_404": {
+        "owner_ctas": {
+          "admin_link_text": "ադմինիստրատոր"
+        }
+      }
     }
   },
   "customer_accounts": {
@@ -3056,6 +3158,25 @@
       },
       "three_d_secure": {
         "title": "3D անվտանգ"
+      },
+      "store_credit": {
+        "details_modal": {
+          "amount_label": "Գումար",
+          "date_label": "Ամսաթիվ",
+          "event_label": "Միջոցառում",
+          "expirable_amounts_button": "Դիտել"
+        }
+      },
+      "payment_details": {
+        "close_payment_modal": "Փակել",
+        "edit_payment_method_button": "Խմբագրել"
+      },
+      "edit_payment_method": {
+        "save_payment_method_button": "Պահպանել",
+        "cancel_edit_payment_method_button": "Չեղարկել"
+      },
+      "update_payment_method": {
+        "button_title": "Թարմացում"
       }
     },
     "order_details": {
@@ -3430,7 +3551,30 @@
         "tomorrow": "Վաղը ժամը {{time}}"
       }
     },
-    "enable_javascript": "Ձեր հաշիվը դիտելու համար միացրեք JavaScript-ը ձեր դիտարկիչի կարգավորումներում կամ մուտք գործեք մեկ այլ դիտարկիչով։"
+    "enable_javascript": "Ձեր հաշիվը դիտելու համար միացրեք JavaScript-ը ձեր դիտարկիչի կարգավորումներում կամ մուտք գործեք մեկ այլ դիտարկիչով։",
+    "active_inspector": {
+      "extension": {
+        "remove_tooltip": "Հեռացնել"
+      }
+    },
+    "shop_ads": {
+      "next_button": "Հաջորդը"
+    },
+    "subscriptions": {
+      "update_payment_instrument": {
+        "cancel": "Չեղարկել",
+        "save": "Պահպանել"
+      }
+    },
+    "sign_in": {
+      "step_one": {
+        "input_field_label": "Էլ․ փոստ",
+        "or": "կամ"
+      },
+      "step_two": {
+        "button": "Ուղարկել"
+      }
+    }
   },
   "templates": {
     "contact": {
@@ -3772,6 +3916,16 @@
       "min_error": "Այս տարրն ունի նվազագույնը {{ min }}",
       "max_error": "Այս տարրն ունի առավելագույնը {{ max }}",
       "step_error": "Դուք կարող եք այս տարրը ավելացնել միայն {{ step }} քայլերով։"
+    },
+    "header": {
+      "menu": "Մենյու"
+    },
+    "cart": {
+      "headings": {
+        "price": "Գինը",
+        "total": "Ընդհանուր"
+      },
+      "update": "Թարմացում"
     }
   },
   "general": {
