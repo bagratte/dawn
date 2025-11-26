@@ -2810,14 +2810,14 @@
     },
     "collections": {
       "sorting": {
-        "az": "Այբբենական կարգով, Արիզոնա",
-        "za": "Այբբենական կարգով, ԶԱ",
-        "price_ascending": "Գինը՝ ցածրից բարձր",
-        "price_descending": "Գինը՝ բարձրից ցածր",
-        "date_ascending": "Ամսաթիվը՝ հինից նոր",
-        "date_descending": "Ամսաթիվ՝ նորից մինչև հին",
+        "az": "Այբբենական, Ա֊Զ",
+        "za": "Այբբենական, Զ֊Ա",
+        "price_ascending": "Գին՝ ցածրից բարձր",
+        "price_descending": "Գին՝ բարձրից ցածր",
+        "date_ascending": "Ամսաթիվ՝ հնից նոր",
+        "date_descending": "Ամսաթիվ՝ նորից հին",
         "manual": "Առաջարկվող",
-        "best_selling": "Ամենավաճառվողը"
+        "best_selling": "Ամենավաճառվող"
       }
     }
   },
