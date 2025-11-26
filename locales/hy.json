@@ -4348,7 +4348,7 @@
       "taxes_included": "Հարկերը ներառված են։",
       "duties_included": "Պարտականությունները ներառված են։",
       "duties_and_taxes_included": "Ներառված են տուրքեր և հարկեր։",
-      "shipping_policy_html": "<a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">Առաքման արժեքը</a> հաշվարկվում է վճարման ժամանակ։",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Առաքումը</a> հաշվարկվում է վճարման ժամանակ։",
       "add_to_cart": "Ավելացնել զամբյուղում",
       "choose_options": "Ընտրեք տարբերակներ",
       "choose_product_options": "Ընտրեք տարբերակներ {{ product_name }} ի համար",
