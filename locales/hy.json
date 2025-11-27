@@ -4438,7 +4438,7 @@
       "title": "Էջի վերնագիր"
     },
     "quick_order_list": {
-      "product_total": "Արտադրանքի ենթագումար",
+      "product_total": "Ապրանքի ենթագումար",
       "view_cart": "Դիտել զամբյուղը",
       "each": "{{ money }} / հատ",
       "product": "Արտադրանք",
