@@ -2666,7 +2666,7 @@
     },
     "page_titles": {
       "blog_or_article_with_error": "Սխալ - %{title}",
-      "products": "Արտադրանքներ",
+      "products": "Ապրանքներ",
       "shopping_cart": "Ձեր գնումների զամբյուղը",
       "account": "Հաշիվ",
       "create_account": "Ստեղծել հաշիվ",
@@ -2939,7 +2939,7 @@
           "order": "Պատվիրել",
           "total": "Ընդհանուր",
           "actions_accessibility_label": "Գործողություններ",
-          "products_accessibility_label": "Արտադրանքներ"
+          "products_accessibility_label": "Ապրանքներ"
         },
         "delivered": "Առաքվել է {{date}}",
         "empty_state_order_source_description": "Այստեղ կցուցադրվեն միայն {{email}} ի կողմից կատարված պատվերները։",
