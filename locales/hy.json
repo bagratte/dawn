@@ -4290,7 +4290,7 @@
       "inventory_out_of_stock": "Սպառված է",
       "inventory_out_of_stock_continue_selling": "Պահեստում կա",
       "on_sale": "Զեղչ",
-      "product_variants": "Արտադրանքի տարբերակներ",
+      "product_variants": "Ապրանքի տարբերակներ",
       "media": {
         "gallery_viewer": "Պատկերասրահի դիտիչ",
         "load_image": "Բեռնել {{ index }} պատկերը պատկերասրահի դիտման մեջ",
