@@ -4146,7 +4146,7 @@
       },
       "results_products_with_count": {
         "one": "{{ count }} ապրանք",
-        "other": "{{ count }} արտադրանք"
+        "other": "{{ count }} ապրանք"
       },
       "results_with_count": {
         "one": "{{ count }} արդյունք",
