@@ -4452,7 +4452,7 @@
         "one": "{{ quantity }} տարր հեռացվել է",
         "other": "{{ quantity }} տարր հեռացվել է"
       },
-      "product_variants": "Արտադրանքի տարբերակներ",
+      "product_variants": "Ապրանքի տարբերակներ",
       "total_items": "Ընդհանուր ապրանքներ",
       "remove_all_single_item_confirmation": "Հեռացնե՞լ 1 ապրանք ձեր զամբյուղից։",
       "remove_all_items_confirmation": "Հեռացնե՞լ բոլոր {{ quantity }} ապրանքները ձեր զամբյուղից։",
