@@ -4383,7 +4383,7 @@
       },
       "product_count_simple": {
         "one": "{{ count }} ապրանք",
-        "other": "{{ count }} արտադրանք"
+        "other": "{{ count }} ապրանք"
       },
       "reset": "Վերագործարկում",
       "sort_button": "Դասավորել",
