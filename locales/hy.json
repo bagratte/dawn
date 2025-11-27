@@ -4441,7 +4441,7 @@
       "product_total": "Ապրանքի ենթագումար",
       "view_cart": "Դիտել զամբյուղը",
       "each": "{{ money }} / հատ",
-      "product": "Արտադրանք",
+      "product": "Ապրանք",
       "variant": "Տարբերակ",
       "variant_total": "Տարբերակների ընդհանուր քանակը",
       "items_added": {
