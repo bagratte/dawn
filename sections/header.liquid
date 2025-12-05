@@ -426,28 +426,104 @@
   customElements.define('sticky-header', StickyHeader);
 {% endjavascript %}
 
-<script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Organization",
-    "name": {{ shop.name | json }},
-    {% if settings.logo %}
-      "logo": {{ settings.logo | image_url: width: 500 | prepend: "https:" | json }},
-    {% endif %}
-    "sameAs": [
-      {{ settings.social_twitter_link | json }},
-      {{ settings.social_facebook_link | json }},
-      {{ settings.social_pinterest_link | json }},
-      {{ settings.social_instagram_link | json }},
-      {{ settings.social_tiktok_link | json }},
-      {{ settings.social_tumblr_link | json }},
-      {{ settings.social_snapchat_link | json }},
-      {{ settings.social_youtube_link | json }},
-      {{ settings.social_vimeo_link | json }}
-    ],
-    "url": {{ request.origin | append: page.url | json }}
-  }
-</script>
+{%- if request.page_type == 'index' -%}
+  <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": {{ shop.name | json }},
+        "url": {{ shop.url | json }}
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "OnlineStore",
+        "acceptedPaymentMethod": [
+          {
+            "@type": "CreditCard",
+            "@id": "http://purl.org/goodrelations/v1#VISA",
+            "name": "VISA"
+          },
+          {
+            "@type": "CreditCard",
+            "@id": "http://purl.org/goodrelations/v1#MasterCard",
+            "name": "MasterCard"
+          },
+          {
+            "@type": "CreditCard",
+            "@id": "http://purl.org/goodrelations/v1#PaymentMethodCreditCard",
+            "name": "ArCa"
+          }
+        ],
+        "brand": {
+          "@type": "Brand",
+          "name": {{ shop.name | json }},
+          "logo": {{ settings.logo | image_url: width: 500 | prepend: "https:" | json }},
+          "slogan": {{ shop.brand.slogan | json }}
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "availableLanguage": [
+            {
+              "@type": "Language",
+              "alternateName": "en",
+              "name": "English"
+            },
+            {
+              "@type": "Language",
+              "alternateName": "hy",
+              "name": "Armenian"
+            },
+            {
+              "@type": "Language",
+              "alternateName": "it",
+              "name": "Italian"
+            },
+            {
+              "@type": "Language",
+              "alternateName": "ru",
+              "name": "Russian"
+            }
+          ],
+          "contactType": "Customer Service",
+          "email": {{ shop.email | json }}
+        },
+        "description": {{ shop.description | json }},
+        "email": {{ shop.email | json }},
+        "foundingDate": "2025",
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "customerRemorseReturnFees": "https://schema.org/ReturnShippingFees",
+          "itemCondition": ["https://schema.org/NewCondition", "https://schema.org/DamagedCondition"],
+          "itemDefectReturnFees": "https://schema.org/FreeReturn",
+          "merchantReturnDays": 60,
+          "merchantReturnLink": {{ shop.url | append: shop.refund_policy.url | json }},
+          "refundType": "https://schema.org/FullRefund",
+          "returnFees": "https://schema.org/ReturnShippingFees",
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "returnPolicyCountry": ["US", "CA", "LV", "ES", "GB", "AU", "JP", "BR"]
+        },
+        "hasShippingService": {{ metaobjects.shipping_services.shipping-services-po3uyxsg.value }},
+        "keywords": null,
+        "logo": {{ settings.logo | image_url: width: 500 | prepend: "https:" | json }},
+        "name": {{ shop.name | json }},
+        "sameAs":
+          {%- assign social_links = settings.social_facebook_link -%}
+          {%- assign social_links = social_links | append: "," | append: settings.social_instagram_link -%}
+          {%- assign social_links = social_links | append: "," | append: settings.social_pinterest_link -%}
+          {%- assign social_links = social_links | append: "," | append: settings.social_snapchat_link -%}
+          {%- assign social_links = social_links | append: "," | append: settings.social_tiktok_link -%}
+          {%- assign social_links = social_links | append: "," | append: settings.social_tumblr_link -%}
+          {%- assign social_links = social_links | append: "," | append: settings.social_twitter_link -%}
+          {%- assign social_links = social_links | append: "," | append: settings.social_vimeo_link -%}
+          {%- assign social_links = social_links | append: "," | append: settings.social_youtube_link -%}
+          {{ social_links | split: ',' | json }},
+        "url": {{ shop.url | json }}
+      }
+    ]
+  </script>
+{%- endif -%}
 
 {% schema %}
 {
