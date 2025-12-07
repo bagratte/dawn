@@ -496,12 +496,64 @@
 
 {%- if request.page_type == 'index' -%}
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": {{ shop.name | json }},
-      "url": {{ shop.url | json }}
-    }
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": {{ shop.name | json }},
+        "url": {{ shop.url | json }}
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "OnlineStore",
+        "@id": {{  shop.url | append: "/#onlinestore" | json }},
+        "acceptedPaymentMethod": [
+          {
+            "@type": "CreditCard",
+            "@id": "http://purl.org/goodrelations/v1#VISA",
+            "name": "VISA"
+          },
+          {
+            "@type": "CreditCard",
+            "@id": "http://purl.org/goodrelations/v1#MasterCard",
+            "name": "MasterCard"
+          },
+          {
+            "@type": "CreditCard",
+            "@id": "http://purl.org/goodrelations/v1#PaymentMethodCreditCard",
+            "name": "ArCa"
+          }
+        ],
+        "brand": {
+          "@id": {{  shop.url | append: '#brand' | json }}
+        },
+        "contactPoint": {
+          "@id": {{ shop.url | append: request.path | append: '#contactpoint' | json }}
+        },
+        "description": {{ shop.description | json }},
+        "email": {{ shop.email | json }},
+        "foundingDate": "2025",
+        "hasMerchantReturnPolicy": {
+          "@id": {{ shop.url | append: shop.refund_policy.url | append: '#merchantreturnpolicy' | json }}
+        },
+        "hasShippingService": null,
+        "keywords": null,
+        "logo": {{ settings.logo | image_url: width: 500 | prepend: "https:" | json }},
+        "name": {{ shop.name | json }},
+        "sameAs":
+          {%- assign social_links = settings.social_facebook_link -%}
+          {%- assign social_links = social_links | append: "," | append: settings.social_instagram_link -%}
+          {%- assign social_links = social_links | append: "," | append: settings.social_pinterest_link -%}
+          {%- assign social_links = social_links | append: "," | append: settings.social_snapchat_link -%}
+          {%- assign social_links = social_links | append: "," | append: settings.social_tiktok_link -%}
+          {%- assign social_links = social_links | append: "," | append: settings.social_tumblr_link -%}
+          {%- assign social_links = social_links | append: "," | append: settings.social_twitter_link -%}
+          {%- assign social_links = social_links | append: "," | append: settings.social_vimeo_link -%}
+          {%- assign social_links = social_links | append: "," | append: settings.social_youtube_link -%}
+          {{ social_links | split: ',' | json }},
+        "url": {{ shop.url | json }}
+      }
+    ]
   </script>
 {%- endif -%}
 
