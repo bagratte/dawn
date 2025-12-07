@@ -440,6 +440,40 @@
   </script>
 {%- endif -%}
 
+{%- if request.path == '/policies/contact-information' -%}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPoint",
+      "@id": {{ shop.url | append: request.path | append: '#contactpoint' | json }},
+      "availableLanguage": [
+        {
+          "@type": "Language",
+          "alternateName": "en",
+          "name": "English"
+        },
+        {
+          "@type": "Language",
+          "alternateName": "hy",
+          "name": "Armenian"
+        },
+        {
+          "@type": "Language",
+          "alternateName": "it",
+          "name": "Italian"
+        },
+        {
+          "@type": "Language",
+          "alternateName": "ru",
+          "name": "Russian"
+        }
+      ],
+      "contactType": "Customer Service",
+      "email": {{ shop.email | json }}
+    }
+  </script>
+{%- endif -%}
+
 {%- if request.page_type == 'index' -%}
   <script type="application/ld+json">
     {
