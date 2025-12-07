@@ -426,6 +426,17 @@
   customElements.define('sticky-header', StickyHeader);
 {% endjavascript %}
 
+{%- if request.page_type == 'index' -%}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": {{ shop.name | json }},
+      "url": {{ shop.url | json }}
+    }
+  </script>
+{%- endif -%}
+
 {% schema %}
 {
   "name": "t:sections.header.name",
