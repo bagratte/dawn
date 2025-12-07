@@ -474,6 +474,26 @@
   </script>
 {%- endif -%}
 
+{%- if request.path == shop.refund_policy.url -%}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MerchantReturnPolicy",
+      "@id": {{ shop.url | append: shop.refund_policy.url | append: '#merchantreturnpolicy' | json }},
+      "customerRemorseReturnFees": "https://schema.org/ReturnShippingFees",
+      "itemCondition": ["https://schema.org/NewCondition", "https://schema.org/DamagedCondition"],
+      "itemDefectReturnFees": "https://schema.org/FreeReturn",
+      "merchantReturnDays": 30,
+      "merchantReturnLink": {{ shop.url | append: shop.refund_policy.url | json }},
+      "refundType": "https://schema.org/FullRefund",
+      "returnFees": "https://schema.org/ReturnShippingFees",
+      "returnMethod": "https://schema.org/ReturnByMail",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+      "returnPolicyCountry": ["US", "CA", "LV", "ES", "GB", "AU", "JP", "BR"]
+    }
+  </script>
+{%- endif -%}
+
 {%- if request.page_type == 'index' -%}
   <script type="application/ld+json">
     {
