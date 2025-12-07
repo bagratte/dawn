@@ -426,6 +426,20 @@
   customElements.define('sticky-header', StickyHeader);
 {% endjavascript %}
 
+{%- if page.handle == 'about' -%}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Brand",
+      "@id": {{  shop.url | append: '#brand' | json }},
+      "name": {{ shop.name | json }},
+      "logo": {{ settings.logo | image_url: width: 500 | prepend: "https:" | json }},
+      "slogan": {{ shop.brand.slogan | json }},
+      "url": {{  shop.url | append: page.url | json }}
+    }
+  </script>
+{%- endif -%}
+
 {%- if request.page_type == 'index' -%}
   <script type="application/ld+json">
     {
