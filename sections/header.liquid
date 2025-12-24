@@ -494,6 +494,12 @@
   </script>
 {%- endif -%}
 
+{%- if request.path == shop.shipping_policy.url -%}
+  <script type="application/ld+json">
+    {{ shop.metafields.custom.shipping_service }}
+  </script>
+{%- endif -%}
+
 {%- if request.page_type == 'index' -%}
   <script type="application/ld+json">
     [
@@ -536,7 +542,9 @@
         "hasMerchantReturnPolicy": {
           "@id": {{ shop.url | append: shop.refund_policy.url | append: '#merchantreturnpolicy' | json }}
         },
-        "hasShippingService": null,
+        "hasShippingService": {
+          "@id": {{ shop.url | append: shop.shipping_policy.url | append: '#shippingservice' | json }}
+        },
         "keywords": null,
         "logo": {{ settings.logo | image_url: width: 500 | prepend: "https:" | json }},
         "name": {{ shop.name | json }},
