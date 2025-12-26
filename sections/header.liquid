@@ -431,7 +431,7 @@
     {
       "@context": "https://schema.org",
       "@type": "Brand",
-      "@id": {{  shop.url | append: '#brand' | json }},
+      "@id": {{  shop.url | append: request.path | append: '#brand' | json }},
       "name": {{ shop.name | json }},
       "logo": {{ settings.logo | image_url: width: 500 | prepend: "https:" | json }},
       "slogan": {{ shop.brand.slogan | json }},
@@ -531,10 +531,10 @@
           }
         ],
         "brand": {
-          "@id": {{  shop.url | append: '#brand' | json }}
+          "@id": {{  shop.url | append: '/policies/contact-information#brand' | json }}
         },
         "contactPoint": {
-          "@id": {{ shop.url | append: request.path | append: '#contactpoint' | json }}
+          "@id": {{ shop.url | append: '/about#contactpoint' | json }}
         },
         "description": {{ shop.description | json }},
         "email": {{ shop.email | json }},
