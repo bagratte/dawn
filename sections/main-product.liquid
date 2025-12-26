@@ -733,7 +733,208 @@
     -%}
 
     <script type="application/ld+json">
-      {{ product | structured_data }}
+      {%  if product.has_only_default_variant %}
+        {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "sku": {{ product.selected_or_first_available_variant.sku | json }},
+          "name": {{ product.title | json }},
+          "description": {{ product.description | replace: '<br>', '\n' | strip_html | json }},
+          "image": [
+            {% for image in product.images -%}
+            {{ image | image_url | prepend: 'https:' | json }}{% unless forloop.last %},{% endunless %}
+            {% endfor -%}
+          ],
+          "category": {{ product.category | json }},
+          "size": null,
+          "color": {{ product.metafields.shopify.color-pattern.value | where: 'color' | map: 'label' | join: '/' | json }},
+          "pattern": {{ product.metafields.shopify.color-pattern.value | reject: 'color' | map: 'label' | join: '/' | json }},
+          {% liquid
+            assign keys = 'drinkware-material,bag-case-material,fabric,cover-material,filler-material,artwork-frame-material' | split: ','
+            assign material = '' | split: ''
+            for key in keys
+              assign m = product.metafields.shopify[key].value | map: 'label'
+              assign material = material | concat: m
+            endfor
+          -%}
+          "material": {{ material | uniq | join: '/' | json }},
+          "audience": {
+            "@type": "PeopleAudience",
+            "suggestedGender": {{ product.metafields.shopify.target-gender.value | map: 'label' | first | json }},
+            {% assign label = product.metafields.shopify.age-group.value | map: 'label' | first -%}
+            {% case label -%}
+            {% when 'Newborn' -%}
+            "suggestedMinAge": 0,
+            {% when 'Babies' -%}
+            "suggestedMinAge": 0.25,
+            {% when 'Toddlers' -%}
+            "suggestedMinAge": 1,
+            {% when 'Kids' -%}
+            "suggestedMinAge": 5,
+            {% when 'Adults' -%}
+            "suggestedMinAge": 13,
+            {% else -%}
+            "suggestedMinAge": null,
+            {% endcase -%}
+            {% case label -%}
+            {% when 'Newborn' -%}
+            "suggestedMaxAge": 0.25
+            {% when 'Babies' -%}
+            "suggestedMaxAge": 1
+            {% when 'Toddlers' -%}
+            "suggestedMaxAge": 5
+            {% when 'Kids' -%}
+            "suggestedMaxAge": 13
+            {% when 'Adults' -%}
+            "suggestedMaxAge": null
+            {% else -%}
+            "suggestedMaxAge": null
+            {% endcase -%}
+          },
+          "brand": {
+            "@id": {{  shop.url | append: '#brand' | json }},
+            "name": "stokhastik"
+          },
+          "aggregateRating": null,
+          "review": null,
+          "offers": {
+            "@type": "Offer",
+            "price": {{ product.price | divided_by: 100.0 | json }},
+            "priceCurrency": {{ shop.currency | json }},
+            {% if product.available -%}
+            "availability": "https://schema.org/InStock",
+            {% else -%}
+            "availability": "https://schema.org/OutOfStock",
+            {% endif -%}
+            "itemCondition": "https://schema.org/NewCondition",
+            "hasMerchantReturnPolicy": {
+              "@id": {{ shop.url | append: shop.refund_policy.url | append: '#merchantreturnpolicy' | json }}
+            },
+            "shippingDetails": {
+              "@type": "OfferShippingDetails",
+              "hasShippingService": {
+                "@id": {{ shop.url | append: shop.shipping_policy.url | append: '#shippingservice' | json }}
+              }
+            },
+            "url": {{ shop.url | append: product.url | json }}
+          }
+        }
+      {% else %}
+        {
+          "@context": "https://schema.org/",
+          "@type": "ProductGroup",
+          "name": {{ product.title | json }},
+          "description": {{ product.description | replace: '<br>', '\n' | strip_html | json }},
+          "pattern": {{ product.metafields.shopify.color-pattern.value | reject: 'color' | map: 'label' | join: '/' | json }},
+          {% liquid
+            assign keys = 'drinkware-material,bag-case-material,fabric,cover-material,filler-material,artwork-frame-material' | split: ','
+            assign material = '' | split: ''
+            for key in keys
+              assign m = product.metafields.shopify[key].value | map: 'label'
+              assign material = material | concat: m
+            endfor
+          -%}
+          "material": {{ material | uniq | join: '/' | json }},
+          "url": {{ shop.url | append:product.url | json }},
+          "audience": {
+            "@type": "PeopleAudience",
+            "suggestedGender": {{ product.metafields.shopify.target-gender.value | map: 'label' | first | json }},
+            {% assign label = product.metafields.shopify.age-group.value | map: 'label' | first -%}
+            {% case label -%}
+            {% when 'Newborn' -%}
+            "suggestedMinAge": 0,
+            {% when 'Babies' -%}
+            "suggestedMinAge": 0.25,
+            {% when 'Toddlers' -%}
+            "suggestedMinAge": 1,
+            {% when 'Kids' -%}
+            "suggestedMinAge": 5,
+            {% when 'Adults' -%}
+            "suggestedMinAge": 13,
+            {% else -%}
+            "suggestedMinAge": null,
+            {% endcase -%}
+            {% case label -%}
+            {% when 'Newborn' -%}
+            "suggestedMaxAge": 0.25
+            {% when 'Babies' -%}
+            "suggestedMaxAge": 1
+            {% when 'Toddlers' -%}
+            "suggestedMaxAge": 5
+            {% when 'Kids' -%}
+            "suggestedMaxAge": 13
+            {% when 'Adults' -%}
+            "suggestedMaxAge": null
+            {% else -%}
+            "suggestedMaxAge": null
+            {% endcase -%}
+          },
+          "hasMerchantReturnPolicy": {
+            "@id": {{ shop.url | append: shop.refund_policy.url | append: '#merchantreturnpolicy' | json }}
+          },
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "hasShippingService": {
+              "@id": {{ shop.url | append: shop.shipping_policy.url | append: '#shippingservice' | json }}
+            }
+          },
+          "brand": {
+            "@id": {{  shop.url | append: '/abount#brand' | json }},
+            "name": "stokhastik"
+          },
+          "aggregateRating": null,
+          "review": null,
+          "productGroupID": {{ product.handle | json }},
+          "variesBy": [
+            {% for option in product.options -%}
+            {{ option | downcase | prepend: 'https://schema.org/' | json }}{% unless forloop.last %},{% endunless %}
+            {% endfor -%}
+          ],
+          "hasVariant": [
+            {% for variant in product.variants -%}
+            {
+              "@context": "https://schema.org/",
+              "@type": "Product",
+              "sku": {{ variant.sku | json }},
+              "name": {{ product.title | append: ' - ' | append: variant.title | json }},
+              "description": {{ product.description | replace: '<br>', '\n' | strip_html | json }},
+              {% assign index = product.options | find_index: 'Color' -%}
+              "color": {{ variant.options[index] | json }},
+              {% assign index = product.options | find_index: 'Size' -%}
+              "size": {{ variant.options[index] | json }},
+              "image": [
+                {% for image in variant.metafields.custom.media.value -%}
+                {{ image | image_url | prepend: 'https:' | json }}{% unless forloop.last %},{% endunless %}
+                {% endfor -%}
+              ],
+              "aggregateRating": null,
+              "review": null,
+              "offers": {
+                "@type": "Offer",
+                "price": {{ variant.price | divided_by: 100.0 | json }},
+                "priceCurrency": {{ shop.currency | json }},
+                {% if variant.available -%}
+                "availability": "https://schema.org/InStock",
+                {% else -%}
+                "availability": "https://schema.org/OutOfStock",
+                {% endif -%}
+                "itemCondition": "https://schema.org/NewCondition",
+                "hasMerchantReturnPolicy": {
+                  "@id": {{ shop.url | append: shop.refund_policy.url | append: '#merchantreturnpolicy' | json }}
+                },
+                "shippingDetails": {
+                  "@type": "OfferShippingDetails",
+                  "hasShippingService": {
+                    "@id": {{ shop.url | append: shop.shipping_policy.url | append: '#shippingservice' | json }}
+                  }
+                },
+                "url": {{ shop.url | append: variant.url | json }}
+              }
+            }{% unless forloop.last %},{% endunless %}
+            {% endfor -%}
+          ]
+        }
+      {% endif %}
     </script>
   </div>
 </product-info>
