@@ -756,6 +756,7 @@
         {
           "@context": "https://schema.org/",
           "@type": "Product",
+          "@id": {{ shop.url | append: product.url | json }},
           "sku": {{ product.selected_or_first_available_variant.sku | json }},
           "name": {{ product.title | json }},
           "description": {{ product.description | replace: '<br>', '\n' | strip_html | json }},
@@ -842,6 +843,7 @@
         {
           "@context": "https://schema.org/",
           "@type": "ProductGroup",
+          "@id": {{ shop.url | append: product.url | json }},
           "name": {{ product.title | json }},
           "description": {{ product.description | replace: '<br>', '\n' | strip_html | json }},
           "pattern": {{ product.metafields.shopify.color-pattern.value | reject: 'color' | map: 'label' | join: '/' | json }},
