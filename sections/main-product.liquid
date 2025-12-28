@@ -912,19 +912,24 @@
             {% endfor -%}
           ],
           "hasVariant": [
-            {% for variant in product.variants -%}
+            {% for v in product.variants -%}
             {
               "@context": "https://schema.org/",
               "@type": "Product",
-              "sku": {{ variant.sku | json }},
-              "name": {{ product.title | append: ' - ' | append: variant.title | json }},
+              "sku": {{ v.sku | json }},
+              "name": {{ product.title | append: ' - ' | append: v.title | json }},
               "description": {{ product.description | replace: '<br>', '\n' | strip_html | json }},
               {% assign index = product.options | find_index: 'Color' -%}
-              "color": {{ variant.options[index] | json }},
+              "color": {{ v.options[index] | json }},
               {% assign index = product.options | find_index: 'Size' -%}
-              "size": {{ variant.options[index] | json }},
+              "size": {{ v.options[index] | json }},
               "image": [
-                {% for image in variant.metafields.custom.media.value -%}
+                {% if v.metafields.custom.media.value -%}
+                  {%- assign images = v.metafields.custom.media.value -%}
+                {%- else -%}
+                  {%- assign images = product.images -%}
+                {%- endif -%}
+                {% for image in images -%}
                 {{ image | image_url | prepend: 'https:' | json }}{% unless forloop.last %},{% endunless %}
                 {% endfor -%}
               ],
@@ -932,9 +937,9 @@
               "review": null,
               "offers": {
                 "@type": "Offer",
-                "price": {{ variant.price | divided_by: 100.0 | json }},
+                "price": {{ v.price | divided_by: 100.0 | json }},
                 "priceCurrency": {{ shop.currency | json }},
-                {% if variant.available -%}
+                {% if v.available -%}
                 "availability": "https://schema.org/InStock",
                 {% else -%}
                 "availability": "https://schema.org/OutOfStock",
@@ -949,7 +954,7 @@
                     "@id": {{ shop.url | append: shop.shipping_policy.url | append: '#shippingservice' | json }}
                   }
                 },
-                "url": {{ shop.url | append: variant.url | json }}
+                "url": {{ shop.url | append: v.url | json }}
               }
             }{% unless forloop.last %},{% endunless %}
             {% endfor -%}
