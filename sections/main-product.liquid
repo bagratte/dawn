@@ -862,12 +862,16 @@
             "hasMerchantReturnPolicy": {
               "@id": {{ shop.url | append: shop.refund_policy.url | append: '#merchantreturnpolicy' | json }}
             },
+            {% if product.selected_or_first_available_variant.metafields.custom.shipping_details -%}
+            "shippingDetails": {{ product.selected_or_first_available_variant.metafields.custom.shipping_details }},
+            {% else -%}
             "shippingDetails": {
               "@type": "OfferShippingDetails",
               "hasShippingService": {
                 "@id": {{ shop.url | append: shop.shipping_policy.url | append: '#shippingservice' | json }}
               }
             },
+            {% endif -%}
             "url": {{ shop.url | append: product.url | json }}
           }
         }
@@ -921,15 +925,6 @@
             {% else -%}
             "suggestedMaxAge": null
             {% endcase -%}
-          },
-          "hasMerchantReturnPolicy": {
-            "@id": {{ shop.url | append: shop.refund_policy.url | append: '#merchantreturnpolicy' | json }}
-          },
-          "shippingDetails": {
-            "@type": "OfferShippingDetails",
-            "hasShippingService": {
-              "@id": {{ shop.url | append: shop.shipping_policy.url | append: '#shippingservice' | json }}
-            }
           },
           "brand": {
             "@id": {{  shop.url | append: '/abount#brand' | json }},
@@ -1012,12 +1007,16 @@
                 "hasMerchantReturnPolicy": {
                   "@id": {{ shop.url | append: shop.refund_policy.url | append: '#merchantreturnpolicy' | json }}
                 },
+                {% if v.metafields.custom.shipping_details -%}
+                  "shippingDetails": {{ v.metafields.custom.shipping_details }},
+                {% else -%}
                 "shippingDetails": {
                   "@type": "OfferShippingDetails",
                   "hasShippingService": {
                     "@id": {{ shop.url | append: shop.shipping_policy.url | append: '#shippingservice' | json }}
                   }
                 },
+                {% endif -%}
                 "url": {{ shop.url | append: v.url | json }}
               }
             }{% unless forloop.last %},{% endunless %}
