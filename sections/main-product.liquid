@@ -882,7 +882,19 @@
           "@id": {{ shop.url | append: product.url | append: '#product' | json }},
           "name": {{ product.title | json }},
           "description": {{ product.description | replace: '<br>', '\n' | strip_html | json }},
-          "pattern": {{ product.metafields.shopify.color-pattern.value | reject: 'color' | map: 'label' | join: '/' | json }},
+          {% liquid
+            assign keys = 'color-pattern,cover-color' | split: ','
+            assign color = '' | split: ''
+            assign pattern = '' | split: ''
+            for key in keys
+              assign c = product.metafields.shopify[key].value | where: 'color' | map: 'label'
+              assign color = color | concat: c
+              assign p = product.metafields.shopify[key].value | reject: 'color' | map: 'label'
+              assign pattern = pattern | concat: p
+            endfor
+          -%}
+          "color": {{ color | join: '/' | json }},
+          "pattern": {{ pattern | join: '/' | json }},
           {% liquid
             assign keys = 'drinkware-material,bag-case-material,fabric,cover-material,filler-material,artwork-frame-material' | split: ','
             assign material = '' | split: ''
@@ -947,7 +959,9 @@
               "name": {{ product.title | append: ' - ' | append: v.title | json }},
               "description": {{ product.description | replace: '<br>', '\n' | strip_html | json }},
               {% assign index = product.options | find_index: 'Color' -%}
+              {%- if index -%}
               "color": {{ v.options[index] | json }},
+              {%- endif %}
               {% assign index = product.options | find_index: 'Size' -%}
               "size": {{ v.options[index] | json }},
               "image": [
