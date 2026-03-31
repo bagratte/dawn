@@ -24,11 +24,11 @@
           "type": "title",
           "settings": {}
         },
-        "caption": {
-          "type": "text",
+        "custom_liquid_QnfRKn": {
+          "type": "custom_liquid",
+          "name": "Subtitle",
           "settings": {
-            "text": "{{ product.metafields.custom.subtitle.value.value.value }}",
-            "text_style": "subtitle"
+            "custom_liquid": "{% if product.category.id != \"hg-3-64\" %}\n<p class=\"subtitle\">{{ product.metafields.custom.subtitle.value.value }}</p>\n{% endif %}"
           }
         },
         "price": {
@@ -132,7 +132,7 @@
       "block_order": [
         "vendor",
         "title",
-        "caption",
+        "custom_liquid_QnfRKn",
         "price",
         "variant_picker",
         "custom_liquid_XK8FyG",
