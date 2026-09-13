@@ -296,7 +296,89 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
-  </head>
+  
+<!-- TagadaPay Integration Script -->
+<script>
+(function() {
+  window.TgdShim = {
+    captured: null,
+    custom: [],
+    defaults: {
+      checkoutLink: ['//*[@id="checkout"]', '//button[@name="checkout"]', '//form[@action="/cart"]//button[@type="submit"]'],
+      buyNowLink: ['.shopify-payment-button__button--unbranded', '.shopify-payment-button__button--branded']
+    }
+  };
+
+  function matches(el, xpath) {
+    try {
+      if (!el || !xpath) return false;
+      const isXpath = xpath.startsWith('//') || xpath.startsWith('/') || xpath.startsWith('(');
+      if (isXpath) {
+        const res = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+        return res === el || res?.contains(el);
+      }
+      return el.matches(xpath) || el.closest(xpath);
+    } catch(e) { return false; }
+  }
+
+  document.addEventListener('click', function(e) {
+    if (window.TgdMapperInitialized) return;
+    const target = e.composedPath ? e.composedPath()[0] : e.target;
+
+    for (const item of window.TgdShim.custom) {
+      if (matches(target, item.xpath)) {
+        return capture(e, item.label);
+      }
+    }
+
+    for (const label in window.TgdShim.defaults) {
+      for (const selector of window.TgdShim.defaults[label]) {
+        if (matches(target, selector)) {
+          return capture(e, label);
+        }
+      }
+    }
+
+    function capture(event, label) {
+      event.preventDefault();
+      event.stopPropagation();
+      event.stopImmediatePropagation();
+      window.TgdShim.captured = { target: target };
+      window.TgdShim.label = label;
+      return false;
+    }
+  }, true);
+})();
+</script>
+<script src="https://api.tagada.io/assets/js/tgdmap.js" async></script>
+<script>
+  window.addEventListener('load', function () {
+    if (window.TgdMapper) {
+      TgdMapper.initialize({
+        storeId: 'store_cebfaecd85ea',
+        appUrl: 'https://api.tagada.io',
+        enableShopifyIntegration: true,
+        enableSelector: true,
+        enableGenericBuyNow: true,
+        enableBuyNowButtonDetector: true,
+        enableCheckoutButtonDetector: true,
+        enableKachingBundle: true,
+        enableShopifyCartPreloader: false,
+        shopifyCheckoutSplitRatio: 100,
+        funnelId: 'funnelv2_1307db52293d',
+        accountId: 'acc_8bfad3a0b0da',
+        stepId: 'step_1789275494809',
+        buyNowButtonDetectorUrlPatterns: [],
+        buyNowButtonDetectorExcludeUrlPatterns: [],
+        checkoutButtonDetectorExcludeUrlPatterns: [],
+        selectors: [],
+        mockMode: false
+      });
+    }
+  });
+</script>
+<!-- End TagadaPay Integration -->
+</head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
